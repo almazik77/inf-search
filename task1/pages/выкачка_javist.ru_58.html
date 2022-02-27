@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+		<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://javist.ru/xmlrpc.php" />
+	<title>Программирование на JAVA</title>
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[321,352] -->
+<meta name="description" itemprop="description" content="Учебники, статьи, исходные коды и прочие полезности из мира Java" />
+
+<meta name="keywords" itemprop="keywords" content="java, программирование, учебники java, статьи по java, самоучитель java" />
+<link rel='next' href='http://javist.ru/page/2/' />
+
+<link rel="canonical" href="http://javist.ru/" />
+<!-- /all in one seo pack -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/javist.ru\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,n,t){var a;function o(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d");return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),3e3<t.toDataURL().length):(a.fillText(String.fromCharCode(55357,56835),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function i(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:o("simple"),flag:o("flag")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?i(a.concatemoji):a.wpemoji&&a.twemoji&&(i(a.twemoji),i(a.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='flat-fonts-css' href='//fonts.googleapis.com/css?family=Amatic+SC%7CPT+Sans:400,700%7CDroid+Serif%7CRoboto+Condensed' media='all' />
+<link rel='stylesheet' id='flat-theme-css' href='http://javist.ru/wp-content/themes/flat/assets/css/flat.min.css' media='all' />
+<link rel='stylesheet' id='flat-style-css' href='http://javist.ru/wp-content/themes/flat/style.css' media='all' />
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src='http://javist.ru/wp-content/themes/flat/assets/js/flat.min.js'></script>
+<!--[if lt IE 9]>
+<script src='http://javist.ru/wp-content/themes/flat/assets/js/html5shiv.min.js'></script>
+<![endif]-->
+<style type="text/css">#page:before, .sidebar-offcanvas, #secondary { background-color: #0074bd; }@media (max-width: 1199px) { #page &gt; .container { background-color: #0074bd; } }</style><style type="text/css">#masthead .site-title {font-family:Amatic SC}body {font-family:PT Sans }h1,h2,h3,h4,h5,h6 {font-family:Droid Serif}#masthead .site-description, .hentry .entry-meta {font-family:Roboto Condensed}</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #eeeeee; }
+</style>
+	</head>
+
+<body class="home blog custom-background" itemscope itemtype="http://schema.org/WebPage">
+<div id="page">
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<div id="secondary" class="col-lg-3">
+								<header id="masthead" class="site-header" role="banner">
+										<div class="hgroup">
+						<img class="logo" src="/wp-content/themes/flat/assets/img/Java_Logo.svg">
+						<h1 class="site-title">Javist</h1>
+					<button type="button" class="btn btn-link hidden-lg toggle-sidebar" data-toggle="offcanvas" aria-label="Sidebar"><i class="fa fa-gear"></i></button>
+					<button type="button" class="btn btn-link hidden-lg toggle-navigation" aria-label="Navigation Menu"><i class="fa fa-bars"></i></button>
+					<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+						<ul id="menu-menyu-1" class="nav-menu"><li id="menu-item-1352" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1352"><a href="http://javist.ru/">Главная</a></li>
+<li id="menu-item-1359" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1359"><a href="http://javist.ru/ask">Задать вопрос</a></li>
+<li id="menu-item-1353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1353"><a href="http://javist.ru/books/">Книги</a></li>
+<li id="menu-item-1354" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1354"><a href="http://javist.ru/category/old/">Старые статьи</a></li>
+</ul>					</nav>
+									</header>
+				
+				<div class="sidebar-offcanvas">
+					<div id="main-sidebar" class="widget-area" role="complementary">
+													<aside id="recent-posts-4" class="widget widget_recent_entries">
+								<h3 class='widget-title'>Свежие записи</h3>
+		<ul>
+					<li>
+				<a href="http://javist.ru/kakie-tipy-dannyx-java/">Какие типы данных Java</a>
+						</li>
+					<li>
+				<a href="http://javist.ru/chitat-dannyj-fajl-v-jtable-i-perezagruzki-esli-dannye-fajla-imeyut-ch/">Читать данный файл в JTable и перезагрузки, если данные файла имеют CH</a>
+						</li>
+					<li>
+				<a href="http://javist.ru/kak-sdelat-vashu-sobstvennuyu-animaciyu-iz-serii-i/">Как сделать вашу собственную анимацию из серии I</a>
+						</li>
+					<li>
+				<a href="http://javist.ru/kak-kultur-subimage-iz-obraza/">Как культур subimage из образа</a>
+						</li>
+					<li>
+				<a href="http://javist.ru/kak-zapustit-skript-s-unix-java/">Как запустить скрипт с Unix Java</a>
+						</li>
+				</ul>
+							</aside>
+					<aside id="vf-widget-discussions" class="widget vf_widget_discussions">
+						<h3 class='widget-title'></h3>
+<ul><li><a href="forum#/discussion/1/bam-youve-got-a-sweet-forum">BAM! You’ve got a sweet forum</a></li></ul>					</aside>
+						
+<p align='center'>Advertisement:<br/><script type="text/javascript">
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+</script></p>
+					</div>
+				</div>
+			</div>
+
+						<div id="primary" class="content-area col-lg-9" itemprop="mainContentOfPage">
+						<div id="content" class="site-content" role="main">
+		
+						<article itemscope itemtype="http://schema.org/Article" id="post-683" class="post-683 post type-post status-publish format-standard hentry category-java-lang category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kakie-tipy-dannyx-java/" title="Постоянная ссылка на Какие типы данных Java" rel="bookmark">Какие типы данных Java</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kakie-tipy-dannyx-java/" rel="bookmark"><time class="entry-date published" datetime="2009-12-16T00:15:22+00:00" itemprop="datepublished">16 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kakie-tipy-dannyx-java/#respond"><span vanilla-identifier="683">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Java состоит из двух групп данных типов, <i>примитивных типов данных</i> и <i>ссылок на объекты.</i></p>
+<h2>Java Primitive Data Types</h2>
+<table border="1" title="Java Data Types">
+<tr>
+<th>Data Type</th>
+<th>Purpose</th>
+<th>Contents</th>
+<th>Default Value*</th>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Truth value</td>
+<td>true or false</td>
+<td>fales</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+<td>Unicode characters</td>
+<td>\u0000</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>Signed integer</td>
+<td>8 bit two&#8217;s complement</td>
+<td>(byte) 0</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Signed integer</td>
+<td>16 bit two&#8217;s complement</td>
+<td>(short) 0</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Signed integer</td>
+<td>32 bit two&#8217;s complement</td>
+<td>0</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Signed integer</td>
+<td>64 bit two&#8217;s complement</td>
+<td>0L</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Real number</td>
+<td>32 bit IEEE 754 floating point</td>
+<td>0.0f</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Real number</td>
+<td>64 bit IEEE 754 floating point</td>
+<td>0.0d</td>
+</tr>
+</table>
+<p>Один из способов помню Java примитивных типов данных с помощью этой мнемонический помощь:: <b>С</b> areful, <b>В</b> ушах <b>S</b> houldn&#39;t <b>я</b> ngest <b>L</b> Arge <b>F</b> Urry <b>D</b> ОГС.</p>
+<p>Экземпляр переменным присваиваются значения по умолчанию; локальные переменные не могут быть присвоены значения по умолчанию.</p>
+<p>Список объектов Java являются переменными, которые держат ссылки на объекты. В отличие от Java примитивных типов данных, которые хранят фактические данные, ссылки на объекты хранить только ссылки на фактические данные объекта.</p>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-612" class="post-612 post type-post status-publish format-standard hentry category-javax-swing category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/chitat-dannyj-fajl-v-jtable-i-perezagruzki-esli-dannye-fajla-imeyut-ch/" title="Постоянная ссылка на Читать данный файл в JTable и перезагрузки, если данные файла имеют CH" rel="bookmark">Читать данный файл в JTable и перезагрузки, если данные файла имеют CH</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/chitat-dannyj-fajl-v-jtable-i-perezagruzki-esli-dannye-fajla-imeyut-ch/" rel="bookmark"><time class="entry-date published" datetime="2009-12-15T00:01:29+00:00" itemprop="datepublished">15 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/chitat-dannyj-fajl-v-jtable-i-perezagruzki-esli-dannye-fajla-imeyut-ch/#respond"><span vanilla-identifier="612">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Мы используем наблюдатель / Наблюдаемые механизма обнаружения, если файл данных были Modifed поскольку в последний раз.</p>
+<p>Мы используем те же файлы данных и DataFileTableModel как предыдущие инструкции. Некоторые незначительные изменения, которые необходимы для DataFileTable класс. Этот класс сейчас реализует интерфейс наблюдателя (см. Update () метод, который будет вызываться при наблюдаемом объекте отправить уведомление).</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#000000">[</font><font color="#000000">DataFileTable.java</font><font color="#000000">]</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.*;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">DataFileTable&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">JPanel</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>implements&nbsp;</b></font><font color="#000000">Observer&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#000000">JTable&nbsp;table;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#000000">DataFileTableModel&nbsp;model;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">DataFileTable</font><font color="#000000">(</font><font color="#000000">String&nbsp;dataFilePath</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DataFileWatchdog&nbsp;&nbsp;wd;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Font&nbsp;f;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Font</font><font color="#000000">(</font><font color="#2a00ff">&#34;SanSerif&#34;</font><font color="#000000">,Font.PLAIN,</font><font color="#990000">24</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setFont</font><font color="#000000">(</font><font color="#000000">f</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setLayout</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">BorderLayout</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">model&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">DataFileTableModel</font><font color="#000000">(</font><font color="#000000">dataFilePath</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">table&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JTable</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">table.setModel</font><font color="#000000">(</font><font color="#000000">model</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">table.createDefaultColumnsFromModel</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JScrollPane&nbsp;scrollpane&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JScrollPane</font><font color="#000000">(</font><font color="#000000">table</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">add</font><font color="#000000">(</font><font color="#000000">scrollpane</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;this&nbsp;watchdog&nbsp;(an&nbsp;Observable&nbsp;object)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;&nbsp;&nbsp;is&nbsp;monitoring&nbsp;any&nbsp;file&nbsp;change</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">wd&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">DataFileWatchdog</font><font color="#000000">(</font><font color="#000000">dataFilePath</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">wd.addObserver</font><font color="#000000">(</font><font color="#7f0055"><b>this</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">update</font><font color="#000000">(</font><font color="#000000">Observable&nbsp;o,&nbsp;Object&nbsp;arg</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;reload&nbsp;data&nbsp;because&nbsp;data&nbsp;file&nbsp;have&nbsp;changed</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">model.initVectors</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">table.repaint</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Dimension&nbsp;getPreferredSize</font><font color="#000000">(){</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;new&nbsp;</b></font><font color="#000000">Dimension</font><font color="#000000">(</font><font color="#990000">400</font><font color="#000000">,&nbsp;</font><font color="#990000">300</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String&nbsp;s</font><font color="#000000">[])&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JFrame&nbsp;frame&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JFrame</font><font color="#000000">(</font><font color="#2a00ff">&#34;Data&nbsp;File&nbsp;Table&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DataFileTable&nbsp;panel;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">panel&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">DataFileTable</font><font color="#000000">(</font><font color="#2a00ff">&#34;customers.dat&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.setDefaultCloseOperation</font><font color="#000000">(</font><font color="#000000">JFrame.DO_NOTHING_ON_CLOSE</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.setForeground</font><font color="#000000">(</font><font color="#000000">Color.black</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.setBackground</font><font color="#000000">(</font><font color="#000000">Color.lightGray</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.getContentPane</font><font color="#000000">()</font><font color="#000000">.add</font><font color="#000000">(</font><font color="#000000">panel,</font><font color="#2a00ff">&#34;Center&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.setSize</font><font color="#000000">(</font><font color="#000000">panel.getPreferredSize</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.setVisible</font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">frame.addWindowListener</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">WindowCloser</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">WindowCloser&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">WindowAdapter&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">windowClosing</font><font color="#000000">(</font><font color="#000000">WindowEvent&nbsp;e</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Window&nbsp;win&nbsp;=&nbsp;e.getWindow</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">win.setVisible</font><font color="#000000">(</font><font color="#7f0055"><b>false</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.exit</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font></code>
+</td>
+</tr>
+</table>
+</div>
+<p>DataFileWatchdog, наблюдаемый объект, проста. Мы используем Свинг таймер, чтобы проверить каждую секунду, если заданный файл изменились. Если метка отличается, то последний, то все зарегистрированные наблюдатели уведомляются об этом.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#000000">[</font><font color="#000000">DataFileWatchdog.java</font><font color="#000000">]</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.Timer;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.*;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">DataFileWatchdog&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Observable</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>implements&nbsp;</b></font><font color="#000000">ActionListener&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Timer&nbsp;t&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Timer</font><font color="#000000">(</font><font color="#990000">1000</font><font color="#000000">,this</font><font color="#000000">)</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;check&nbsp;every&nbsp;second</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>long&nbsp;</b></font><font color="#000000">lastModified;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;file;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DataFileWatchdog</font><font color="#000000">(</font><font color="#000000">String&nbsp;s</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">file&nbsp;=&nbsp;s;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;f&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#000000">file</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">lastModified&nbsp;=&nbsp;f.lastModified</font><font color="#000000">()</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;original&nbsp;timestamp</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">t.start</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;e</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;f&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#000000">file</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>long&nbsp;</b></font><font color="#000000">actualLastModified&nbsp;=&nbsp;f.lastModified</font><font color="#000000">()&nbsp;</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">lastModified&nbsp;!=&nbsp;actualLastModified</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;the&nbsp;file&nbsp;have&nbsp;changed</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">lastModified&nbsp;=&nbsp;actualLastModified;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setChanged</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">notifyObservers</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-452" class="post-452 post type-post status-publish format-standard hentry category-javax-swing category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kak-sdelat-vashu-sobstvennuyu-animaciyu-iz-serii-i/" title="Постоянная ссылка на Как сделать вашу собственную анимацию из серии I" rel="bookmark">Как сделать вашу собственную анимацию из серии I</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kak-sdelat-vashu-sobstvennuyu-animaciyu-iz-serii-i/" rel="bookmark"><time class="entry-date published" datetime="2009-12-14T23:30:30+00:00" itemprop="datepublished">14 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kak-sdelat-vashu-sobstvennuyu-animaciyu-iz-serii-i/#respond"><span vanilla-identifier="452">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Этот совет Java Swing иллюстрирует метод анимации серии изображений, расположенный на месте. Разработчики могут использовать этот совет для создания анимации в их applicationa рисунок с файлами. Эта подсказка может быть использована для анимированных логотипов применения.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.*;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">LogoAnimator&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">JPanel</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>implements&nbsp;</b></font><font color="#000000">ActionListener&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#000000">ImageIcon&nbsp;images</font><font color="#000000">[]</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">totalImages&nbsp;=&nbsp;</font><font color="#990000">30</font><font color="#000000">,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">currentImage&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">animationDelay&nbsp;=&nbsp;</font><font color="#990000">50</font><font color="#000000">;&nbsp;</font><font color="#3f7f5f">//&nbsp;50&nbsp;millisecond&nbsp;delay</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#000000">Timer&nbsp;animationTimer;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">LogoAnimator</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setSize</font><font color="#000000">(&nbsp;</font><font color="#000000">getPreferredSize</font><font color="#000000">()&nbsp;)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">images&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ImageIcon</font><font color="#000000">[&nbsp;</font><font color="#000000">totalImages&nbsp;</font><font color="#000000">]</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">i&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;&nbsp;i&nbsp;&lt;&nbsp;images.length;&nbsp;++i&nbsp;</font><font color="#000000">)&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">images</font><font color="#000000">[&nbsp;</font><font color="#000000">i&nbsp;</font><font color="#000000">]&nbsp;</font><font color="#000000">=</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ImageIcon</font><font color="#000000">(&nbsp;</font><font color="#2a00ff">&#34;images/java&#34;&nbsp;</font><font color="#000000">+&nbsp;i&nbsp;+&nbsp;</font><font color="#2a00ff">&#34;.gif&#34;&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">startAnimation</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">paintComponent</font><font color="#000000">(&nbsp;</font><font color="#000000">Graphics&nbsp;g&nbsp;</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">.paintComponent</font><font color="#000000">(&nbsp;</font><font color="#000000">g&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(&nbsp;</font><font color="#000000">images</font><font color="#000000">[&nbsp;</font><font color="#000000">currentImage&nbsp;</font><font color="#000000">]</font><font color="#000000">.getImageLoadStatus</font><font color="#000000">()&nbsp;</font><font color="#000000">==</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">MediaTracker.COMPLETE&nbsp;</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">images</font><font color="#000000">[&nbsp;</font><font color="#000000">currentImage&nbsp;</font><font color="#000000">]</font><font color="#000000">.paintIcon</font><font color="#000000">(&nbsp;</font><font color="#000000">this,&nbsp;g,&nbsp;</font><font color="#990000">0</font><font color="#000000">,&nbsp;</font><font color="#990000">0&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">currentImage&nbsp;=&nbsp;</font><font color="#000000">(&nbsp;</font><font color="#000000">currentImage&nbsp;+&nbsp;</font><font color="#990000">1&nbsp;</font><font color="#000000">)&nbsp;</font><font color="#000000">%&nbsp;totalImages;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(&nbsp;</font><font color="#000000">ActionEvent&nbsp;e&nbsp;</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">repaint</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">startAnimation</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(&nbsp;</font><font color="#000000">animationTimer&nbsp;==&nbsp;</font><font color="#7f0055"><b>null&nbsp;</b></font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">currentImage&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">animationTimer&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Timer</font><font color="#000000">(&nbsp;</font><font color="#000000">animationDelay,&nbsp;</font><font color="#7f0055"><b>this&nbsp;</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">animationTimer.start</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>else&nbsp;&nbsp;</b></font><font color="#3f7f5f">//&nbsp;continue&nbsp;from&nbsp;last&nbsp;image&nbsp;displayed</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(&nbsp;</font><font color="#000000">!&nbsp;animationTimer.isRunning</font><font color="#000000">()&nbsp;)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">animationTimer.restart</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">stopAnimation</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">animationTimer.stop</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Dimension&nbsp;getMinimumSize</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">getPreferredSize</font><font color="#000000">()</font><font color="#000000">;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Dimension&nbsp;getPreferredSize</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;new&nbsp;</b></font><font color="#000000">Dimension</font><font color="#000000">(&nbsp;</font><font color="#990000">160</font><font color="#000000">,&nbsp;</font><font color="#990000">80&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(&nbsp;</font><font color="#000000">String&nbsp;args</font><font color="#000000">[]&nbsp;)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">LogoAnimator&nbsp;anim&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">LogoAnimator</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JFrame&nbsp;app&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JFrame</font><font color="#000000">(&nbsp;</font><font color="#2a00ff">&#34;Animator&nbsp;test&#34;&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">app.getContentPane</font><font color="#000000">()</font><font color="#000000">.add</font><font color="#000000">(&nbsp;</font><font color="#000000">anim,&nbsp;BorderLayout.CENTER&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">app.addWindowListener</font><font color="#000000">(</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">WindowAdapter</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">windowClosing</font><font color="#000000">(&nbsp;</font><font color="#000000">WindowEvent&nbsp;e&nbsp;</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.exit</font><font color="#000000">(&nbsp;</font><font color="#990000">0&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;The&nbsp;constants&nbsp;10&nbsp;and&nbsp;30&nbsp;are&nbsp;used&nbsp;below&nbsp;to&nbsp;size&nbsp;the</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;window&nbsp;10&nbsp;pixels&nbsp;wider&nbsp;than&nbsp;the&nbsp;animation&nbsp;and</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;30&nbsp;pixels&nbsp;taller&nbsp;than&nbsp;the&nbsp;animation.&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">app.setSize</font><font color="#000000">(&nbsp;</font><font color="#000000">anim.getPreferredSize</font><font color="#000000">()</font><font color="#000000">.width&nbsp;+&nbsp;</font><font color="#990000">10</font><font color="#000000">,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">anim.getPreferredSize</font><font color="#000000">()</font><font color="#000000">.height&nbsp;+&nbsp;</font><font color="#990000">30&nbsp;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-360" class="post-360 post type-post status-publish format-standard hentry category-java-awt-image category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kak-kultur-subimage-iz-obraza/" title="Постоянная ссылка на Как культур subimage из образа" rel="bookmark">Как культур subimage из образа</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kak-kultur-subimage-iz-obraza/" rel="bookmark"><time class="entry-date published" datetime="2009-12-14T23:12:40+00:00" itemprop="datepublished">14 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kak-kultur-subimage-iz-obraza/#respond"><span vanilla-identifier="360">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Вы можете использовать следующий код, чтобы обрезать subimage из образа.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.image.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.io.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.imageio.ImageIO;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.*;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.event.MouseInputAdapter;</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Cropping&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">JPanel</font><br/><br />
+<font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">BufferedImage&nbsp;image;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Dimension&nbsp;size;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Rectangle&nbsp;clip;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">showClip;</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Cropping</font><font color="#000000">(</font><font color="#000000">BufferedImage&nbsp;image</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.image&nbsp;=&nbsp;image;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">size&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Dimension</font><font color="#000000">(</font><font color="#000000">image.getWidth</font><font color="#000000">()</font><font color="#000000">,&nbsp;image.getHeight</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">showClip&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">paintComponent</font><font color="#000000">(</font><font color="#000000">Graphics&nbsp;g</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">.paintComponent</font><font color="#000000">(</font><font color="#000000">g</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Graphics2D&nbsp;g2&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">Graphics2D</font><font color="#000000">)</font><font color="#000000">g;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.setRenderingHint</font><font color="#000000">(</font><font color="#000000">RenderingHints.KEY_ANTIALIASING,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">RenderingHints.VALUE_ANTIALIAS_ON</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getWidth</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;size.width</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getHeight</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;size.height</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.drawImage</font><font color="#000000">(</font><font color="#000000">image,&nbsp;x,&nbsp;y,&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">showClip</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">clip&nbsp;==&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">createClip</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.setPaint</font><font color="#000000">(</font><font color="#000000">Color.red</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.draw</font><font color="#000000">(</font><font color="#000000">clip</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">setClip</font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;keep&nbsp;clip&nbsp;within&nbsp;raster</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x0&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getWidth</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;size.width</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y0&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getHeight</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;size.height</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">x&nbsp;&lt;&nbsp;x0&nbsp;||&nbsp;x&nbsp;+&nbsp;clip.width&nbsp;&nbsp;&gt;&nbsp;x0&nbsp;+&nbsp;size.width&nbsp;||</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">y&nbsp;&lt;&nbsp;y0&nbsp;||&nbsp;y&nbsp;+&nbsp;clip.height&nbsp;&gt;&nbsp;y0&nbsp;+&nbsp;size.height</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clip.setLocation</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">repaint</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Dimension&nbsp;getPreferredSize</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">size;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">createClip</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clip&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Rectangle</font><font color="#000000">(</font><font color="#990000">140</font><font color="#000000">,&nbsp;</font><font color="#990000">140</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clip.x&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getWidth</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;clip.width</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clip.y&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getHeight</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;clip.height</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">clipImage</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">BufferedImage&nbsp;clipped&nbsp;=&nbsp;</font><font color="#7f0055"><b>null</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try</b></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">w&nbsp;=&nbsp;clip.width;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">h&nbsp;=&nbsp;clip.height;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x0&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getWidth</font><font color="#000000">()&nbsp;&nbsp;</font><font color="#000000">-&nbsp;size.width</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y0&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">getHeight</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;size.height</font><font color="#000000">)</font><font color="#000000">/</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;clip.x&nbsp;-&nbsp;x0;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;clip.y&nbsp;-&nbsp;y0;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clipped&nbsp;=&nbsp;image.getSubimage</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y,&nbsp;w,&nbsp;h</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>catch</b></font><font color="#000000">(</font><font color="#000000">RasterFormatException&nbsp;rfe</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;raster&nbsp;format&nbsp;error:&nbsp;&#34;&nbsp;</font><font color="#000000">+&nbsp;rfe.getMessage</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JLabel&nbsp;label&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JLabel</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ImageIcon</font><font color="#000000">(</font><font color="#000000">clipped</font><font color="#000000">))</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JOptionPane.showMessageDialog</font><font color="#000000">(</font><font color="#000000">this,&nbsp;label,&nbsp;</font><font color="#2a00ff">&#34;clipped&nbsp;image&#34;</font><font color="#000000">,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JOptionPane.PLAIN_MESSAGE</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">JPanel&nbsp;getUIPanel</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>final&nbsp;</b></font><font color="#000000">JCheckBox&nbsp;clipBox&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JCheckBox</font><font color="#000000">(</font><font color="#2a00ff">&#34;show&nbsp;clip&#34;</font><font color="#000000">,&nbsp;showClip</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clipBox.addActionListener</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ActionListener</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;e</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">showClip&nbsp;=&nbsp;clipBox.isSelected</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">repaint</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">})</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JButton&nbsp;clip&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JButton</font><font color="#000000">(</font><font color="#2a00ff">&#34;clip&nbsp;image&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clip.addActionListener</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ActionListener</font><font color="#000000">()</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;e</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">clipImage</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">})</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JPanel&nbsp;panel&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JPanel</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">panel.add</font><font color="#000000">(</font><font color="#000000">clipBox</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">panel.add</font><font color="#000000">(</font><font color="#000000">clip</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">panel;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">IOException</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">File&nbsp;file&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">&#34;images/cougar.jpg&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Cropping&nbsp;test&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Cropping</font><font color="#000000">(</font><font color="#000000">ImageIO.read</font><font color="#000000">(</font><font color="#000000">file</font><font color="#000000">))</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ClipMover&nbsp;mover&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ClipMover</font><font color="#000000">(</font><font color="#000000">test</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">test.addMouseListener</font><font color="#000000">(</font><font color="#000000">mover</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">test.addMouseMotionListener</font><font color="#000000">(</font><font color="#000000">mover</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JFrame&nbsp;f&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JFrame</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f.setDefaultCloseOperation</font><font color="#000000">(</font><font color="#000000">JFrame.EXIT_ON_CLOSE</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f.getContentPane</font><font color="#000000">()</font><font color="#000000">.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JScrollPane</font><font color="#000000">(</font><font color="#000000">test</font><font color="#000000">))</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f.getContentPane</font><font color="#000000">()</font><font color="#000000">.add</font><font color="#000000">(</font><font color="#000000">test.getUIPanel</font><font color="#000000">()</font><font color="#000000">,&nbsp;</font><font color="#2a00ff">&#34;South&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f.setSize</font><font color="#000000">(</font><font color="#990000">400</font><font color="#000000">,</font><font color="#990000">400</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f.setLocation</font><font color="#000000">(</font><font color="#990000">200</font><font color="#000000">,</font><font color="#990000">200</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">f.setVisible</font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">ClipMover&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">MouseInputAdapter</font><br/><br />
+<font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Cropping&nbsp;cropping;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Point&nbsp;offset;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">dragging;</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ClipMover</font><font color="#000000">(</font><font color="#000000">Cropping&nbsp;c</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">cropping&nbsp;=&nbsp;c;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">offset&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Point</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">dragging&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">mousePressed</font><font color="#000000">(</font><font color="#000000">MouseEvent&nbsp;e</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Point&nbsp;p&nbsp;=&nbsp;e.getPoint</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">cropping.clip.contains</font><font color="#000000">(</font><font color="#000000">p</font><font color="#000000">))</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">offset.x&nbsp;=&nbsp;p.x&nbsp;-&nbsp;cropping.clip.x;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">offset.y&nbsp;=&nbsp;p.y&nbsp;-&nbsp;cropping.clip.y;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">dragging&nbsp;=&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">mouseReleased</font><font color="#000000">(</font><font color="#000000">MouseEvent&nbsp;e</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">dragging&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">mouseDragged</font><font color="#000000">(</font><font color="#000000">MouseEvent&nbsp;e</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000">(</font><font color="#000000">dragging</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;e.getX</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;offset.x;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;e.getY</font><font color="#000000">()&nbsp;</font><font color="#000000">-&nbsp;offset.y;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">cropping.setClip</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><font color="#ffffff"><br />
+</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-437" class="post-437 post type-post status-publish format-standard hentry category-java-lang category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kak-zapustit-skript-s-unix-java/" title="Постоянная ссылка на Как запустить скрипт с Unix Java" rel="bookmark">Как запустить скрипт с Unix Java</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kak-zapustit-skript-s-unix-java/" rel="bookmark"><time class="entry-date published" datetime="2009-12-13T23:27:33+00:00" itemprop="datepublished">13 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kak-zapustit-skript-s-unix-java/#respond"><span vanilla-identifier="437">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Вы можете использовать folowing фрагмент кода для запуска сценариев Unix с Java.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">cmd&nbsp;=&nbsp;</font><font color="#000000">{</font><font color="#2a00ff">&#34;/bin/sh&#34;</font><font color="#000000">,&nbsp;</font><font color="#2a00ff">&#34;-c&#34;</font><font color="#000000">,&nbsp;</font><font color="#2a00ff">&#34;ls&nbsp;&gt;&nbsp;hello&#34;</font><font color="#000000">}</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">Runtime.getRuntime</font><font color="#000000">()</font><font color="#000000">.exec</font><font color="#000000">(</font><font color="#000000">cmd</font><font color="#000000">)</font><font color="#000000">;</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-665" class="post-665 post type-post status-publish format-standard hentry category-java-lang category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/ispolzovanie-lpanu/" title="Постоянная ссылка на Использование ЛпаНу" rel="bookmark">Использование ЛпаНу</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/ispolzovanie-lpanu/" rel="bookmark"><time class="entry-date published" datetime="2009-12-11T00:11:51+00:00" itemprop="datepublished">11 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/ispolzovanie-lpanu/#respond"><span vanilla-identifier="665">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Когда генерируется исключение, исполнение в методе занимает довольно резкое, нелинейные пути, который изменяет нормальный поток через метод. В зависимости от того, как кодируется метод, метод может вернуть досрочно. Например, если метод открывает соединение с базой данных о въезде и закрывает его при выходе из него, тогда вы не хотите, чтобы код, который закрывает файл, который будет обойти, за исключением механизма обработки ключевых слов, наконец, предназначен для решения таких непредвиденных обстоятельств.</p>
+<p>&quot;Наконец&quot; создает блок кода, который будет выполнен после Try / Catch блока завершена и перед кодом после Try / Catch блока. И наконец блок будет выполнять или не генерируется исключение.</p>
+<p>Если бросить исключение, наконец, блок будет выполнить, даже если не поймут заявления соответствующего исключения. Наконец гарантированно выполнить, даже если они брошены без исключения. Наконец блока является идеальной позиции для закрытия таких ресурсов, как дескриптор файла или базы данных, соединения и т.п.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">FinallyDemo&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">procA</font><font color="#000000">(){</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;inside&nbsp;procA&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>throw&nbsp;new&nbsp;</b></font><font color="#000000">RuntimeException</font><font color="#000000">(</font><font color="#2a00ff">&#34;demo&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><font color="#7f0055"><b>finally</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;procA's&nbsp;finally&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f7f5f">//Return&nbsp;from&nbsp;with&nbsp;in&nbsp;a&nbsp;try&nbsp;block.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">procB</font><font color="#000000">(){</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;inside&nbsp;procB&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>finally</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;procB's&nbsp;finally&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f7f5f">//Execute&nbsp;a&nbsp;try&nbsp;block&nbsp;normally.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">procC</font><font color="#000000">(){</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;inside&nbsp;procC&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>finally</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;procC's&nbsp;finally&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">procA</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><font color="#7f0055"><b>catch</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e</font><font color="#000000">){</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;Exception&nbsp;caught&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">procB</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">procC</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#000000">}</font></code>
+</td>
+</tr>
+</table>
+</div>
+<p><b>Вывод на экран:</b></p>
+<pre>
+inside procA
+procA's finally
+Exception caught
+inside procB
+procB's finally
+inside procC
+procC's final
+</pre>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-574" class="post-574 post type-post status-publish format-standard hentry category-java-lang category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/javascript-yavlyaetsya-takoj-zhe-kak-java/" title="Постоянная ссылка на JavaScript является такой же, как Java" rel="bookmark">JavaScript является такой же, как Java</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/javascript-yavlyaetsya-takoj-zhe-kak-java/" rel="bookmark"><time class="entry-date published" datetime="2009-12-10T23:54:05+00:00" itemprop="datepublished">10 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/javascript-yavlyaetsya-takoj-zhe-kak-java/#respond"><span vanilla-identifier="574">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>НЕТ! Удивительно большое число людей, в том числе многие веб-дизайнеры, не понимают разницы между Java и JavaScript. Вкратце его можно сформулировать следующим образом:</p>
+<p>Java была разработана Sun Microsystems. Java является полноценным объектно-ориентированный язык программирования. Она может быть использована для создания автономных приложений и апплетов. Апплеты загружаются в виде отдельных файлов на вашем браузере ряд документов HTML, а также предоставить бесконечное множество дополнительных возможностей для веб-сайта вы посетили. Результаты отображаются апплетов может оказаться встроенных в страницу HTML (например, прокрутка сообщения баннер, которая так часто встречается на Java расширение участков), но код Java прибыли в виде отдельного файла.</p>
+<p>JavaScript с другой стороны, был разработан Netscape, является меньшим и более простой язык сценариев, который не создает апплет или автономные приложения. В своей наиболее распространенной форме Сегодня, JavaScript находится внутри документы HTML, и может обеспечить уровень интерактивности далеко за рамки обычно плоские страницы HTML &#8212; без необходимости в серверных CGI (Common Gateway Interface) программами.</p>
+<p>Некоторые серверного программного обеспечения, такими как SuiteSpot Netscape, позволяющая разработчикам веб-приложений написать CGI программ в серверной версии JavaScript. Оба клиентского и серверного JavaScript одни и те же основные языке JavaScript, но каждая сторона сделки с различными объектами. Клиентские объекты преимущественно компоненты веб-страницы HTML (например, формы, надписи, кнопки). На стороне сервера это те объекты, которые облегчают обработку заявок, которые приходят от клиентов, а также подключение к базам данных.</p>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-469" class="post-469 post type-post status-publish format-standard hentry category-java-awt-print category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kak-napechatat-swing-komponenty/" title="Постоянная ссылка на Как напечатать Swing компоненты" rel="bookmark">Как напечатать Swing компоненты</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kak-napechatat-swing-komponenty/" rel="bookmark"><time class="entry-date published" datetime="2009-12-10T23:33:44+00:00" itemprop="datepublished">10 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kak-napechatat-swing-komponenty/#respond"><span vanilla-identifier="469">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<BR><br />
+<img src="/javapics/28.PNG"  width="580" height="342" hspace="6" alt="java.awt.print" title="java.awt.print" border="0" /><br />
+<BR><BR></p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Color;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Component;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Dimension;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Event;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Font;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.GradientPaint;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Graphics;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Graphics2D;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Paint;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.Toolkit;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.ActionEvent;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.KeyEvent;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.WindowAdapter;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.event.WindowEvent;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.font.FontRenderContext;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.font.LineMetrics;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.geom.Rectangle2D;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.print.PageFormat;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.print.Printable;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.print.PrinterException;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.awt.print.PrinterJob;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.AbstractAction;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.JComponent;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.JFrame;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.JMenu;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.JMenuBar;</font><br/><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">javax.swing.KeyStroke;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">SwingPrinter&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">JFrame&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SwingPrinter</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">PageFormat&nbsp;mPageFormat;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">SwingPrinter</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">(</font><font color="#2a00ff">&#34;SwingPrinter&nbsp;v1.0&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">createUI</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PrinterJob&nbsp;pj&nbsp;=&nbsp;PrinterJob.getPrinterJob</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mPageFormat&nbsp;=&nbsp;pj.defaultPage</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setVisible</font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">createUI</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setSize</font><font color="#000000">(</font><font color="#990000">300</font><font color="#000000">,&nbsp;</font><font color="#990000">300</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">center</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Add&nbsp;the&nbsp;menu&nbsp;bar.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JMenuBar&nbsp;mb&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JMenuBar</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JMenu&nbsp;file&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">JMenu</font><font color="#000000">(</font><font color="#2a00ff">&#34;File&#34;</font><font color="#000000">,&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">file.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FilePrintAction</font><font color="#000000">())</font><font color="#000000">.setAccelerator</font><font color="#000000">(</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">KeyStroke.getKeyStroke</font><font color="#000000">(</font><font color="#000000">KeyEvent.VK_P,&nbsp;Event.CTRL_MASK</font><font color="#000000">))</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">file.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FilePageSetupAction</font><font color="#000000">())</font><font color="#000000">.setAccelerator</font><font color="#000000">(</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">KeyStroke.getKeyStroke</font><font color="#000000">(</font><font color="#000000">KeyEvent.VK_P,&nbsp;Event.CTRL_MASK</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">|&nbsp;Event.SHIFT_MASK</font><font color="#000000">))</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">file.addSeparator</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">file.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">FileQuitAction</font><font color="#000000">())</font><font color="#000000">.setAccelerator</font><font color="#000000">(</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">KeyStroke.getKeyStroke</font><font color="#000000">(</font><font color="#000000">KeyEvent.VK_Q,&nbsp;Event.CTRL_MASK</font><font color="#000000">))</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mb.add</font><font color="#000000">(</font><font color="#000000">file</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setJMenuBar</font><font color="#000000">(</font><font color="#000000">mb</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Add&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;window.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">getContentPane</font><font color="#000000">()</font><font color="#000000">.add</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">PatchworkComponent</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Exit&nbsp;the&nbsp;application&nbsp;when&nbsp;the&nbsp;window&nbsp;is&nbsp;closed.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">addWindowListener</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">WindowAdapter</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">windowClosing</font><font color="#000000">(</font><font color="#000000">WindowEvent&nbsp;e</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.exit</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">})</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">center</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Dimension&nbsp;screen&nbsp;=&nbsp;Toolkit.getDefaultToolkit</font><font color="#000000">()</font><font color="#000000">.getScreenSize</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Dimension&nbsp;us&nbsp;=&nbsp;getSize</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">screen.width&nbsp;-&nbsp;us.width</font><font color="#000000">)&nbsp;</font><font color="#000000">/&nbsp;</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">screen.height&nbsp;-&nbsp;us.height</font><font color="#000000">)&nbsp;</font><font color="#000000">/&nbsp;</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setLocation</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">FilePrintAction&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">AbstractAction&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">FilePrintAction</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">(</font><font color="#2a00ff">&#34;Print&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;ae</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PrinterJob&nbsp;pj&nbsp;=&nbsp;PrinterJob.getPrinterJob</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ComponentPrintable&nbsp;cp&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ComponentPrintable</font><font color="#000000">(</font><font color="#000000">getContentPane</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">pj.setPrintable</font><font color="#000000">(</font><font color="#000000">cp,&nbsp;mPageFormat</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">pj.printDialog</font><font color="#000000">())&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">pj.print</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">PrinterException&nbsp;e</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#000000">e</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">FilePageSetupAction&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">AbstractAction&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">FilePageSetupAction</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">(</font><font color="#2a00ff">&#34;Page&nbsp;setup...&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;ae</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PrinterJob&nbsp;pj&nbsp;=&nbsp;PrinterJob.getPrinterJob</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mPageFormat&nbsp;=&nbsp;pj.pageDialog</font><font color="#000000">(</font><font color="#000000">mPageFormat</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">FileQuitAction&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">AbstractAction&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">FileQuitAction</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">(</font><font color="#2a00ff">&#34;Quit&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;ae</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.exit</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font><br/><br />
+<font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">PatchworkComponent&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">JComponent&nbsp;</font><font color="#7f0055"><b>implements&nbsp;</b></font><font color="#000000">Printable&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">mSide&nbsp;=&nbsp;</font><font color="#990000">36</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">mOffset&nbsp;=&nbsp;</font><font color="#990000">36</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">mColumns&nbsp;=&nbsp;</font><font color="#990000">8</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">mRows&nbsp;=&nbsp;</font><font color="#990000">4</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">String&nbsp;mString&nbsp;=&nbsp;</font><font color="#2a00ff">&#34;Java&nbsp;Source&nbsp;and&nbsp;Support&#34;</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">Font&nbsp;mFont&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Font</font><font color="#000000">(</font><font color="#2a00ff">&#34;Serif&#34;</font><font color="#000000">,&nbsp;Font.PLAIN,&nbsp;</font><font color="#990000">64</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">Paint&nbsp;mHorizontalGradient,&nbsp;mVerticalGradient;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">PatchworkComponent</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;mOffset;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;mOffset;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">halfSide&nbsp;=&nbsp;mSide&nbsp;/&nbsp;</font><font color="#990000">2</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">x0&nbsp;=&nbsp;x&nbsp;+&nbsp;halfSide;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">y0&nbsp;=&nbsp;y;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">x1&nbsp;=&nbsp;x&nbsp;+&nbsp;halfSide;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">y1&nbsp;=&nbsp;y&nbsp;+&nbsp;</font><font color="#000000">(</font><font color="#000000">mRows&nbsp;*&nbsp;mSide</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mVerticalGradient&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">GradientPaint</font><font color="#000000">(</font><font color="#000000">x0,&nbsp;y0,&nbsp;Color.darkGray,&nbsp;x1,&nbsp;y1,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Color.lightGray,&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">x0&nbsp;=&nbsp;x;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">y0&nbsp;=&nbsp;y&nbsp;+&nbsp;halfSide;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">x1&nbsp;=&nbsp;x&nbsp;+&nbsp;</font><font color="#000000">(</font><font color="#000000">mColumns&nbsp;*&nbsp;mSide</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">y1&nbsp;=&nbsp;y&nbsp;+&nbsp;halfSide;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mHorizontalGradient&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">GradientPaint</font><font color="#000000">(</font><font color="#000000">x0,&nbsp;y0,&nbsp;Color.darkGray,&nbsp;x1,&nbsp;y1,</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Color.lightGray,&nbsp;</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">PatchworkComponent</font><font color="#000000">(</font><font color="#000000">String&nbsp;s</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mString&nbsp;=&nbsp;s;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">paintComponent</font><font color="#000000">(</font><font color="#000000">Graphics&nbsp;g</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Graphics2D&nbsp;g2&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">Graphics2D</font><font color="#000000">)&nbsp;</font><font color="#000000">g;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.rotate</font><font color="#000000">(</font><font color="#000000">Math.PI&nbsp;/&nbsp;</font><font color="#990000">24</font><font color="#000000">,&nbsp;mOffset,&nbsp;mOffset</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">row&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;&nbsp;row&nbsp;&lt;&nbsp;mRows;&nbsp;row++</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">column&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;&nbsp;column&nbsp;&lt;&nbsp;mColumns;&nbsp;column++</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;column&nbsp;*&nbsp;mSide&nbsp;+&nbsp;mOffset;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;row&nbsp;*&nbsp;mSide&nbsp;+&nbsp;mOffset;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(((</font><font color="#000000">column&nbsp;+&nbsp;row</font><font color="#000000">)&nbsp;</font><font color="#000000">%&nbsp;</font><font color="#990000">2</font><font color="#000000">)&nbsp;</font><font color="#000000">==&nbsp;</font><font color="#990000">0</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.setPaint</font><font color="#000000">(</font><font color="#000000">mVerticalGradient</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>else</b></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.setPaint</font><font color="#000000">(</font><font color="#000000">mHorizontalGradient</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Rectangle2D&nbsp;r&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Rectangle2D.Float</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y,&nbsp;mSide,&nbsp;mSide</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.fill</font><font color="#000000">(</font><font color="#000000">r</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">FontRenderContext&nbsp;frc&nbsp;=&nbsp;g2.getFontRenderContext</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">width&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#7f0055"><b>float</b></font><font color="#000000">)&nbsp;</font><font color="#000000">mFont.getStringBounds</font><font color="#000000">(</font><font color="#000000">mString,&nbsp;frc</font><font color="#000000">)</font><font color="#000000">.getWidth</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">LineMetrics&nbsp;lm&nbsp;=&nbsp;mFont.getLineMetrics</font><font color="#000000">(</font><font color="#000000">mString,&nbsp;frc</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">x&nbsp;=&nbsp;</font><font color="#000000">((</font><font color="#000000">mColumns&nbsp;*&nbsp;mSide</font><font color="#000000">)&nbsp;</font><font color="#000000">-&nbsp;width</font><font color="#000000">)&nbsp;</font><font color="#000000">/&nbsp;</font><font color="#990000">2&nbsp;</font><font color="#000000">+&nbsp;mOffset;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;</b></font><font color="#000000">y&nbsp;=&nbsp;</font><font color="#000000">((</font><font color="#000000">mRows&nbsp;*&nbsp;mSide</font><font color="#000000">)&nbsp;</font><font color="#000000">+&nbsp;lm.getAscent</font><font color="#000000">())&nbsp;</font><font color="#000000">/&nbsp;</font><font color="#990000">2&nbsp;</font><font color="#000000">+&nbsp;mOffset;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.setFont</font><font color="#000000">(</font><font color="#000000">mFont</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.setPaint</font><font color="#000000">(</font><font color="#000000">Color.white</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.drawString</font><font color="#000000">(</font><font color="#000000">mString,&nbsp;x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">print</font><font color="#000000">(</font><font color="#000000">Graphics&nbsp;g,&nbsp;PageFormat&nbsp;pageFormat,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">pageIndex</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">pageIndex&nbsp;!=&nbsp;</font><font color="#990000">0</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">NO_SUCH_PAGE;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">paintComponent</font><font color="#000000">(</font><font color="#000000">g</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">PAGE_EXISTS;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font><br/><br />
+<font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">ComponentPrintable&nbsp;</font><font color="#7f0055"><b>implements&nbsp;</b></font><font color="#000000">Printable&nbsp;</font><font color="#000000">{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">Component&nbsp;mComponent;</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ComponentPrintable</font><font color="#000000">(</font><font color="#000000">Component&nbsp;c</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mComponent&nbsp;=&nbsp;c;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">print</font><font color="#000000">(</font><font color="#000000">Graphics&nbsp;g,&nbsp;PageFormat&nbsp;pageFormat,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">pageIndex</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">pageIndex&nbsp;&gt;&nbsp;</font><font color="#990000">0</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">NO_SUCH_PAGE;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Graphics2D&nbsp;g2&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">Graphics2D</font><font color="#000000">)&nbsp;</font><font color="#000000">g;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">g2.translate</font><font color="#000000">(</font><font color="#000000">pageFormat.getImageableX</font><font color="#000000">()</font><font color="#000000">,&nbsp;pageFormat.getImageableY</font><font color="#000000">())</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">wasBuffered&nbsp;=&nbsp;disableDoubleBuffering</font><font color="#000000">(</font><font color="#000000">mComponent</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">mComponent.paint</font><font color="#000000">(</font><font color="#000000">g2</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">restoreDoubleBuffering</font><font color="#000000">(</font><font color="#000000">mComponent,&nbsp;wasBuffered</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">PAGE_EXISTS;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">disableDoubleBuffering</font><font color="#000000">(</font><font color="#000000">Component&nbsp;c</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">c&nbsp;</font><font color="#7f0055"><b>instanceof&nbsp;</b></font><font color="#000000">JComponent&nbsp;==&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;false</b></font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">JComponent&nbsp;jc&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">JComponent</font><font color="#000000">)&nbsp;</font><font color="#000000">c;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">wasBuffered&nbsp;=&nbsp;jc.isDoubleBuffered</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">jc.setDoubleBuffered</font><font color="#000000">(</font><font color="#7f0055"><b>false</b></font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">wasBuffered;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff"></font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">restoreDoubleBuffering</font><font color="#000000">(</font><font color="#000000">Component&nbsp;c,&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">wasBuffered</font><font color="#000000">)&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">c&nbsp;</font><font color="#7f0055"><b>instanceof&nbsp;</b></font><font color="#000000">JComponent</font><font color="#000000">)</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">((</font><font color="#000000">JComponent</font><font color="#000000">)&nbsp;</font><font color="#000000">c</font><font color="#000000">)</font><font color="#000000">.setDoubleBuffered</font><font color="#000000">(</font><font color="#000000">wasBuffered</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#000000">}</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-375" class="post-375 post type-post status-publish format-standard hentry category-java-awt-geom category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kak-narisovat-figuru-s-pomoshhyu-linij-i-krivyx/" title="Постоянная ссылка на Как нарисовать фигуру с помощью линий и кривых" rel="bookmark">Как нарисовать фигуру с помощью линий и кривых</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kak-narisovat-figuru-s-pomoshhyu-linij-i-krivyx/" rel="bookmark"><time class="entry-date published" datetime="2009-12-10T23:15:31+00:00" itemprop="datepublished">10 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kak-narisovat-figuru-s-pomoshhyu-linij-i-krivyx/#respond"><span vanilla-identifier="375">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Этот совет Java демонстрирует метод рисования основных форм с использованием линий и кривых на компоненты Java. Основными формами может быть сделан разработчиком перезаписи Paint () функцию компонента.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;x,&nbsp;y,&nbsp;controlpointx,&nbsp;controlpointy,controlpointx1,&nbsp;controlpointy1,&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;controlpointx2,&nbsp;controlpointy2&nbsp;may&nbsp;be&nbsp;define&nbsp;by&nbsp;the&nbsp;developer</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">GeneralPath&nbsp;shape&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">GeneralPath</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">shape.moveTo</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">shape.lineTo</font><font color="#000000">(</font><font color="#000000">x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">shape.quadTo</font><font color="#000000">(</font><font color="#000000">controlPointX,&nbsp;controlPointY,&nbsp;x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">shape.curveTo</font><font color="#000000">(</font><font color="#000000">controlPointX1,&nbsp;controlPointY1,&nbsp;controlPointX2,&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">controlPointY2,&nbsp;x,&nbsp;y</font><font color="#000000">)</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">shape.closePath</font><font color="#000000">()</font><font color="#000000">;</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+					<article itemscope itemtype="http://schema.org/Article" id="post-505" class="post-505 post type-post status-publish format-standard hentry category-java-util category-old tag-other">
+	<header class="entry-header">
+		<h2 class="entry-title" itemprop="name">
+			<a itemprop="url" href="http://javist.ru/kak-ustanovit-tajmer-na-zadachu-dlya-zapuska-iterativno/" title="Постоянная ссылка на Как установить таймер на задачу для запуска итеративно" rel="bookmark">Как установить таймер на задачу для запуска итеративно</a>
+		</h2>
+							<div class="entry-meta"><span class="entry-date"><a href="http://javist.ru/kak-ustanovit-tajmer-na-zadachu-dlya-zapuska-iterativno/" rel="bookmark"><time class="entry-date published" datetime="2009-12-09T23:40:43+00:00" itemprop="datepublished">9 Декабрь 2009</time></a></span> by <span class="author vcard" itemscope itemprop="author" itemtype="http://schema.org/Person"><a class="url fn n" href="http://javist.ru/author/admin/" rel="author" itemprop="url"><span itemprop="name">admin</span></a></span><span class="sep">&middot;</span><span class="comments-link"><a href="http://javist.ru/kak-ustanovit-tajmer-na-zadachu-dlya-zapuska-iterativno/#respond"><span vanilla-identifier="505">0 Comments</span></a></span></div>
+			</header>
+
+								<div class="entry-content" itemprop="articleBody">
+						<tr>
+<td valign="top" colspan="2">
+<p>Этот совет Java иллюстрирует метод планирования таймера для задачи запустить повторно. Разработчик может использовать этот код, если есть необходимость выполнить или повторить задачу в заявку на предопределенный отрезок времени.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td nowrap="nowrap" valign="top" align="left">
+<code><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">delay&nbsp;=&nbsp;</font><font color="#990000">5000</font><font color="#000000">;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;delay&nbsp;for&nbsp;5&nbsp;sec.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">interval&nbsp;=&nbsp;</font><font color="#990000">1000</font><font color="#000000">;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;iterate&nbsp;every&nbsp;sec.</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Timer&nbsp;timer&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Timer</font><font color="#000000">()</font><font color="#000000">;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">timer.scheduleAtFixedRate</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">TimerTask</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">run</font><font color="#000000">()&nbsp;{</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Task&nbsp;here&nbsp;...</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><font color="#000000">,&nbsp;delay,&nbsp;interval</font><font color="#000000">)</font><font color="#000000">;</font></code>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+								</div>
+			</article>
+				
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Навигация по записям</h2>
+		<div class="nav-links"><span class='page-numbers current'>1</span>
+<a class='page-numbers' href='http://javist.ru/page/2/'>2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='http://javist.ru/page/62/'>62</a>
+<a class="next page-numbers" href="http://javist.ru/page/2/"><i class="fa fa-chevron-right"></i></a></div>
+	</nav>	
+			</div>
+												<footer class="site-info" itemscope itemtype="http://schema.org/WPFooter">
+									</footer>
+														</div>
+					</div>
+	</div>
+</div>
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<img src='//counter.yadro.ru/hit?t38.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='1' height='1'>")
+//--></script><!--/LiveInternet-->
+
+
+
+<script type="text/javascript">
+var vanilla_forum_url = 'http://forum.javist.ru/';
+(function() {
+   var vanilla_count = document.createElement('script');
+   vanilla_count.type = 'text/javascript';
+   vanilla_count.src = vanilla_forum_url + '/js/count.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(vanilla_count);
+})();
+</script>
+</body>
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+</html>

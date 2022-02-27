@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="https://static.school-php.com">
+<link rel="dns-prefetch" href="https://school-php.com">
+<link rel="prefetch" href="https://static.school-php.com/skins/img/sprites.png">
+<link rel="prefetch" href="https://static.school-php.com/skins/img/bg.jpg">
+<link rel="prefetch" href="https://static.school-php.com/skins/img/c3.jpg">
+<link rel="prefetch" href="https://static.school-php.com/skins/img/logo.jpg">
+<link rel="prefetch" href="https://static.school-php.com/skins/img/icon_WebStorm.png">
+<link rel="prefetch" href="https://static.school-php.com/skins/js/analytics.js">
+<link rel="prefetch" href="https://static.school-php.com/skins/js/watch.js">
+<title>Школа PHP Программирования - курс уроков php mysql html js</title>
+<meta name="apple-mobile-web-app-title" content="Школа PHP Программирования - курс уроков php mysql html js">
+<meta name="description" content="Школа PHP Программирования - систематизированный видео курс PHP, HTML, MySQL, JS с нуля с домашними заданиями и индивидуальными консультациями">
+<meta name="keywords" content="php,mysql,js,html,школа,обучение,курс,видео уроки, видеоуроки, программирование">
+<meta name="author" content="Усков Станислав">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" href="https://school-php.com">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#00aba9">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="School-PHP">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+<style>:root{--blue: #007bff;--indigo: #6610f2;--purple: #6f42c1;--pink: #e83e8c;--red: #dc3545;--orange: #fd7e14;--yellow: #ffc107;--green: #28a745;--teal: #20c997;--cyan: #17a2b8;--white: #fff;--gray: #6c757d;--gray-dark: #343a40;--primary: #007bff;--secondary: #6c757d;--success: #28a745;--info: #17a2b8;--warning: #ffc107;--danger: #dc3545;--light: #f8f9fa;--dark: #343a40;--breakpoint-xs: 0;--breakpoint-sm: 576px;--breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}*,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}@-ms-viewport{width:device-width}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}[tabindex="-1"]:focus{outline:0 !important}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}abbr[title],abbr[data-original-title]{text-decoration:underline;text-decoration:underline dotted;cursor:help;border-bottom:0}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}dfn{font-style:italic}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]){color:inherit;text-decoration:none}a:not([href]):not([tabindex]):hover,a:not([href]):not([tabindex]):focus{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}pre,code,kbd,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:1em}pre{margin-top:0;margin-bottom:1rem;overflow:auto;-ms-overflow-style:scrollbar}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg:not(:root){overflow:hidden}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#6c757d;text-align:left;caption-side:bottom}th{text-align:inherit}label{display:inline-block;margin-bottom:.5rem}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="radio"],input[type="checkbox"]{box-sizing:border-box;padding:0}input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"]{-webkit-appearance:listbox}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}progress{vertical-align:baseline}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none !important}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width: 576px){.container{max-width:540px}}@media (min-width: 768px){.container{max-width:720px}}@media (min-width: 992px){.container{max-width:960px}}@media (min-width: 1200px){.container{max-width:1140px}}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col,.no-gutters>[class*="col-"]{padding-right:0;padding-left:0}.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col,.col-auto,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm,.col-sm-auto,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md,.col-md-auto,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg,.col-lg-auto,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl,.col-xl-auto{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.col-auto{flex:0 0 auto;width:auto;max-width:none}.col-1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col-2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col-3{flex:0 0 25%;max-width:25%}.col-4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-6{flex:0 0 50%;max-width:50%}.col-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col-9{flex:0 0 75%;max-width:75%}.col-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col-11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col-12{flex:0 0 100%;max-width:100%}.order-first{order:-1}.order-last{order:13}.order-0{order:0}.order-1{order:1}.order-2{order:2}.order-3{order:3}.order-4{order:4}.order-5{order:5}.order-6{order:6}.order-7{order:7}.order-8{order:8}.order-9{order:9}.order-10{order:10}.order-11{order:11}.order-12{order:12}.offset-1{margin-left:8.3333333333%}.offset-2{margin-left:16.6666666667%}.offset-3{margin-left:25%}.offset-4{margin-left:33.3333333333%}.offset-5{margin-left:41.6666666667%}.offset-6{margin-left:50%}.offset-7{margin-left:58.3333333333%}.offset-8{margin-left:66.6666666667%}.offset-9{margin-left:75%}.offset-10{margin-left:83.3333333333%}.offset-11{margin-left:91.6666666667%}@media (min-width: 576px){.col-sm{flex-basis:0;flex-grow:1;max-width:100%}.col-sm-auto{flex:0 0 auto;width:auto;max-width:none}.col-sm-1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col-sm-2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col-sm-3{flex:0 0 25%;max-width:25%}.col-sm-4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col-sm-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-sm-6{flex:0 0 50%;max-width:50%}.col-sm-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-sm-8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col-sm-9{flex:0 0 75%;max-width:75%}.col-sm-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col-sm-11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col-sm-12{flex:0 0 100%;max-width:100%}.order-sm-first{order:-1}.order-sm-last{order:13}.order-sm-0{order:0}.order-sm-1{order:1}.order-sm-2{order:2}.order-sm-3{order:3}.order-sm-4{order:4}.order-sm-5{order:5}.order-sm-6{order:6}.order-sm-7{order:7}.order-sm-8{order:8}.order-sm-9{order:9}.order-sm-10{order:10}.order-sm-11{order:11}.order-sm-12{order:12}.offset-sm-0{margin-left:0}.offset-sm-1{margin-left:8.3333333333%}.offset-sm-2{margin-left:16.6666666667%}.offset-sm-3{margin-left:25%}.offset-sm-4{margin-left:33.3333333333%}.offset-sm-5{margin-left:41.6666666667%}.offset-sm-6{margin-left:50%}.offset-sm-7{margin-left:58.3333333333%}.offset-sm-8{margin-left:66.6666666667%}.offset-sm-9{margin-left:75%}.offset-sm-10{margin-left:83.3333333333%}.offset-sm-11{margin-left:91.6666666667%}}@media (min-width: 768px){.col-md{flex-basis:0;flex-grow:1;max-width:100%}.col-md-auto{flex:0 0 auto;width:auto;max-width:none}.col-md-1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col-md-2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col-md-3{flex:0 0 25%;max-width:25%}.col-md-4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col-md-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-md-6{flex:0 0 50%;max-width:50%}.col-md-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-md-8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col-md-9{flex:0 0 75%;max-width:75%}.col-md-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col-md-11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col-md-12{flex:0 0 100%;max-width:100%}.order-md-first{order:-1}.order-md-last{order:13}.order-md-0{order:0}.order-md-1{order:1}.order-md-2{order:2}.order-md-3{order:3}.order-md-4{order:4}.order-md-5{order:5}.order-md-6{order:6}.order-md-7{order:7}.order-md-8{order:8}.order-md-9{order:9}.order-md-10{order:10}.order-md-11{order:11}.order-md-12{order:12}.offset-md-0{margin-left:0}.offset-md-1{margin-left:8.3333333333%}.offset-md-2{margin-left:16.6666666667%}.offset-md-3{margin-left:25%}.offset-md-4{margin-left:33.3333333333%}.offset-md-5{margin-left:41.6666666667%}.offset-md-6{margin-left:50%}.offset-md-7{margin-left:58.3333333333%}.offset-md-8{margin-left:66.6666666667%}.offset-md-9{margin-left:75%}.offset-md-10{margin-left:83.3333333333%}.offset-md-11{margin-left:91.6666666667%}}@media (min-width: 992px){.col-lg{flex-basis:0;flex-grow:1;max-width:100%}.col-lg-auto{flex:0 0 auto;width:auto;max-width:none}.col-lg-1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col-lg-2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col-lg-3{flex:0 0 25%;max-width:25%}.col-lg-4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col-lg-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-lg-6{flex:0 0 50%;max-width:50%}.col-lg-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-lg-8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col-lg-9{flex:0 0 75%;max-width:75%}.col-lg-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col-lg-11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col-lg-12{flex:0 0 100%;max-width:100%}.order-lg-first{order:-1}.order-lg-last{order:13}.order-lg-0{order:0}.order-lg-1{order:1}.order-lg-2{order:2}.order-lg-3{order:3}.order-lg-4{order:4}.order-lg-5{order:5}.order-lg-6{order:6}.order-lg-7{order:7}.order-lg-8{order:8}.order-lg-9{order:9}.order-lg-10{order:10}.order-lg-11{order:11}.order-lg-12{order:12}.offset-lg-0{margin-left:0}.offset-lg-1{margin-left:8.3333333333%}.offset-lg-2{margin-left:16.6666666667%}.offset-lg-3{margin-left:25%}.offset-lg-4{margin-left:33.3333333333%}.offset-lg-5{margin-left:41.6666666667%}.offset-lg-6{margin-left:50%}.offset-lg-7{margin-left:58.3333333333%}.offset-lg-8{margin-left:66.6666666667%}.offset-lg-9{margin-left:75%}.offset-lg-10{margin-left:83.3333333333%}.offset-lg-11{margin-left:91.6666666667%}}@media (min-width: 1200px){.col-xl{flex-basis:0;flex-grow:1;max-width:100%}.col-xl-auto{flex:0 0 auto;width:auto;max-width:none}.col-xl-1{flex:0 0 8.3333333333%;max-width:8.3333333333%}.col-xl-2{flex:0 0 16.6666666667%;max-width:16.6666666667%}.col-xl-3{flex:0 0 25%;max-width:25%}.col-xl-4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col-xl-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-xl-6{flex:0 0 50%;max-width:50%}.col-xl-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-xl-8{flex:0 0 66.6666666667%;max-width:66.6666666667%}.col-xl-9{flex:0 0 75%;max-width:75%}.col-xl-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}.col-xl-11{flex:0 0 91.6666666667%;max-width:91.6666666667%}.col-xl-12{flex:0 0 100%;max-width:100%}.order-xl-first{order:-1}.order-xl-last{order:13}.order-xl-0{order:0}.order-xl-1{order:1}.order-xl-2{order:2}.order-xl-3{order:3}.order-xl-4{order:4}.order-xl-5{order:5}.order-xl-6{order:6}.order-xl-7{order:7}.order-xl-8{order:8}.order-xl-9{order:9}.order-xl-10{order:10}.order-xl-11{order:11}.order-xl-12{order:12}.offset-xl-0{margin-left:0}.offset-xl-1{margin-left:8.3333333333%}.offset-xl-2{margin-left:16.6666666667%}.offset-xl-3{margin-left:25%}.offset-xl-4{margin-left:33.3333333333%}.offset-xl-5{margin-left:41.6666666667%}.offset-xl-6{margin-left:50%}.offset-xl-7{margin-left:58.3333333333%}.offset-xl-8{margin-left:66.6666666667%}.offset-xl-9{margin-left:75%}.offset-xl-10{margin-left:83.3333333333%}.offset-xl-11{margin-left:91.6666666667%}}
+/*# sourceMappingURL=bootstrap.min.css.map */
+@font-face{font-family:"Guardian TextSans Cy";font-style:normal;font-weight:400;font-stretch:normal;font-display:swap;src:url(/skins/fonts/g/gTextSansCy-Regular-Web.eot?#iefix) format("eot"),url(/skins/fonts/g/gTextSansCy-Regular-Web.woff2) format("woff2"),url(/skins/fonts/g/gTextSansCy-Regular-Web.woff) format("woff")}@font-face{font-family:"Guardian TextSans Cy";font-style:normal;font-weight:500;font-stretch:normal;font-display:swap;src:url(/skins/fonts/g/gTextSansCy-Medium-Web.eot?#iefix) format("eot"),url(/skins/fonts/g/gTextSansCy-Medium-Web.woff2) format("woff2"),url(/skins/fonts/g/gTextSansCy-Medium-Web.woff) format("woff")}@font-face{font-family:"Guardian TextSans Cy";font-style:normal;font-weight:700;font-stretch:normal;font-display:swap;src:url(/skins/fonts/g/gTextSansCy-Bold-Web.eot?#iefix) format("eot"),url(/skins/fonts/g/gTextSansCy-Bold-Web.woff2) format("woff2"),url(/skins/fonts/g/gTextSansCy-Bold-Web.woff) format("woff")}html{box-sizing:border-box;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}body{font-family:"Guardian TextSans Cy",Helvetica,Arial,sans-serif;font-weight:400;font-style:normal;font-stretch:normal;background-color:#fff;color:#333;font-size:16px;line-height:1.42857143}h1,h2,h3,h4,h5,h6,p{margin:0;padding:0}img{max-width:100%}a{text-decoration:none;color:#2C7ABF}a:hover{text-decoration:none;color:#2C7ABF}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.main-head-bg{width:100%;height:500px}.main-head-bg2{width:100%;height:500px}.img-m-mid{width:71%}body>header{width:100%;margin:0 auto;background-color:#fff;top:-125px}body>header .fa-bars{float:left;font-size:34px;margin:13px 0 0 15px}@media (min-width:551px){body>header .fa-bars{display:none}}body>header .my-clear{clear:both}body>header .logo{float:left;margin:5px 0 0 20px}@media (min-width:551px){body>header .logo{margin:10px 0 5px 80px}}@media (max-width:550px){body>header .logo .logo-big{display:none!important}}@media (min-width:551px){body>header .logo .logo-mini{display:none!important}}body>header .user-block{display:block;float:right;margin:20px 10px 0 0;color:#00b336;font-size:16px;cursor:pointer}@media (min-width:551px){body>header .user-block{margin:42px 80px 0 0;font-size:20px}}body>header .user-block>div>span{padding:0 15px 0 5px}body>header .user-block>div>span:hover{text-decoration:underline}body>header .user-block i{display:none;width:20px;height:20px;background:url(https://static.school-php.com/skins/img/new/locker.jpg) center center no-repeat}body>header nav{text-align:center}@media (max-width:550px){body>header nav{display:none!important}}@media (max-width:1090px){body>header nav{clear:both}}body>header nav a:hover{background:#f8f8f8}body>header nav>div{cursor:default}body>header nav>a,body>header nav>div,body>header nav>span{font-family:"Guardian TextSans Cy",Helvetica,Arial,sans-serif;font-weight:500;font-style:normal;font-stretch:normal;font-size:15px;color:#005f4b;padding:15px 15px 15px;text-transform:uppercase;display:inline-block;margin-right:-4px;border-bottom:7px solid #fff;transition:all .4s}body>header nav>a:hover,body>header nav>div:hover,body>header nav>span:hover{border-bottom:7px solid #005f4b;color:#005f4b}body>header nav>a:focus>div,body>header nav>a:hover>div,body>header nav>a>div:focus-within,body>header nav>div:focus>div,body>header nav>div:hover>div,body>header nav>div>div:focus-within,body>header nav>span:focus>div,body>header nav>span:hover>div,body>header nav>span>div:focus-within{visibility:visible;opacity:1}@media (max-width:1100px){body>header nav>a,body>header nav>div,body>header nav>span{font-size:14px;padding:15px 11px 15px}}@media (max-width:1000px){body>header nav>a,body>header nav>div,body>header nav>span{font-size:13px;padding:15px 8px 15px}}@media (max-width:850px){body>header nav>a,body>header nav>div,body>header nav>span{font-size:12px;padding:15px 6px 15px}}@media (max-width:750px){body>header nav>a,body>header nav>div,body>header nav>span{font-size:15px;padding:5px 15px 10px}}body>header nav .nav-submenu{position:absolute;left:0;background:#fff;border-top:5px solid #005f4b;width:100%;text-align:left;opacity:0;visibility:hidden;transition:all .1s ease-in-out .3s;box-shadow:0 5px 8px rgba(56,56,56,.3);z-index:110;margin-top:20px;padding:30px 0}body>header nav .nav-submenu .row{margin:auto}body>header nav .nav-submenu .nav-submenu-title{padding-bottom:14px;font-size:12px;color:grey;font-weight:700}@media (max-width:576px){body>header nav .nav-submenu .nav-submenu-title{padding-bottom:0!important}}body>header nav .nav-submenu h4{padding:8px 0}body>header nav .nav-submenu .col-3{border-right:2px dashed #eee}@media (max-width:576px){body>header nav .nav-submenu .col-12{border-bottom:1px solid grey;margin-bottom:10px}}body>header nav .nav-submenu a{font-family:"Guardian TextSans Cy",Helvetica,Arial,sans-serif;font-weight:500;font-style:normal;font-stretch:normal;font-size:14px;color:#005f4b}body>header nav .nav-submenu>.nav-submenu-courses{width:25%}body>header nav .nav-submenu:nth-child(1)::after{content:"";background:url(https://static.school-php.com/skins/img/new/icon-graduates.png);opacity:.5;top:0;left:0;bottom:0;right:0;position:absolute;z-index:-1}body>header.sticky{position:fixed;top:0;width:100%;box-shadow:0 5px 8px rgba(56,56,56,.3);transition:top .3s ease-in-out;z-index:300;-webkit-transform:translateZ(0);max-width:100%;padding:0 0 5px 0}@media (max-width:750px){body>header.sticky .fa-bars{display:block!important}}body>header.sticky nav{margin-bottom:-5px}@media (max-width:750px){body>header.sticky nav{display:none!important}}body>header.sticky nav>a,body>header.sticky nav>div{padding:20px 8px 13px;font-size:14px}body>header.sticky .logo{margin:5px 0 0 20px}body>header.sticky .user-block{margin:20px 80px 0 0}body>header.sticky .user-block i{display:block;padding-left:30px}body>header.sticky .user-block>div{display:none}body>header.sticky .my-clear{display:none}#header-sticky-spacer{display:none;height:150px}.m-button{color:#005f4b;background:#93ea20;font-family:"Guardian TextSans Cy",Helvetica,Arial,sans-serif;font-weight:700;font-style:normal;font-stretch:normal;font-size:1rem;display:block;text-transform:uppercase;border:none;padding:10px 25px;transition:background .15s ease-in-out;text-align:center;min-width:215px;height:45px;margin:0 auto;max-width:320px;width:100%}.m-button:hover{color:#005f4b;background:#7bd503}.my-slider{position:relative;height:500px}.my-slider>div.item{position:absolute!important;height:500px;width:100%;opacity:0;transition:all 1s linear}.my-slider>div.active{opacity:1}.my-slider .nav-arrow{position:absolute;top:50%;margin-top:-20px;height:40px;width:40px;z-index:10;border-color:#fff;border-style:solid;border-width:0 0 14px 14px;opacity:.5;cursor:pointer}.my-slider .nav-arrow:hover{opacity:1}.my-slider .nav-arrow-left{left:40px;-o-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);transform:rotate(45deg)}.my-slider .nav-arrow-right{right:40px;-o-transform:rotate(225deg);-moz-transform:rotate(225deg);-ms-transform:rotate(225deg);-webkit-transform:rotate(225deg);transform:rotate(225deg)}.carousel-1-text,.carousel-1-text2{background:rgba(0,0,0,.5);color:#fff;z-index:2;position:absolute;display:inline-block;padding:0 15px}.carousel-1-text{left:100px;top:150px;font-size:36px;transition:left 2s,top 1.5s ease-in}.carousel-1-text2{left:100px;bottom:215px;font-size:24px;transition:left 2s,bottom 1.5s ease-in}.main-carousel{height:500px;overflow:hidden}@media (max-width:710px){.main-carousel{display:none!important}}.main-carousel .carousel-filter{background:url(https://static.school-php.com/skins/img/new/main-top-filter.png);width:100%;height:100%;top:0;left:0;z-index:1;position:absolute}.main-carousel .content-carousel-1{position:relative;background:#1b427d url(https://static.school-php.com/skins/img/new/main-head-bg.jpg) no-repeat;background-size:100% 100%;height:500px}.main-carousel .content-carousel-1 .carousel-1-circle-1,.main-carousel .content-carousel-1 .carousel-1-circle-2{position:absolute;z-index:1;border:1px dashed #fff;border-radius:100%}.main-carousel .content-carousel-1 .carousel-1-circle-1>div,.main-carousel .content-carousel-1 .carousel-1-circle-2>div{position:absolute;color:#fff;font-weight:700;-moz-box-shadow:0 0 7px rgba(8,32,68,.45);-webkit-box-shadow:0 0 7px rgba(8,32,68,.45);box-shadow:0 0 7px rgba(8,32,68,.45);-moz-border-radius:100%;-webkit-border-radius:100%;border-radius:100%;text-align:center;z-index:2;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-moz-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-moz-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;transform:scale(1,1);-moz-transition:all 1s;-webkit-transition:all 1s;transition:all 1s}.main-carousel .content-carousel-1 .carousel-1-circle-1{top:50px;right:500px;width:270px;height:270px}.main-carousel .content-carousel-1 .carousel-1-circle-1 .circle-js{background-color:#7ec8e5;font-size:28px;width:45%;height:45%;top:-10%;left:50%;margin-left:-23%;transition-delay:.5s}.main-carousel .content-carousel-1 .carousel-1-circle-1 .circle-css{background-color:#75bf44;font-size:24px;width:55%;height:55%;top:50%;right:-10%;margin-top:-32%;z-index:3;transition-delay:.6s}.main-carousel .content-carousel-1 .carousel-1-circle-1 .circle-html{background-color:#00a0e3;font-size:36px;width:70%;height:70%;top:50%;left:5%;z-index:4;transition-delay:.7s}.main-carousel .content-carousel-1 .carousel-1-circle-2{top:95px;right:120px;width:350px;height:350px}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-bitrix,.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-https,.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-xml,.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-yii{background-color:#75bf44;width:17%;height:17%;font-size:12px}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-ajax,.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-mysql,.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-oop,.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-phpstorm{background-color:#f04d50;width:27%;height:27%;font-size:20px}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-php{background-color:#f04d50;top:50%;left:50%;width:55%;height:55%;margin-left:-27.5%;margin-top:-27.5%;font-size:35px;transition-delay:1.3s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-mysql{top:7%;left:1%;transition-delay:.5s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-bitrix{top:-4%;left:28%;transition-delay:.6s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-phpstorm{top:-9%;left:51%;transition-delay:.7s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-https{top:13%;left:79%;transition-delay:.8s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-oop{top:34%;left:83%;transition-delay:.9s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-yii{top:66%;left:81%;transition-delay:1s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-ajax{top:80%;left:55%;transition-delay:1.1s}.main-carousel .content-carousel-1 .carousel-1-circle-2 .circle-xml{top:86%;left:33%;transition-delay:1.2s}.main-carousel .content-carousel-1 .corousel-1-monitor{position:absolute;right:340px;top:310px;background:url(https://static.school-php.com/skins/img/new/main-monitor.png) no-repeat top left;width:285px;height:169px;z-index:5}.main-carousel .content-carousel-2{position:relative;background:#1b427d url(https://static.school-php.com/skins/img/new/main-head-bg2.jpg) no-repeat;background-size:100% 100%;height:500px}.main-carousel .content-carousel-2>img{width:100%;height:500px!important}.main-carousel .content-carousel-2 .corousel-2-engine{position:absolute;right:140px;top:55px;background:url(https://static.school-php.com/skins/img/new/main-head-bg2-monitor.png) no-repeat top left;width:449px;height:399px;z-index:1}.content-center-start{background:url(https://static.school-php.com/skins/img/new/bg-top.jpg) top center no-repeat;height:500px;background-size:100% 100%;text-align:center}.content-center-start .text1{color:#91e91b;font-size:40px;padding-top:90px;text-transform:uppercase;font-weight:700}.content-center-start .text2{color:#fff;font-size:60px;padding:40px 0 50px 0}.content-center-start .text2 span{color:#91e91b}.content-center0{background-color:#fff;padding:72px 64px;font-size:24px;line-height:1.4;text-align:left;font-weight:400;font-family:'Helvetica Neue','Segoe UI',Helvetica,Arial,sans-serif}@media (max-width:710px){.content-center0{padding:28px 14px!important}}.content-center0 .row{margin:auto}.content-center0 .col-md-4{text-align:center}.content-center0 .col-md-8{text-align:left;padding:14px 0 0}.content-center0 .col-md-8 p{padding-bottom:10px}.content-center0 img{width:100%}.content-center0 a:hover{border-bottom:1px solid rgba(44,122,191,.75)}.content-center1{background-color:#F8F8F8;padding:64px 0;box-shadow:0 1px 0 rgba(0,0,0,.05) inset;font-family:'Helvetica Neue','Segoe UI',Helvetica,Arial,sans-serif;font-weight:400}.content-center1 .row{margin:0 15px}.content-center1 h2{font-size:32px;font-weight:400;text-align:center;margin:0 0 24px}.content-center1 .c-c1-title{font-size:24px;margin-bottom:20px;text-align:center}.content-center1 p{font-size:16px;line-height:1.5;text-align:justify}.content-body{width:100%;max-width:960px;margin:0 auto;text-align:center}.content-body-big{width:100%;max-width:1220px;padding:0 15px;margin:0 auto}.col{float:left;min-height:1px;position:relative;padding-right:12px;padding-left:12px}.col-4{width:33.3333333333%}.col-8{width:66.6666666666%}.col-3{width:25%}.col-6{width:50%}.col-9{width:75%}.not-home{background:url(https://static.school-php.com/skins/img/new/bg.jpg);padding:30px 0}.not-home>div{max-width:1240px;margin:auto;padding:50px 30px 64px;background-color:#fff;border:2px solid #EEE}</style>
+</head>
+<body data-xsrf="b37dfa8849683da4e43f8e927f727f7c">
+<header id="header">
+<div class="content-body-big">
+<div class="fa fa-bars js-mobile-menu" data-action="" aria-hidden="true"></div>
+<a href="/" class="logo">
+<img class="logo-big" src="https://static.school-php.com/skins/img/logo6.jpg" alt="Школа программирования" height="77" width="484">
+<img class="logo-mini" src="https://static.school-php.com/skins/img/logo-mini3.jpg" alt="" height="50" width="107">
+</a>
+<a class="user-block" href="/login/all">
+<div>
+<span><span class="fa fa-sign-in" aria-hidden="true"></span> Вход / Регистрация</span>
+</div>
+<i>Вход</i>
+</a>
+<div class="my-clear"></div>
+<nav>
+<a href="/">Главная</a>
+<a href="/starting">Начать обучение</a>
+<div tabindex="0">Курсы <span class="fa fa-caret-down"></span>
+<div class="nav-submenu">
+<div class="content-body row align-items-center">
+<a class="col-12 col-sm-3 clearfix" href="/courses/html-css-begin">
+<div class="nav-submenu-title">БАЗОВЫЙ КУРС<br>основы верстки</div>
+<div class="sprites sprites-html-32" style="float:left;"></div>
+<h4>HTML, CSS, Photoshop</h4>
+</a>
+<a class="col-12 col-sm-3 clearfix" href="/courses/php-i-mysql-programmirovanie-s-nulya">
+<div class="nav-submenu-title">ПЕРВЫЙ УРОВЕНЬ<br>основы программирования</div>
+<div class="sprites sprites-php-32" style="float:left;"></div>
+<h4>PHP, MySQL, JavaScript</h4>
+</a>
+<div class="col-12 col-sm-6 clearfix">
+ <div class="nav-submenu-title">ВТОРОЙ УРОВЕНЬ (ПОВЫШЕНИЕ КВАЛИФИКАЦИИ)<br>&nbsp;</div>
+<div class="row align-items-center">
+<a class="col-5" href="/courses/html5-i-css3-visokiy-uroven">
+<h4><i class="fa fa-html5" aria-hidden="true"></i> верстки</h4>
+</a>
+<a class="col-7" href="/courses/php7-i-mysql-sredniy-uroven">
+<h4><img src="https://static.school-php.com/skins/img/new/icon-graduates.png" alt="" style="width:32px;"> программирования</h4>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div tabindex="0">Для учеников <span class="fa fa-caret-down"></span>
+<div class="nav-submenu">
+<div class="content-body row align-items-center">
+<a class="col-3" href="/launch">Запуск проекта</a>
+<a class="col-3" href="/tricks">Мелкие трюки</a>
+<a class="col-3" href="/how-to-get-job">Делимся практикой<br>по трудоустройству</a>
+<a class="col-3" href="/check">Проверь<br>свои знания</a>
+</div>
+</div>
+</div>
+<a href="/tasks">Задачи по PHP MySQL</a>
+<a href="/blog">Блог</a>
+<a href="/comments">Отзывы</a>
+
+</nav>
+</div>
+</header>
+<div id="header-sticky-spacer"></div>
+<main>
+<div class="my-slider main-carousel">
+<div class="nav-arrow nav-arrow-left"></div>
+<div class="nav-arrow nav-arrow-right"></div>
+<div class="item content-carousel-1 active" id="item1">
+<img src="https://static.school-php.com/skins/img/new/main-head-bg.jpg" alt="" class="main-head-bg" height="500">
+<div class="carousel-filter"></div>
+<div class="carousel-1-text">Обучение веб-программированию</div>
+<div class="carousel-1-text2">Мы изучаем только лучшие технологии для создания сайтов!</div>
+<div class="carousel-1-circle-1">
+<div class="circle-js">JS</div>
+<div class="circle-html">HTML5</div>
+<div class="circle-css">CSS3</div>
+</div>
+<div class="carousel-1-circle-2">
+<div class="circle-php">PHP</div>
+<div class="circle-mysql">MYSQL</div>
+<div class="circle-bitrix">bitrix</div>
+<div class="circle-phpstorm">PHPSTORM</div>
+<div class="circle-https">https</div>
+<div class="circle-oop">OOP</div>
+<div class="circle-yii">yii</div>
+<div class="circle-ajax">AJAX</div>
+<div class="circle-xml">xml</div>
+</div>
+<div class="corousel-1-monitor"></div>
+</div>
+<div class="item content-carousel-2" id="item2">
+<img src="https://static.school-php.com/skins/img/new/main-head-bg2.jpg" alt="" height="500">
+<div class="carousel-filter"></div>
+<div class="carousel-1-text">Техподдержка курсов</div>
+<div class="carousel-1-text2">Ежедневные консультации, постоянная помощь в обучении, ментор!</div>
+<div class="corousel-2-engine"><img src="https://static.school-php.com/skins/img/new/main-head-bg2-img.png" alt="" width="449" height="399"></div>
+</div>
+<div class="item" id="item3">
+<div class="content-center-start">
+<div class="text1">Ещё не поздно!</div>
+<div class="text2">Начните обучение уже сегодня</div>
+<a href="/courses/html-css-begin" class="m-button">Начать с бесплатного курса!</a>
+</div>
+</div>
+</div>
+<div class="content-center0">
+<div class="row content-body">
+<div class="col-12 col-md-8">
+Добро пожаловать на современные онлайн курсы верстки и программирования: HTML, CSS, PHP, MySQL, JavaScript.
+Представляю Вашему вниманию серию курсов по созданию сайтов для самых маленьких начиная с нуля "Как выделить текст курсивом" и заканчивая сложной архитектурой интернет-магазинов и социальных сетей.
+</div>
+<div class="col-12 col-md-4">
+<a href="#"><img alt="" src="https://static.school-php.com/skins/img/new/m-top.jpg" width="296" height="209"><br><s>Смотреть презентацию</s><br>Скоро будет!</a>
+</div>
+</div>
+</div>
+<div class="content-center1">
+<div class="content-body">
+<h2>Идеальное сочетание курса по изучению программирования</h2>
+<img src="https://static.school-php.com/skins/img/new/m-mid.jpg" class="img-m-mid" alt="">
+<div class="row">
+<div class="col-12 col-sm-4">
+<div class="c-c1-title">Учитель</div>
+<p>Без ограничений консультации в скайпе, доступность на связи - 14 часов в сутки. Проверка домашних заданий в течении суток. Индивидуальный подход к каждому ученику.</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="c-c1-title">Ученик</div>
+<p>Свободный график обучения даёт полную свободу и максимальное удобство ученику любого возраста (заниматься обучением можно после школы, университета, работы).</p>
+</div>
+<div class="col-12 col-sm-4">
+<div class="c-c1-title">Видео-уроки</div>
+<p>Систематичная программа обучения с заранее проработанным материалом для видео-уроков. Качественные дополнения к урокам и тесты после каждого видео.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-center2">
+<div class="content-body-big show-content">
+<h1>Современные курсы по HTML, CSS, PHP, MySQL</h1>
+<h3>100 видео-уроков, ~50 самостоятельных заданий, годовая программа обучения</h3>
+<div class="clearfix c-menu">
+<div class="col col-4 c-menu-active" data-id="1">Информация о курсах</div>
+<div class="col col-4 c-menu-middle" data-id="2">Почему School-PHP?</div>
+<div class="col col-4" data-id="3">Почему PHP?</div>
+</div>
+<div class="clearfix c-body">
+<div class="visibility1 visibility2" id="content-center2-1">
+<div class="row">
+<div class="col-12 col-md-9">
+<h3>Современные курсы по HTML, CSS, PHP, MySQL, JavaScript</h3>
+<p>Курсы с нуля подойдут любому человеку вне зависимости от его знаний в области программирования, вся необходимая база знаний присутствует в курсе. А так же плюсы самих курсов:</p>
+<ul>
+<li><strong>Дистанционное обучение</strong>: обучайтесь когда хотите и где хотите. Мягкий диван, удобное кресло и в перерывах между семьей, работой и друзьями; утром, днём, вечером или ночью на ваш выбор;</li>
+<li><strong>Индивидуальные консультации без ограничений</strong>: ежедневно, доступность 14 часов, без выходных, без ограничений в объеме и времени;</li><li><strong>Проверка домашних заданий</strong>: лучший способ закрепить пройденный материал, личная проверка не позволит ученику пропустить ту или иную важную деталь, которую пропускают в виду сложности, усталости, невнимательности, отвлеченности на другие дела и другим человеческим факторам;</li>
+<li><strong>Тесты после уроков и выпускное задание</strong>: они позволят закрепить пройденный материал;</li>
+<li><strong>Лицензированный IDE PHPStorm</strong>: лучший редактор кода, который ускорит изучение программирования сегодня и упростит разработку кода в будущем.</li>
+</ul>
+</div>
+<div class="col-12 col-md-3">
+При поддержке:<br>
+<a href="https://www.jetbrains.com/phpstorm/" rel="nofollow" target="_blank"><img src="https://static.school-php.com/skins/img/new/logo-phpstorm.svg" alt="School-PHP + PHPStorm = <3"></a>
+</div>
+</div>
+</div>
+<div class="hidden" id="content-center2-2">
+<div class="row">
+<div class="col-12 col-md-9">
+<h3>Плюсы школы School-PHP программирования</h3>
+<p>Всё дело в качестве и ответственности, которые я ставлю в основу моих курсов, а так же в обучении без посредников - я не нанимаю программистов учить Вас, я обучаю лично. А так же другие плюсы:</p>
+<ul>
+<li><strong>Свежий материал</strong>: курс 2017 года. Некоторые фишки и возможности только появились в последних версиях языков, часть из них ещё даже не задокументирована на официальных сайтах, а у нас вы рассмотрите детали использования и будете на шаг впереди тех, кто уже давно занимается программированием. Вы получите те знания, которые пригодятся даже через 5-7 лет;</li>
+<li><strong>Закрепление знаний</strong>: вы проходите тесты, выполняете домашние задания, которое я лично проверю и укажу на мелкие или крупные ошибки. В случае надобности я так же могу отправить на доработку и благодаря проверке домашек никто не закончит курс пока я не буду уверен в знаниях ученика на 100%;</li>
+<li><strong>Индивидуальное обучение</strong>: Индивидуальный подход проявляется в личных консультациях и тесном общении по поводу пройденных уроков и выполненных домашних заданий;</li>
+<li><strong>Дистанционное образование</strong>: нельзя всех подстроить под определённый график. Именно поэтому я в сети и доступен с 12:00 до 02:00 для каждого;</li>
+<li><strong>Качество</strong>: систематичное обучение и весь необходимый материал для возможности создавать современные веб-сайты;</li>
+<li><strong>Как правильно изучить PHP ?</strong>: если внимательно слушать учителя-преподавателя, то материал запоминается в глубине сознания. Даже если на миг мы забудем, то достаточно подглядеть в синтаксис и всё вспоминается тут же.</li>
+</ul>
+</div>
+<div class="col-12 col-md-3">
+<img src="https://static.school-php.com/skins/img/logo3.jpg" alt="">
+</div>
+</div>
+</div>
+<div class="hidden" id="content-center2-3">
+<div class="row">
+<div class="col-12 col-md-9">
+<h3>Выбирайте лучший язык программирования на сегодня</h3>
+<p>Спрос рождает предложение, практически любой бизнес сегодня нуждается в сайте (офис в интернете), что позволяет общаться с клиентом на любом расстоянии. Среди конкурентов PHP занимает первое место на рынке труда обгоняя ближайших конкурентов по вакансиям в десятки раз. Чем же так хорош PHP? Всё очень просто:</p>
+<ul>
+<li>Прост в изучении, прост в решении типовых задач;</li>
+<li>Имеет весь необходимый функционал для создания сайтов любой сложности;</li>
+<li>Имеет огромную производительность;</li>
+<li>Ежемесячно обновляется, всегда актуален и не имеет дыр в безопасности.</li>
+</ul>
+<p>PHP входит в тройку самых востребованных языков программирования на сегодня и покрывает около 50% рынка (2 других языка - создание мобильных приложений для IOS и Android).</p>
+</div>
+<div class="col-12 col-md-3">
+<img src="https://static.school-php.com/skins/img/new/logo-php.svg" alt="School-PHP + PHP = <3">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-center2-5">
+<div class="content-body show-content">
+<h3>Мои требования в становлении успешного программиста</h3>
+<ul>
+<li>Уделять обучению не менее 5 дней в неделю и не менее 2 часов в день;</li>
+<li>Не делать долгих пауз. Если заболели, то полчасика написать простой калькулятор, если на работе завал - вернувшись домой домой сверстать календарь с датами за те же полчасика;</li>
+<li>Ответственно конспектировать каждый урок выписывая все важное. Ответственно подходить к уроку и не пропускать материал думая о своём, ответственно выполнять домашнее задание;</li>
+<li>Получать удовольствие от "творения"</li>
+</ul>
+</div>
+</div>
+<div class="content-center2-5b">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 col-12">
+<img src="/skins/img/landing2.jpg" alt="Верстка для всех разрешений экрана">
+</div>
+<div class="col-lg-5 col-12">
+<div class="c-c-2-5-title">
+<span class="sprites sprites-html-32"></span> Современная верстка HTML5 и CSS3
+</div>
+<div class="c-c-2-5-text">
+<p>Верстка - язык разметки, написание кода для браузера, представление информации в графическом виде, это всё и есть внешний вид сайта, то, каким мы его видим.</p>
+<p>Вы научитесь создавать макеты полноценных сайтов. Совершенствуя знания верстки на втором уровне ученик научится верстать так, чтобы сайт одинаково хорошо открывался не только на компьютерах, но так же на планшетах (iPad, Galaxy и Lenovo Tab, и другие), и смартфонах (мобильные устройства), а так же научится продвигать сайт в поисковых системах таких как Google и Yandex.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-center2-5b content-center2-5b2">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-12">
+<div class="c-c-2-5-title">
+<span class="sprites sprites-php-32"></span> Программирование на PHP и MySQL
+</div>
+<div class="c-c-2-5-text">
+<p>PHP программирование - создание скриптов для сервера где размещен сайт, который предназначен для сбора, хранения и обработки информации.</p>
+<p>Форма комментариев на странице относится к верстке, но сам комментарий сохраняется в безопасном месте на сервере и является частью программирования. Корзина в интернет-магазине - работа браузера, а вот перечень доступных товаров и их цена должны храниться не у посетителя, а на сервере, чтобы раздавать актуальную информацию всем посетителям. Оформленные заказы так же хранятся на сервере.</p>
+<p>За курс Вы научитесь всё это делать!</p>
+</div>
+</div>
+<div class="col-lg-7 col-12"></div>
+</div>
+</div>
+</div>
+<div class="content-center2-5">
+<div class="content-body show-content">
+<div class="c-c-2-5-section show-content">
+<div class="c-c-2-5-title"><i class="fa fa-check" aria-hidden="true"></i> Быстро и качественно</div>
+<div class="c-c-2-5-text">
+<p>Перед записью моих курсов я ознакомился с ведущими конкурентами в России и на Украине, и вот что я выяснил: множество книг, уроков и курсов имеют общие проблемы: отсутствует вступительная часть о том как настроить и установить программы для начала обучения, закреплённых знаний, то есть не было ни домашек, ни индивидуальных проверок. У групповых курсов - ошибки назывались, но из-за вас никто группу не тормозил, поэтому давался новый материал для остальных и, если Вы отстаёте, отставать с каждым уроком будете больше и больше (Индивидуальный подход и проверка домашек моего курса справляется с данной проблемой!). Другие видео-записи не содержат фид-бека с автором, то есть в случае ошибок нужно было самостоятельно искать решения проблем (Личные консультации в моём курсе решают и эту проблему). Учебники и устаревшие материалы до 2016 года считаются устаревшими (HTML5 + CSS3 вышли 2012 году, но браузеры стали поддерживать начиная с 2014-ого, PHP 7 вышел в 2015 году).</p>
+<p>Качественный материал не решит проблему ленивого ученика. Запомните, чтобы хорошо учиться надо лишь проявлять усердие. Каждый новый материал необходимо закреплять практикой (для этого есть домашние задания), а так же конспектировать. Благодаря качественному конспекту очень просто вспомнить пройденный материал, кроме этого в момент написания конспекта вы так же запоминаете (не зря некоторые преподаватели поощряют шпаргалки). Если внимательно слушать учителя-преподавателя, то материал запоминается в глубине сознания. Даже если на миг мы забудем, то достаточно подглядеть в синтаксис и всё вспоминается тут же.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-center3">
+<div class="content-body show-content">
+<div class="row" style="margin: 20px 10px; border-bottom: 1px dotted #793862; padding-bottom:5px; font-size: 20px;">
+<div class="col-6" style="text-align: left; font-size: 28px;line-height: 35px;letter-spacing: 1px;font-weight: 400;">Портфолио учеников</div>
+<div class="col-6" style="font-size:18px; text-align: right; padding:9px 0 0 10px;"><a href="/blog/12/портфолио-моих-учеников-по-окончанию-курса" title="на этой странице вы почитаете более подробно о том, как я формировал портфолио и на что надо обращать внимание"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> читать подробнее о портфолио</a></div>
+</div>
+</div>
+</div>
+<div class="content-center4">
+<div class="row content-body-big show-content">
+<div class="col-12 col-md-4">
+<div class="c-c4-square"><span>Б</span></div>
+<div class="c-c4-head">
+<div class="c-c4-title">Базовый - бесплатный</div>
+<div class="c-c4-desc">Основы верстки<br>HTML, CSS, Photoshop</div>
+<div class="c-c4-price">бесплатно!</div>
+</div>
+<ul>
+<li>HTML - язык разметки;</li>
+<li>CSS - каскадная таблица стилей;</li>
+<li>Основы верстки сайта;</li>
+<li>Фиксированная верстка;</li>
+<li>Резиновая верстка;</li>
+<li>Photoshop - нарезка макета.</li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<div class="c-c4-square"><span>1</span></div>
+<div class="c-c4-head">
+<div class="c-c4-title">Первый уровень</div>
+<div class="c-c4-desc">Основы программирования<br>PHP, MySQL, JavaScript</div>
+<div class="c-c4-price">350 $</div>
+</div>
+<ul>
+<li>Основы программирования: переменные, операторы, конструкции, циклы, функции, классы;</li>
+<li>Ядро (FrameWork), структура сайта, MVC как схема разделения данных;</li>
+<li>Основы MySQL и взаимодействие с PHP;</li>
+<li>Кабинет пользователя: регистрация, авторизация, подтверждение почты;</li>
+<li>Разделы: отзывы, комментарии, каталоги, новости;</li>
+<li>Взаимосвязи сущностей: один ко многим и многие ко многим на примере каталога товаров в интернет магазине;</li>
+<li>Права доступа, создаём админ-панель (CMS);</li>
+<li>Язык программирования в браузере JavaScript, и библиотеки jQuery и Ajax.</li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<div class="c-c4-square"><span>2</span></div>
+<div class="c-c4-head">
+<div class="c-c4-title">Второй уровень</div>
+<div class="c-c4-desc">Продвинутый уровень программирования<br>готовимся к профессиональной карьере</div>
+<div class="c-c4-price">250 $</div>
+</div>
+<ul>
+<li>ООП - объектно-ориентированное программирование;</li>
+<li>Безопасность веб-приложений, всё о взломе;</li>
+<li>Изучаем продвинутые возможности MySQL;</li>
+<li>Кэширование, Платежные системы, ORM, RESTFul API, Sphinx;</li>
+<li>Установка и настройка сервера Ubuntu;</li>
+<li>Семантическая и Адаптивная вёрстка;</li>
+<li>Факторы ранжирования сайтов;</li>
+<li>Bower, Less, Bootstrap, микроразметка.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="content-bottom">
+<div class="content-body show-content">
+<p>Начни обучение с School&#8209;PHP уже сегодня.</p>
+<a href="/courses/html-css-begin/урок-0.1/nachalo-v-sozdanii-saytov" class="m-button2">Начать обучение</a>
+</div>
+</div>
+</main>
+<footer>
+<div class="row content-body">
+<div class="col-12 col-sm-8">
+<img src="https://static.school-php.com/skins/img/logo.png" alt=""><br>
+Школа программирования © 2012-2022<br>
+<i class="sprites sprites-skype" title="Консультации по скайпу"></i> imbalance_hero |
+<i class="sprites sprites-mail" title="Консультации по email"></i> <a href="mailto:inpost@list.ru">inpost@list.ru</a> , <a href="mailto:admin@school-php.com">admin@school-php.com</a><br>
+<a href="http://phpforum.su/index.php?showuser=20039" target="_blank">account on phpforum</a> |
+<a href="https://www.youtube.com/user/imbalancehero/videos" target="_blank">youtube channel</a>
+<div style="padding-top:5px;">
+<a href="https://twitter.com/school_php" title="Мы на фейсбуке" target="_blank"><i class="sprites sprites-twitter"></i></a>
+</div>
+</div>
+<div class="col-12 col-sm-4 lvcounter" id="lvcounter"></div>
+</div>
+</footer>
+<div id="hidden-menu-left">
+<a href="/">Главная</a>
+<a href="/courses/html-css-begin">БАЗОВЫЙ КУРС</a>
+<a href="/courses/php-i-mysql-programmirovanie-s-nulya">ПЕРВЫЙ УРОВЕНЬ программирования</a>
+<a href="/courses/html5-i-css3-visokiy-uroven">ВТОРОЙ УРОВЕНЬ верстки</a>
+<a href="/courses/php7-i-mysql-sredniy-uroven">ВТОРОЙ УРОВЕНЬ программирования</a>
+<a href="/starting">Начать обучение</a>
+<a href="/launch">Запуск проекта</a>
+<a href="/tricks">Мелкие трюки</a>
+<a href="/how-to-get-job">Делимся практикой трудоустройства</a>
+<a href="/check">Проверь свои знания</a>
+<a href="/tasks">Задачи по PHP MySQL</a>
+<a href="/blog">Блог</a>
+<a href="/comments">Отзывы</a>
+
+</div>
+<div id="hidden-menu-right" class="js-mobile-menu" data-action="hide"></div>
+<link href="https://static.school-php.com/skins/components/node_modules/bootstrap/scss/bootstrap.min.css" rel="stylesheet">
+<link href="https://static.school-php.com/skins/components/owlcarousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="https://static.school-php.com/skins/components/owlcarousel/owl-carousel/owl.theme.css" rel="stylesheet">
+<link href="https://static.school-php.com/skins/css/other-end.min.css?v1626893385" rel="stylesheet">
+<link href="https://static.school-php.com/skins/components/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://static.school-php.com/skins/components/highlight/styles/github.css" rel="stylesheet">
+<script src="/skins/components/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/skins/components/node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="/skins/components/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/skins/components/hl/highlight.pack.js"></script>
+<script src="/skins/js/fw.min.js?v6"></script>
+<script src="/skins/components/snippet/jquery.snippet.min.js"></script>
+<script src="/skins/components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="/skins/js/googletagmanager.js"></script>
+<script src="/skins/js/other.min.js"></script>
+<script src="/skins/components/highlight/highlight.pack.js"></script>
+</body>
+</html>
