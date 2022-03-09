@@ -1,0 +1,561 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Design & Programming by Sergey Belyaev, @2006-2022 E-mail: bsn@mail.ru -->
+
+<html>
+<head>
+  <title>Школа программиста</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <meta name="viewport" content="width=640, initial-scale=1">
+  <meta name="description" content="Олимпиады по информатике. Новости, задачи, решения. Автоматическая система проверки.">
+  <meta name="keywords" content="программирование, задачи по программированию, разбор задач, решение олимпиадных задач, проверяющая система, acm, асм">
+  <meta name='yandex-verification' content='4750e2c69b4e997c' />
+  <meta name='yandex-verification' content='5cb06d7dea348985' />
+  <meta name="google-site-verification" content="h6lljpq7I6H-uuuQLjC_oX_jLfDyQjsygVZup9Xyygs" />  
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"> 
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/144x144.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/images/192x192.png" />
+  <link rel="icon" href="/images/120x120.svg" type="image/x-icon">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(52428040, "init", {
+        id:52428040,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/52428040" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <style>
+    a {color: rgb(0, 60, 0); text-decoration: none; border-color: 0;} 
+a:hover {color: red; text-decoration: underline;} 
+
+a.red {color: red; text-decoration: none; border-color: 0;} 
+a.red:hover {color: red; text-decoration: underline;} 
+
+a.top:link    {color: rgb(0, 0, 0);font-weight:bold;font-family:verdana;font-size:11pt;}
+a.top:visited {color: rgb(0, 0, 0);font-weight:bold;font-family:verdana;font-size:11pt;}
+a.top:hover   {color:#ee2222;font-weight:bold;font-family:verdana;font-size:11pt;}
+
+h1 {margin-top:5; margin-bottom:5; text-align:center; font-family: verdana, tahoma, arial; font-size: 14pt; color : #006600; font-weight: normal;} 
+h2 {font-family: verdana, tahoma, arial; font-size: 14pt; color : #006600; font-weight: normal;} 
+h3 {margin-top:10; margin-bottom:-20; font-family: verdana, tahoma, arial; font-size: 14pt; color : #006600; font-weight: normal;} 
+h4 {font-family: verdana, tahoma, arial; font-size: 11pt; color : #006600; font-weight: bold;} 
+
+hr {color: #509050; width: 100%; height: 1px}
+
+input { background-color: #f0fff0; border: gray 1px solid; font-family: verdana, tahoma; font-size: 8pt} 
+input.button {background-color: #eeeeee;border: gray 1px solid; font-family: verdana, tahoma; font-size: 8pt} 
+select {background-color: #f0fff0; border: gray 1px solid; font-family: verdana, tahoma; font-size: 8pt} 
+textarea {background-color: #f0fff0; border: gray 1px solid; font-family: verdana, tahoma; font-size: 8pt} 
+.menu_title {font-family: Tahoma;font-size: 12px;color: #0D2B01; FONT-WEIGHT: bold;}
+
+
+.news {color: #006600}
+.btext {text-align:center; font-family: verdana, tahoma, arial; font-size: 8pt; color : #004400; font-weight: bold;} 
+.btext2 {text-align: left; font-family: verdana, tahoma, arial; font-size: 8pt; color : #004400; font-weight: bold;} 
+.btext3 {font-family: verdana, tahoma, Arial; font-size: 8pt; color : #007000;}
+.menu { color: #33a033; font-size: 11pt; text-decoration: none; font-weight: bold;} 
+.title {color: rgb(0,120,0);font-weight:bold;}
+.nomargin {margin: 0 0 0 0}
+p.text {text-indent: 30px; text-align: justify; margin-top: 5px; margin-bottom: 10px;}
+p.stext {text-indent: 30px; font-size: 10pt;text-align: justify; margin-top: 5px; margin-bottom: 10px;}
+img.point {width: 5px; height: 12px; background-image: url(/images/1x1.gif);}
+.normal {background-color: #FFFFFF;border: 0 solid gray;font-size: 12px;font-family: Verdana, Tahoma;}
+.red {color: red;}
+.green {color: #008800;}
+.green2 {color: #008800;}
+.gray {background-color: #e8e8e8;}
+.lightgreen {background-color: #ccffcc;}
+.white {background-color: white;}
+.white2 {background-color: white; font-family: courier;}
+
+table.main {background-color: #007700; width: 100%;}
+th {background-color: #ddffdd; color: #006600; font-size: 12pt; text-decoration : none; font-weight : bold;}
+tr.small {font-size: 8pt;} 
+td.green {background-color: #9DBFB1}
+
+.img_topleft{
+	border : 0px;
+	background-image: url(/images/img_topleft.gif);
+	background-repeat: no-repeat;
+    width:13px;
+	height: 13px;
+}
+.img_top{
+	border : 0px;
+	background-image: url(/images/img_top.gif);
+	background-repeat: repeat-x;
+	height: 13px;
+}
+.img_topright{
+	border : 0px;
+	background-image: url(/images/img_topright.gif);
+	background-repeat: no-repeat;
+   width:13px;
+	height: 13px;
+}
+.img_left{
+	border : 0px;
+	background-image: url(/images/img_left.gif);
+	background-repeat: repeat-y;
+   width:13px;
+}
+.img_right{
+	border : 0px;
+	background-image: url(/images/img_right.gif);
+	background-repeat: repeat-y;
+   width:13px;
+}
+.img_bottomleft{
+	border : 0px;
+	background-image: url(/images/img_bottomleft.gif);
+	background-repeat: no-repeat;
+   width: 13px;
+	height: 13px;
+}
+.img_bottom{
+	border : 0px;
+	background-image: url(/images/img_bottom.gif);
+	background-repeat: repeat-x;
+	height: 13px;
+}
+.img_bottomright{
+	border : 0px;
+	background-image: url(/images/img_bottomright.gif);
+	background-repeat: no-repeat;
+   width:13px;
+	height: 13px;
+}
+.img_bottomright_comment{
+	border : 0px;
+	background-image: url(/images/img_comment.gif);
+	background-repeat: no-repeat;
+   width:13px;
+	height: 13px;
+}
+table.thumb {
+   border-collapse: collapse;
+	text-align:center;
+   margin: 10px;
+   padding: 0px;
+}
+
+a.my {color : #999999; font-size: 10; text-decoration:none}
+a.my:visited {color : #999999; font-size: 10; text-decoration: underline}
+a.my:hover {color : #666666; font-size: 10; text-decoration: underline}
+
+  </style>
+  <script>var now = new Date(2022,2-1,27,19,42,14)</script>
+
+<script>
+function ValidLF(){
+  if(!enter.lgn.value){
+    alert('Необходимо ввести логин!')
+    enter.lgn.focus()
+  }else 
+  if(!enter.password.value){
+    alert('Необходимо ввести пароль!')
+    enter.password.focus()
+  }
+  else {return true}
+  return false
+}
+function ShowTime(){ 
+  now.setTime(now.getTime()+1000)
+  timer.innerHTML =now.toLocaleString()+"&nbsp;"
+  window.setTimeout('ShowTime()',1000)
+} 
+</script>
+
+</head>
+
+<body onload="ShowTime()" class=nomargin>
+  <table width=100% cellpadding=0 cellspacing=0 style="margin-top: 2" border=0> 
+	<tr height=20><td colspan=5>
+	  <table width=100% cellpadding=0 cellspacing=0 border=0> 
+
+        <tr height=40>
+	      <td colspan=2>
+		    <table cellpadding=0 cellspacing=0><tr>
+		      <td valign=top>
+
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script>
+
+</td>
+		      <td><a href=/>
+			    
+ 			       <img src="/images/title.png" width=354 height=40 alt="Школа программиста" title="Школа программиста" border=0></a>
+				
+			  </td>
+			  
+            </tr></table>
+		  </td>
+		  <td valign=top colspan=2 align=right>
+		     <p id=timer class=nomargin></p>
+			 
+			   <a href=/inc/remind.asp style="font-size: 8pt">Забыли пароль?</a>
+             
+		  </td>
+        </tr>
+
+        <tr height=5>
+		  <td background=/images/3lines.gif colspan=4></td>
+		</tr><tr height=20 valign=middle>
+           <td bgcolor=#aaFFaa width=430>
+<a href=/index.asp?main=tasks class=top>[задачи]</a>
+
+<a href=/asp/do/index.asp class=top>[курсы]</a>
+
+  <a href=/asp/champ/index.asp class=top>[олимпиады]</a>
+
+  <a href=/inc/register.asp class=top>[регистрация]</a>
+</td>
+           <td bgcolor=#609E48 width=20 background=/images/45a.gif></td>
+		   <td bgcolor=#609E48 align=center>
+		   
+		   </td>
+           <td bgcolor=#609E48 width=300 align=right> 
+  <form class=nomargin name=enter action=/index.asp?main=enter&r=154304155223621337232469 method=post onsubmit='return ValidLF()'> 
+    <nobr>
+    <b class=btext2>
+	  Логин: <input type=text name=lgn value='' size=8 style="height:18">&nbsp;
+	  Пароль: <input type=password name=password value='' size=8 style="height:18">&nbsp;
+	  <input type=submit value=Ok class=button style="height:18">&nbsp;
+    </b>
+	</nobr>
+  </form>
+  <script defer>enter.lgn.focus()</script> 
+</td>
+		</tr>
+	  </table>
+    </td></tr>	
+	<tr height=8><td colspan=5 background=/images/line.gif><a href=/?main=back&showmenu=0><img src=/images/l_arr.gif border=0 width=15 height=7 alt="Скрыть меню"></a></td></tr>
+	<tr><td colspan=6>
+    <table width=100% cellspacing=0 cellpadding=0><tr height=100%>
+	  
+        <td width=180 valign=top height=100%>		<table width=100% height=100% cellpadding=0 cellspacing=0 valign=top>
+	    <tr height=1%><td>
+
+           
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>ИНФОРМАЦИЯ</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=7>О школе</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=40207>Правила</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/asp/champ>Олимпиады</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/asp/albom/>Фотоальбом</a><br>
+
+
+  <img src=/images/circle.gif width=10 height=10> <a href=/asp/gb.asp?id=-1>Гостевая</a><br>
+  <img src=/images/circle.gif width=10 height=10> <a href=/asp/forum.asp>Форум</a><br>
+
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=121>Архив олимпиад</a><br>
+</td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+	    </tr><tr height=1%><td>
+
+		   
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>ЗАДАЧНИК</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%>
+<img src=/images/circle.gif width=10 height=10> <a href=/index.asp?main=tasks>Архив задач</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/index.asp?main=status >Состояние системы</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/index.asp?main=rating>Рейтинг</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/asp/do/index.asp?main=about>Курсы</a><br> 
+
+		   </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+	    </tr><tr height=1%><td>
+
+		   
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>МЕТОДИЧКА</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=118>Новичкам</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=120>Работа в системе</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=196>Курсы ККДП</a><br>
+
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=845>Дистрибутивы</a><br> 
+
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=43650>Статьи</a><br>
+<img src=/images/circle.gif width=10 height=10> <a href=/article.asp?id_text=2>Ссылки</a><br>
+           </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+	    </tr><tr height=100%><td>
+
+		   
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>СТАТИСТИКА</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%>
+		   <br>
+
+<table align=center>
+<tr>
+  <td><img src="//hit23.hotlog.ru/cgi-bin/hotlog/count?s=426099&im=700" width="88" height="31" alt="HotLog" onclick="window.open('http://hotlog.ru/viewstat?id=426099&bs_day=28&bs_month=1&bs_year=2022&es_day=27&es_month=2&es_year=2022&basic_hits=1&basic_hosts=1&section=daily')" style="cursor:hand"></td>
+  <td><img src="//counter.yadro.ru/logo?11.15" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" alt="" border="0" width="88" height="31"  onclick="window.open('http://www.liveinternet.ru/stat/acmp.ru/')" style="cursor:hand"/></td>
+
+</tr>
+
+</table>
+
+<center>
+
+<br>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-8694399840838901"
+     data-ad-slot="1596885095"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<br>&nbsp;
+</center>
+           </td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+		</td></tr>
+ 	    </table>
+
+		</td>
+      
+	  <td valign=top> 	
+
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>НОВОСТИ</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad2.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%><br>
+<a name=news_40227></a><b class=news>[11.02]</b> Идёт регистрация на Вузовско-академическую олимпиаду по информатике (II уровень РСОШ). Регистрация на отборочный тур до 27 февраля. Сайт олимпиады: <a href="https://sp.urfu.ru/vuzakadem/inform/">https://sp.urfu.ru/vuzakadem/inform/</a>.
+По всем вопросам можно написать в группу ВКонтакте <a href="https://vk.com/uralsp">vk.com/uralsp</a> или по электронной почте <a href="mailto:sp@urfu.ru">sp@urfu.ru</a>.<br><br><a name=news_40226></a><b class=news>[17.01]</b> Завершился региональный этап ВОШ по информатике и ИКТ: 
+<a href="/asp/do/index.asp?main=topic&id_course=3&id_section=24&id_topic=303">[Задачи]</a>
+<a href=/article.asp?id_text=43852>[Результаты]</a>
+<a href="/asp/albom/index.asp?main=gallery&id_section=40041">[Фото]</a>
+<a href=/inc/download.asp?id=40038>[Разбор]</a>
+  <a href="https://www.youtube.com/playlist?list=PLHX_ZgKaM8sJ2pV66jLr5N5QaBsTi1Yql">[Видеоразбор]</a>
+.
+<br><br><a name=news_40225></a><b class=news>[30.12]</b> <a href="/article.asp?id_text=43851">Статистика популярности языков программирования на acmp.ru</a><br><br><a name=news_40224></a><b class=news>[22.12]</b> Согласно <a href=/inc/download.asp?id=40035>приказу №719-11-05</a> определены пороговые баллы для прохождения на региональный этап ВсОШ по информатике и ИКТ, полученные в результате участия на муниципальном этапе: 9 класс - 148; 10 класс - 204; 11 класс - 264. Региональный этап состоится 15, 17 января 2022 г.<br><br><a name=news_40223></a><b class=news>[08.12]</b> Завершился муниципальный этап ВОШ по информатике в Красноярском крае. Результаты: <a href="/asp/champ/index.asp?main=rating&id_stage=42181">[7-8 классы]</a> <a href="/asp/champ/index.asp?main=rating&id_stage=42182">[9-11 классы]</a>. Задачи: <a href="/asp/do/index.asp?main=topic&id_course=3&id_section=23&id_topic=299">[7-8 классы]</a> <a href="/asp/do/index.asp?main=topic&id_course=3&id_section=23&id_topic=300">[9-11 классы]</a>. Видеоразбор всех задач вы можете найти <a href="https://youtube.com/playlist?list=PLxVrp7RZ0ASigjSrYuy39pk7qwgeejmtU">здесь</a>.<br><br><a name=news_40222></a><b class=news>[28.11]</b> Завершился полуфинал ВКОШП для Восточной Сибири. 
+<a href="https://contest.yandex.ru/contest/32409/standings">[Результаты]</a>
+<a href="https://acmp.ru/asp/do/index.asp?main=topic&id_course=3&id_section=25&id_topic=298">[Задачи]</a>
+<br><br><a name=news_40221></a><b class=news>[20.11]</b> Определены пороговые баллы для прохождения учащихся г. Красноярска на муниципальный этап Всероссийской олимпиады школьников по информатике: 100 баллов для выступающих за 7-8 классы, 150 баллов для выступающих за 9-е классы и 350 баллов для выступающих за 10-11 классы (приказ ГУО №481 от 9.11.2021, <a href=/inc/download.asp?id=40034>Приложение №2</a>).<br><br><a name=news_40220></a><b class=news>[13.10]</b> Завершился школьный этап ВОШ по информатике в г. Красноярске и других муниципалитетах Красноярского края. Задачи: <a href="/asp/do/index.asp?main=topic&id_course=3&id_section=22&id_topic=289">[7-8 классы]</a> <a href="/asp/do/index.asp?main=topic&id_course=3&id_section=22&id_topic=290">[9-11 классы]</a>. Результаты: <a href="/asp/champ/index.asp?main=rating&id_stage=42104">[7-8 классы]</a> <a href="/asp/champ/index.asp?main=rating&id_stage=42105">[9-11 классы]</a>.<br><br><a name=news_40219></a><b class=news>[22.06]</b> Обновлены компиляторы: MinGW GNU C++ 10.3 (C++20), Python 3.9.5, PyPy3.7 v7.3.5 (64-bit), PascalABC.NET 3.8 (версия 3.8.0.2901 от 19.06.2021), Java SE JDK 16.0.1, Free Pascal 3.2.2 и Go 1.16.3.<br><br><a name=news_40217></a><b class=news>[19.01]</b> Завершился региональный этап ВОШ по информатике и ИКТ: 
+<a href="/asp/do/index.asp?main=task&id_course=3&id_section=24&id_topic=284">[Задачи]</a>
+<a href=/inc/download.asp?id=40033>[Результаты]</a>
+<a href="/asp/albom/index.asp?main=gallery&id_section=40039">[Фото]</a>
+<a href=/inc/download.asp?id=40032>[Разбор]</a>
+  <a href="https://www.youtube.com/playlist?list=PLHX_ZgKaM8sKWPawOvTB6bzGGiqEV60og">[Видеоразбор]</a>
+.<br><br><a name=news_40216></a><b class=news>[24.12]</b> Определены пороговые баллы для прохождения на региональный этап ВсОШ по информатике и ИКТ, полученные в результате участия на муниципальном этапе: 9 класс - 182; 10 класс - 258; 11 класс - 314. Региональный этап состоится 16, 18 января 2021 г.<br><br><a name=news_40215></a><b class=news>[27.11]</b> Определены пороговые баллы для прохождения учащихся г. Красноярска на муниципальный этап Всероссийской олимпиады школьников по информатике: 200 баллов для выступающих за 7-8 классы и 300 баллов для выступающих за 9-11 классы. <a href="/inc/download.asp?id=40031">Скачать приказ</a>.<br><br>
+
+<center>
+
+  <b>1</b>
+
+  <a href=index.asp?page=1>2</a>
+
+  <a href=index.asp?page=2>3</a>
+
+  <a href=index.asp?page=3>4</a>
+
+  <a href=index.asp?page=4>5</a>
+
+  <a href=index.asp?page=5>6</a>
+
+  <a href=index.asp?page=6>7</a>
+
+  <a href=index.asp?page=7>8</a>
+
+  <a href=index.asp?page=8>9</a>
+
+  <a href=index.asp?page=9>10</a>
+
+  <a href=index.asp?page=10>11</a>
+
+  <a href=index.asp?page=11>12</a>
+<a href=index.asp?page=12>»</a>
+</center>
+
+</td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+</td>
+
+<td width=200 valign=top>
+<table width=100% cellpadding=0 cellspacing=0 valign=top>
+<tr height=1%><td valign=top>
+
+</td></tr>
+
+<tr height=1%><td valign=top>
+
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>ПОИСК ПО САЙТУ</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad2.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%>
+<form style="margin: 2 2 2 2" action=/article.asp?main=find&id_sec=&r=934041321937205337232469 method=post>
+   <input name=str value="" size=19> <input type=submit value="Ok" class=button>
+</form>
+</td></tr>
+</td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+
+<tr height=1%><td>
+
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>СЕЙЧАС В ONLINE</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad2.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%>
+<table width=100% cellpadding=0 cellspacing=0>
+<script>
+   var L=new Array("offline","online","wap","ignore"),
+       IG=new Array(0), ign=0var M=Array(393090,1,"Алексей Максимов","",372369,1,"Асетбек Бибол","",338285,1,"Байрамукова А.Р.","",115461,1,"Белов Александр","",367579,1,"Демьяненко Д.А.","",364871,1,"Джапаров Ахмад","",317029,1,"Долинин Т.Е.","",346804,1,"Жалгасбаев А.Е.","",370568,1,"Жалова А.А.","",391710,1,"Каримбердиев Ш.","",214060,1,"Кондибор Н.В.","",392693,1,"Корнев Серафим","",383359,1,"Кочкорбекова А.М.","",182592,1,"Кривошей Максим","",386972,1,"Кузнецов И.А.","",336417,1,"Малахов Д.П.","",379900,1,"Масеёнок К.А.","",393396,1,"Миллер М.И.","",384384,1,"Моисеенко Д.А.","",309427,1,"Мясников Ю.А.","",339739,1,"Нарадовский","",290606,1,"Неизвестный","",393418,1,"Неизвестный","",393400,1,"Неизвестный","",387734,1,"Платон Ахремушкин","",380234,1,"Подрезова А.А.","",380367,1,"Рахманбердиева Н.Д.","",384045,1,"Рекруткин Н.В.","",298973,1,"Сабиров Б.А.","",393119,1,"Сапарханов С.Б.","",273211,1,"Ситарский К.Б.","",301965,1,"Слоневский Н.В.","",393417,1,"Софья Д.Б.","",392020,1,"Тимофей","",295782,1,"Трофимов Иван","",343685,1,"Умиртай Ж.У.","",362893,1,"Фазлетдинов А.М.","",388507,1,"Федоров Д.П.","",392629,1,"Черкес А.В.","",375770,1,"Швалов Д.А.","",391431,1,"Шлянников Н.М.","",393341,1,"Эгамбердиев А.Ж.","",0), vn=42,vnall=42
+
+  var id_usr=0,id_run=0/10, id_bird=0/10, id_month=0/10, id_month2=0/10, id_month3=0/10
+  for(i=0;i<vn;i++){
+    id_m=M[4*i]
+	img=M[4*i+1]
+	mfio=M[4*i+2]
+	AddStr=M[4*i+3]
+	img2=""
+	imgstr=""
+
+    
+
+	document.write('<tr><td align=left><nobr>'+imgstr+' <font size=2><a href=/index.asp?main=user&id='+id_m+' class=small>'+mfio+'</a></font> '+img2+'</nobr></td></tr>')
+  }
+
+  document.write("<tr><td><font size=1><br>Всего: " + vn + ((vnall>vn)?(" / "+vnall):"") + "</font></td></tr>")
+</script>
+</table></td></tr>
+</td><td></td></tr><tr height=2><td colspan=5></td></tr></table>
+<tr><td>
+
+		<table height=100% width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr height=19>
+		    <td width=1></td>
+            <td width=12 background=/images/l_menu.gif bgcolor="#339933"></td>
+            <td background="/images/s_menu.gif" align=center bgcolor="#88ff88" class=menu_title
+			  			
+			>РЕЙТИНГ</td>
+            <td width=12 background=/images/r_menu.gif bgcolor="#339933"></td>
+		    <td width=1></td>
+          </tr>
+          <tr valign="top" height=100% bgcolor="#f0fff0">
+		    <td></td>
+            <td colspan="3" background=/images/notepad2.gif style="BORDER-BOTTOM: #306E18 1px dashed;  BORDER-left: #306E18 1px dashed;BORDER-right: #306E18 1px dashed; padding: 3px" height=100%><table width="100%"><tr><td><font size=2>1</font></td><td><font size=2><a href=/index.asp?main=user&id=88750>Андрей и.К. </a></font></td><td align=right><font  size=2>41948</font></td></tr><tr><td><font size=2>2</font></td><td><font size=2><a href=/index.asp?main=user&id=158512>Андрей Мисник </a></font></td><td align=right><font  size=2>41948</font></td></tr><tr><td><font size=2>3</font></td><td><font size=2><a href=/index.asp?main=user&id=6922>Зубков О.В. </a></font></td><td align=right><font  size=2>41948</font></td></tr><tr><td><font size=2>4</font></td><td><font size=2><a href=/index.asp?main=user&id=106936>Тер-Саркисов Б.О. </a></font></td><td align=right><font  size=2>41948</font></td></tr><tr><td><font size=2>5</font></td><td><font size=2><a href=/index.asp?main=user&id=5319>Демиденко Виталий </a></font></td><td align=right><font  size=2>41877</font></td></tr><tr><td><font size=2>6</font></td><td><font size=2><a href=/index.asp?main=user&id=35132>Пашментов Н.В. </a></font></td><td align=right><font  size=2>41794</font></td></tr><tr><td><font size=2>7</font></td><td><font size=2><a href=/index.asp?main=user&id=190443>Яндулов Богдан </a></font></td><td align=right><font  size=2>41778</font></td></tr><tr><td><font size=2>8</font></td><td><font size=2><a href=/index.asp?main=user&id=32756>Лукьянчиков В.И. </a></font></td><td align=right><font  size=2>41493</font></td></tr><tr><td><font size=2>9</font></td><td><font size=2><a href=/index.asp?main=user&id=4876>Фолунин В.А. </a></font></td><td align=right><font  size=2>41272</font></td></tr><tr><td><font size=2>10</font></td><td><font size=2><a href=/index.asp?main=user&id=164713>Донный Алексей </a></font></td><td align=right><font  size=2>41223</font></td></tr></table>
+&nbsp;
+<br>
+</td><td></td></tr><tr height=2><td colspan=5></td></tr></table>	
+</td>
+
+</tr></table>
+	  </td>
+	</tr></table>
+	</td></tr>
+	<tr height=8><td colspan=5 background=/images/line.gif></td></tr>
+  </table>
+<center>
+<p style="margin:3">
+  <i>Красноярский краевой Дворец пионеров, (c)2006 - 2022, E-mail: admin&#64;acmp&#46;ru</i>
+</p>
+<br>
+<font style="color: #999999; font-size: 10">
+<!–– google_ad_section_start(weight=ignore) ––>
+
+<br>
+ В <a href="https://vulcanking.work/" target="_blank" class="my">казино на деньги</a> играть тут &nbsp <a href="http://liveinsocial.ru/" target="_blank" class="my">Rox casino</a> &nbsp Скачать на телефон <a href="https://m.anwap.tube/films/c116" target="_blank" class="my">русские фильмы</a> бесплатно в формате mp4 &nbsp Круиз рэдиссон от <a href="https://radisson-flotilia.ru/" target="_blank" class="my">radisson-flotilia.ru</a> с историческими видами на центр столицы. &nbsp Situs login agen judi <a href="https://forums.planetpdf.com/" target="_blank" class="my">sbobet</a>. 
+<script type="text/javascript">
+<!--
+var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="//www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+//-->
+</script>
+
+<!–– google_ad_section_end ––>		  
+</font>
+</center>
+
+<iframe src="/icq/icq_update.asp?noupdate=1" width=100 height=20 marginwidth=0 marginheight=0 frameborder=0 scrolling=no></iframe>
+
+</center>
+
+</body>
+</html>
+

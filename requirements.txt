@@ -1,0 +1,5 @@
+requests
+nltk
+pymorphy2
+bs4
+pymorphy2-dicts-ru

@@ -11,3 +11,11 @@ pip install -r requirements.txt
 ```bash
 python3 task1/main.py
 ```
+
+#### Task 2
+
+##### Run script
+
+```bash
+python3 task2/main.py
+```

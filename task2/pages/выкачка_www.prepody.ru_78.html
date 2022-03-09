@@ -1,0 +1,2251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Образовательный студенческий форум </title>
+<META name="keywords" content="высшая, математика, алгебра, геометрия, форум, решить, задача">
+<META NAME="Robots" content="all">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.prepody.ru/ipb.html?act=rssout&amp;id=1" />
+<link rel="alternate" type="application/rss+xml" title="Календарь: Основной календарь" href="http://www.prepody.ru/ipb.html?act=rssout&amp;type=calendar&amp;id=1" />
+ 
+<style type="text/css">
+	/* 
+ * Cascading Style Sheet(CSS 467), for Invision Power Board 2.1.0
+ * Author: James A. Mathias, admin@leihu.com, http://www.1lotus.com 
+ * Copyright: 2005 Invision Power Services, all rights reserved 
+ *
+ * All style attributes in alpha-numeric order starting from 0
+ *
+ */
+
+/* 
+ * ========================================
+ * global element styles 
+ * ========================================
+ */
+
+html{
+	overflow-x: auto; /* fixes MSIE scrollbar bug DO NOT REMOVE, has no effect in Mozilla, or Opera */
+}
+
+body{ 
+	background: #FFF;
+	color: #222;
+	font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	font-size: 11px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 0px; /* required for Opera to have 0 margin */
+	text-align: center; /* centers board in MSIE */
+}
+
+/* 
+ * ========================================
+ * Set up IPB table
+ * ========================================
+ */
+ 
+.ipbtable { width:100% }
+
+table.ipbtable,
+tr.ipbtable,
+td.ipbtable
+{ /* required for text in tables, because tables do not inherit from body */
+	background: transparent;
+	color: #222;
+	font-size: 11px;
+	line-height: 135%;
+}
+
+.ipbtable td,
+.divpad{ /* gives all tables faux cellpadding of 5px */
+	padding: 5px;
+}
+
+td.nopad{ /* allows some tables to have no padding on the td */
+	padding: 0;
+}
+
+
+
+form{
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */
+	padding: 0; /* removes mystery form tag gapping */
+}
+
+img{
+	border: 0; /* makes sure linked images do not have a border */
+	vertical-align: middle;
+}
+
+/* 
+ * ========================================
+ * global hyperlink styles 
+ * ========================================
+ */
+
+a:link,
+a:visited,
+a:active{
+	background: transparent;
+	color: #222;
+	text-decoration: underline;
+}
+
+a:hover{
+	background: transparent;
+	color: #34498B;
+}
+
+/* 
+ * ========================================
+ * Main wrapper, this controls the overall width of the board in you browser view window. 
+ * ========================================
+ */
+
+#ipbwrapper{ 
+	margin: 20px auto 20px auto; /* centers the box, no matter the overall width, also applies a 20px gap at the top and bottom of the board */
+	text-align: left; /* re_aligns text to left second part of two part MSIE centering workaround */
+	/* EDIT THIS TO CHANGE THE WIDTH OF THE BOARD -> 750px is a common fixed resolution size */
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * styles for pagination links 
+ * ========================================
+ */
+ 
+
+.pagelink,
+.pagelinklast,
+.pagecurrent,
+.minipagelink,
+.minipagelinklast{
+	background: #F0F5FA;
+	border: 1px solid #072A66;
+	padding: 1px 3px 1px 3px;
+}
+
+.pagelinklast,
+.minipagelinklast{
+	background: #DFE6EF;
+}
+
+
+.pagecurrent{
+	background: #FFC9A5;
+}
+
+.minipagelink,
+.minipagelinklast{
+	border: 1px solid #C2CFDF;
+	font-size: 10px;
+	margin: 0 1px 0 0;
+}
+
+.pagelink a:active,
+.pagelink a:visited,
+.pagelink a:link,
+.pagelinklast a:active,
+.pagelinklast a:visited,
+.pagelinklast a:link,
+.pagecurrent a:active,
+.pagecurrent a:visited,
+.pagecurrent a:link,
+.minipagelink a:active,
+.minipagelink a:visited,
+.minipagelink a:link,
+.minipagelinklast a:active,
+.minipagelinklast a:visited,
+.minipagelinklast a:link{
+	text-decoration: none;
+}
+
+/* fake button effect for some links */
+.fauxbutton{
+	background: #BFCDE0;
+	border: 1px solid #072A66;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.fauxbutton a:link,
+.fauxbutton a:visited,
+.fauxbutton a:active{
+	color: #222 !important;
+	text-decoration: none;
+}
+
+.forumdesc,
+.forumdesc a:link,
+.forumdesc a:visited,
+.forumdesc a:active{ 
+	background: transparent;
+	font-size: 10px; 
+	color: #666;
+	line-height: 135%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+.searchlite {
+	background-color:yellow;
+	font-weight:bold;
+	color: red;
+}
+
+.activeusers{
+	background: #FFF;
+	border: 1px solid #072A66;
+	color: #000;
+	margin: 0px;
+	padding: 1px;
+}
+
+.activeuserposting a:link,
+.activeuserposting a:visited,
+.activeuserposting a:active,
+.activeuserposting
+{
+	font-style:italic;
+	text-decoration: none;
+	border-bottom:1px dotted black;
+}
+
+fieldset.search{ 
+	line-height: 150%;
+	padding: 6px; 
+}
+
+label{ 
+	cursor: pointer; 
+}
+
+img.attach{ 
+	background: #808080 url(style_images/1/click2enlarge.gif) no-repeat top right;
+	border: 1px solid #808080;
+	margin: 0 2px 0 0;
+	padding: 11px 2px 2px 2px;
+}
+
+.thumbwrap,
+.thumbwrapp,
+.fullimagewrap{
+	border: 1px solid #072A66;
+	margin: 2px;
+}
+
+.thumbwrapp{
+	border: 2px solid #660707;
+}
+
+.fullimagewrap{
+	background: #F5F9FD;
+	text-align: center;
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+.thumbwrap h4,
+.thumbwrapp h4{	
+	background: #DDE6F2;
+	border: 0 !important;
+	border-bottom: 1px solid #5176B5 !important;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.thumbwrap p,
+.thumbwrapp p{
+	background: #EEF2F7 !important;
+	border: 0 !important;
+	border-top: 1px solid #5176B5 !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrap p.alt,
+.thumbwrapp p.alt{
+	background: #DFE6EF !important;
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: left;
+}
+
+.thumbwrapp p.pin{
+	background: #EFDFDF !important;
+	text-align: center !important;
+}
+	
+.thumbwrap img.galattach,
+.thumbwrapp img.galattach{
+	background: #FFF url(style_images/1/img_larger.gif) no-repeat bottom right;
+	border: 1px solid #072A66;
+	margin: 5px;
+	padding: 2px 2px 10px 2px;
+}
+
+li.helprow{ 
+	margin: 0 0 10px 0;
+	padding: 0; 
+}
+
+ul#help{ 
+	padding: 0 0 0 15px; 
+}
+
+.warngood,
+.warnbad{ 
+	color: #0B9500;
+	font-weight: bold;
+}
+
+.warnbad{ 
+	color: #DD0000;
+}
+
+#padandcenter{ 
+	margin: 0 auto 0 auto;
+	padding: 14px 0 14px 0;
+	text-align: center;
+}
+
+#profilename{ 
+	font-size: 28px; 
+	font-weight: bold; 
+}
+
+#photowrap{ 
+	padding: 6px; 
+}
+
+#phototitle{ 
+	border-bottom: 1px solid #000; 
+	font-size: 24px; 
+}
+
+#photoimg{ 
+	margin: 15px 0 0 0;
+	text-align: center; 
+} 
+
+#ucpmenu,
+#ucpcontent{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+	line-height: 150%;
+}
+
+#ucpmenu p{ 
+	margin: 0; 
+	padding: 2px 5px 6px 9px;
+}
+
+#ucpmenu a:link, 
+#ucpmenu a:active, 
+#ucpmenu a:visited{ 
+	text-decoration: none; 
+}
+
+#ucpcontent{ 
+	width: auto;
+}
+
+#ucpcontent p{ 
+	margin: 0;
+	padding: 10px;
+}
+
+.activeuserstrip{ 
+	background: #BCD0ED;
+	padding: 6px;
+}
+
+/* Topic View elements */
+.signature{  
+	background: transparent;
+	color: #339; 
+	font-size: 10px;
+	line-height: 150%;
+}
+
+.postdetails{ 
+	font-size: 10px;
+	line-height:140%;
+}
+
+.postcolor{ 
+	font-size: 12px; 
+	line-height: 160%;
+}
+
+.normalname{ 
+	color: #003;
+	font-size: 12px; 
+	font-weight: bold; 
+}
+
+.normalname a:link, 
+.normalname a:visited, 
+.normalname a:active{ 
+	font-size: 12px;
+}
+
+.post1,
+.bg1{ 
+	background: #F5F9FD;
+}
+
+.post2,
+.bg3{ 
+	background: #EEF2F7;
+}
+
+.row2shaded,
+.post1shaded { background-color: #DEDBE4 }
+.row4shaded,
+.post2shaded { background-color: #E3DFE7 }
+
+.row1{ 
+	background: #DFE6EF; 
+}
+
+.row2{ 
+	background: #E4EAF2; 
+}
+
+.darkrow1{ 
+	background: #BCD0ED;
+	color: #3A4F6C; 
+}
+
+.darkrow3{ 
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+/* tableborders gives the white column / row lines effect */
+.plainborder,
+.tablefill,
+.tablepad{ 
+	background: #F5F9FD;
+	border: 1px solid #345487;
+}
+
+.tablefill,
+.tablepad{ 
+	padding: 6px;  
+}
+
+.tablepad{ 
+	border: 0 !important;
+}
+
+.wrapmini{ 
+	float: left;
+	line-height: 1.5em;
+	width: 30%;
+}
+
+.pagelinks{
+	float: left;
+	line-height: 1.2em;
+	width: 35%;
+}
+
+.desc{ 
+	font-size: 11px; 
+	color: #434951;
+}
+
+.lastaction
+{
+	font-size: 10px; 
+	color: #434951;
+}
+
+.edit{ 
+	font-size: 9px;
+}
+
+.thin{ 
+	border: 1px solid #FFF;
+	border-left: 0;
+	border-right: 0;
+	line-height: 150%;
+	margin: 2px 0 2px 0;
+	padding: 6px 0 6px 0;
+}
+
+/* =================================================================================== */
+/* =================================================================================== */
+/* =================================================================================== */
+
+/* 
+ * ========================================
+ * calendar styles 
+ * ========================================
+ */
+	
+.calmonths{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	font-size: 18px; 
+	font-weight: bold; 
+	margin: 5px 0 5px 0;
+	padding: 8px;
+	text-align: center;
+}
+
+.weekday{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.calmonths a{
+	text-decoration: none;
+}
+
+.calday,
+.calweekday{ 
+	background: #DFE6EF;
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0;
+	padding: 4px;
+	text-align: right;
+}
+
+.calweekday{
+	border-right: 1px solid #AAA;
+	color: #222;
+	font-size: 14px;
+	padding: 6px;
+	text-align: center;
+}
+
+.celltodayshaded,
+.celldateshaded,
+.cellblank,
+.celldate,
+.celltoday,
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	background: #EEF2F7; 
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.celltodayshaded,
+.celldateshaded
+{
+	background: #E3DFE7;
+}
+
+.mcellblank,
+.mcelldate,
+.mcelltoday{
+	height: auto;
+}
+
+.cellblank,
+.mcellblank{
+	background: #C2CFDF;
+}
+
+.celltoday,
+.celltodayshaded,
+.mcelltoday{
+	border: 2px solid #8B0000;
+}
+
+.calranged
+{
+	border: 2px outset #C2CFDF;
+	background: #C2CFDF;
+	padding:4px;
+}
+
+.calitem
+{
+	border-bottom: 1px dotted #C2CFDF;
+	padding:4px;
+}
+
+/* 
+ * ========================================
+ * form styles 
+ * ========================================
+ */
+
+.input-warn,
+.input-green,
+input,
+textarea,
+select{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	margin: 5px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.input-warn,
+.input-warn-content
+{
+	border: 1px solid #C00;
+}
+
+.input-ok,
+.input-ok-content
+{
+	border: 1px solid #0C0;
+}
+
+.input-warn-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #FCC;
+}
+
+.input-ok-content
+{
+	padding: 4px;
+	margin: 4px;
+	background-color: #CFC;
+}
+
+
+.input-text
+{
+	color: #900;
+}
+
+select{
+	border: 0;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+input.button{
+	margin: 0;
+	width: auto;
+}
+
+optgroup option{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.codebuttons{ 
+	font-family: Verdana, Helvetica, Sans-Serif; 
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+}
+
+.textarea,
+.searchinput,
+.button,
+.gobutton{
+	background: #FFF;
+	border: 1px solid #4C77B6;
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+}
+	
+.button{
+	background: #DFE6EF;
+}
+
+.gobutton{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.radiobutton,
+.checkbox,
+.helpbox { 
+	border: 0;
+	vertical-align: middle;
+}
+
+/* 
+ * class.formtable 
+ *
+ * used for tabled forms 
+ * technically tables should not be used for form display 
+ * but, in the case of IPB a table is easier to work with
+ * for the average webmaster, who has little to no CSS knowledge.
+ *
+ */
+
+.formtable{
+	background: transparent;
+}
+
+.formtable td,
+.pformleft,
+.pformleftw,
+.pformright{
+	background:#F5F9FD;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	border-left: 0;
+	font-weight: bold;
+	margin: 1px 0 0 0;
+	padding: 6px;
+	width: 25%;
+} 
+
+.formtable td.wider,
+.pformleftw,
+.pformright{
+	width: 40%;
+}
+
+.formtable td.formright,
+.pformright{
+	border-right: 0px;
+	font-weight: normal;
+	width: auto;
+} 
+
+.formtable td.formtitle,
+.formsubtitle{
+	background: #D1DCEB;
+	border: 1px solid #9FB9D4; 
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+.formsubtitle{ 
+	border: 0;
+	color: #3A4F6C;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.formtable td.formstrip{
+	background: #DDE8F2;
+	border: 1px solid #9FB9D4;
+	border-left: 0;
+	border-right: 0;
+	font-weight: normal;
+}
+
+/* 
+ * ========================================
+ * new style quote and code wrappers MATT's DESIGN 
+ * ========================================
+ */
+
+.quotetop{
+	background: #E4EAF2 url(style_images/1/css_img_quote.gif) no-repeat right;
+	border: 1px dotted #000;
+	border-bottom: 0;
+	border-left: 4px solid #8394B2;
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+
+.quotemain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	border-left: 4px solid #8394B2;
+	border-top: 0;
+	color: #465584;
+	padding: 4px;
+	margin: 0 auto 8px auto;
+}
+
+.codetop,
+.sqltop,
+.htmltop{
+	background: #FDDBCC url(style_images/1/css_img_code.gif) no-repeat right;
+	color: #000;
+	font-weight: bold;
+	margin: 0 auto 0 auto;
+	padding: 3px;
+	width: 98%;
+}
+
+.codemain,
+.sqlmain,
+.htmlmain{
+	background: #FAFCFE;
+	border: 1px dotted #000;
+	color: #465584;
+	font-family: Courier, Courier New, Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	width: 98%;
+}
+
+/* 
+ * ========================================
+ * old school quote and code styles - backwards compatibility 
+ * ========================================
+ */
+
+#QUOTE,
+#CODE{  
+	background: #FAFCFE; 
+	border: 1px solid #000; 
+	color: #465584; 
+	font-family: Verdana, Arial; 
+	font-size: 11px; 
+	padding: 2px; 
+	white-space: normal;
+}
+
+#CODE{ 
+	font-family: Courier, Courier New, Verdana, Arial;
+}
+
+/* 
+ * ========================================
+ * All New Styles 
+ * ========================================
+ */
+.cleared{
+	clear: both;
+}
+
+.borderwrap,
+.borderwrapm{ /* this will affect the outlining border of all the tables and boxes through-out the skin. */
+	background: #FFF; 
+	border: 1px solid #072A66;
+	padding: 0px; 
+	margin: 0px; 
+}
+
+.borderwrapm{
+	margin: 5px;
+}
+
+.borderwrap h3,
+.maintitle,
+.maintitlecollapse{
+	background: url(style_images/1/tile_cat.gif);
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0px;
+	padding: 8px;
+}
+
+.maintitle td {
+	color: #FFF; 
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.maintitlecollapse{
+	border: 1px solid #FFF;
+}
+
+.maintitle p,
+.maintitlecollapse p,
+.formsubtitle p{
+	background: transparent !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.maintitle p.expand,
+.maintitle p.goto,
+.maintitlecollapse p.expand,
+.formsubtitle p.members{
+	float: right;
+	width: auto !important;
+}
+
+.maintitle a:link, 
+.maintitle a:visited,
+.maintitlecollapse a:link, 
+.maintitlecollapse a:visited{ 
+	background: transparent;
+	color: #FFF;
+	text-decoration: none; 
+}
+
+.maintitle a:hover, 
+.maintitle a:active,
+.maintitlecollapse a:hover, 
+.maintitlecollapse a:active{ 
+	background: transparent;
+	color: #F1F1F1;
+}
+
+table th,
+.borderwrap table th,
+.subtitle,
+.subtitlediv,
+.postlinksbar{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+
+.subtitlediv{
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	text-align: right;
+}
+
+.borderwrap table th a:link,
+.subtitle a:link,
+.subtitlediv a:link,
+.borderwrap table th a:visited,
+.subtitle a:visited, 
+.subtitlediv a:visited, 
+.borderwrap table th a:active,
+.subtitle a:active,
+.subtitlediv a:active,
+.borderwrap table th a:hover,
+.subtitle a:hover,
+.subtitlediv a:hover{ 
+	background: transparent;
+	color: #3A4F6C;
+	text-decoration: none; 
+}
+
+.borderwrap h4{
+	background: #DDE6F2;
+	border: 1px solid #FFF;
+	border-bottom: 1px solid #5176B5;
+	border-top: 1px solid #5176B5;
+	color: #5176B5; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.borderwrap p{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	margin: 5px;
+	padding: 10px;
+	text-align: left;
+}
+
+td.formbuttonrow,
+.borderwrap p.formbuttonrow,
+.borderwrap p.formbuttonrow1{
+	background: #D1DCEB !important; 
+	border: 1px solid #FFF;
+	border-top: 1px solid #5176B5;
+	margin: 0px !important;
+	padding: 5px !important;
+	text-align: center;
+}
+
+td.formbuttonrow{
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+.borderwrap p.formbuttonrow1{
+	background: #F9F9F9 !important;
+	border: 0;
+	border-top: 1px solid #CCC;
+}
+
+.bar,
+.barb,
+.barc{
+	background: #DFE6EF;
+	border: 1px solid #FFF;
+}
+
+.barc{
+	border-bottom: 0;
+}
+
+.bar p,
+.barb p,
+.barc p{
+	background: transparent;
+	border: 0;
+	color: #222;
+	font-size: 11px;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+}
+
+.barb p{
+	text-align: right;
+}
+
+.bar p.over,
+.bar p.overs,
+.barc p.over,
+.barc p.overs{
+	float: right;
+}
+
+.barb p.over,
+.barb p.overs{
+	float: left;
+}
+
+.bar p.overs,
+.barb p.overs,
+.barc p.overs{
+	position: relative;
+	top: 5px;
+}
+
+.catend{
+	background: #8394B2;
+	color: #000;
+	font-size: 1px;
+	height: 5px;
+}
+
+.newslink{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 0;
+	width: 100%;
+}
+
+.newslink td{
+	color: #222;
+	font-size: 10px;
+	padding: 5px 5px 5px 10px;
+}
+
+.newslink span{
+	background: transparent;
+	color: #072A66;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.newslink input{
+	background: #FFF;
+	border: 1px solid #999;
+	color: #072A66;
+	font-size: 10px;
+	padding: 3px;
+	vertical-align: middle;
+	width: auto;
+}
+
+.newslink input.button{
+	background: transparent;
+	border: 0;
+	color: #072A66;
+	vertical-align: middle;
+}
+
+.fieldwrap{
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+	text-align: left;
+}
+
+.fieldwrap h4{
+	background: #EEE;
+	border: 1px solid #CCC;
+	border-left: 0;
+	border-right: 0;
+	color: #444; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap {
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	border-top: 0;
+	margin: 5px;
+	padding: 0;
+}
+
+
+.errorwrap h4 {
+	background: #E3C0C0;
+	border: 1px solid #992A2A;
+	border-left: 0;
+	border-right: 0;
+	color: #992A2A; 
+	font-size: 12px;
+	font-weight: bold; 
+	margin: 0;
+	padding: 5px;
+}
+
+.errorwrap p {
+	background: transparent;
+	border: 0;
+	color: #992A2A;
+	margin: 0;
+	padding: 8px;
+}
+
+
+.ruleswrap{
+	background: #F2DDDD;
+	border: 1px solid #992A2A;
+	color: #992A2A; 
+	margin: 5px 0 5px 0;
+	padding: 5px;
+}
+
+#redirectwrap{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 200px auto 0 auto;
+	text-align: left;
+	width: 500px;
+}
+
+#redirectwrap h4{
+	background: #D0DDEA;
+	border-bottom: 1px solid #C2CFDF;
+	color: #3A4F6C;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p{
+	margin: 0;
+	padding: 5px;
+}
+
+#redirectwrap p.redirectfoot{
+	background: #E3EBF4;
+	border-top: 1px solid #C2CFDF;
+	text-align: center;
+}
+
+
+#gfooter{
+	background: #8394B2;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
+#gfooter td{
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+
+#gfooter a:link,
+#gfooter a:visited{
+	color: #FFF;
+}
+
+#logostrip{ 
+	background: #3860BB url(style_images/1/tile_back.gif);
+	border: 1px solid #FFF;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#logographic{
+	background: transparent url(style_images/1/logo4.gif) no-repeat left;
+	height: 68px;
+	margin: 0;
+	padding: 0;
+}
+
+#submenu{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border: 1px solid #FFF;
+	border-top: 0;
+	color: #3A4F6C; 
+	margin: 0; 
+}
+
+#userlinks,
+#userlinksguest{ 
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	margin: 5px 0 5px 0;
+	padding: 0 5px 0 5px;
+}
+
+#userlinksguest{ 
+	background: #F4E7EA;
+	border: 1px solid #986265;
+}
+
+#submenu p,
+#userlinks p,
+#userlinksguest p{
+	background: transparent !important;
+	border: 0 !important;
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0 !important;
+	padding: 7px 0 7px 0; 
+	text-align: right;
+}
+
+#userlinks p,
+#userlinksguest p{
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+#submenu p.home,
+#userlinks p.home,
+#userlinksguest p.home{
+	float: left;
+}
+
+#userlinksguest p.pcen{
+	text-align: center;
+}
+
+#submenu a:link, 
+#submenu  a:visited{ 
+	background: transparent; 
+	color: #3A4F6C; 
+	padding: 0 6px 0 6px;
+	text-decoration: none;
+}
+
+#submenu a:hover, 
+#submenu a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+#navstrip{ 
+	background: transparent;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 14px 0px 8px 0px; 
+}
+
+#navstrip a:link, 
+#navstrip  a:visited{ 
+	background: transparent; 
+	color: #222; 
+	text-decoration: none;
+}
+
+#navstrip a:hover, 
+#navstrip a:active{
+	background: transparent; 
+	color: #5176B5; 
+}
+
+.toplinks{
+	background: transparent;
+	color: #000;
+	margin: 0;
+	padding: 0 0 5px 0;
+	text-align: right;
+}
+
+.toplinks span{
+	background: #F0F5FA;
+	border: 1px solid #C2CFDF;
+	border-bottom: 0;
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.copyright{ 
+	background: #EEE;
+	font-size: 11px; 
+	margin: 0 0 5px 0;
+	padding: 8px;
+}
+
+/* 
+ * ========================================
+ * print page styles 
+ * ========================================
+ */
+
+#print{
+	margin: 20px auto 20px auto;
+	padding: 0;
+	text-align: left;
+	width: 85%;
+}
+
+#print h1,
+#print h2,
+#print h3,
+#print h4,
+#print p{
+	color: #036;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 8px;
+}
+
+#print h2,
+#print h3,
+#print p{
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#print h3{
+	background: #F5F5F5;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+#print h4{
+	background: #F9F9F9;
+	font-size: 11px;
+}
+
+#print p{
+	margin: 0 0 5px 0;
+	padding: 10px;
+}
+
+#print p.printcopy{
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+
+/* ============================================================== */
+/* RTE STYLES
+/* ============================================================== */
+
+.rteimage {
+	/*background: #D3D3D3;*/
+	/*border: 1px outset transparent*/;
+	cursor: pointer;
+	cursor: hand;
+	padding:1px;
+}
+
+.rteImageRaised {
+	/*background: #D3D3D3;*/
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteImageLowered {
+	/*background: #D3D3D3;*/
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	padding:0px;
+}
+
+.rteimage:hover {
+	background: #EBEBEB;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.rteVertSep {
+	margin: 0 4px 0 4px;
+}
+
+.rteBack {
+	background: #D3D3D3;
+	border: 1px outset;
+	letter-spacing: 0;
+	padding: 2px;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombutton
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #EBEBEB;
+}
+
+/* used in ips_rte.js - do not remove */
+.rtebottombuttonon
+{
+	font-size:10px;
+	border:1px solid #777;
+	border-top:0px;
+	padding:3px;
+	margin:0px;
+	background-color: #D3D3D3;
+}
+
+.rtebuttonbar1 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-bottom:0px;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar2 {
+	/*background: #D3D3D3;*/
+	background-image: url(style_images/1/folder_rte_images/rte_tile.gif);
+	border: 1px solid gray;
+	border-top:1px solid gray;
+	letter-spacing: 0;
+	padding: 2px;
+	height:26px;
+}
+
+.rtebuttonbar1 tbody tr td,
+.rtebuttonbar1 tr td,
+.rtebuttonbar2 tbody tr td,
+.rtebuttonbar2 tr td,
+.rteBack tbody tr td,
+.rteBack tr td
+{
+	/*background: #D3D3D3;*/
+	padding: 0;
+}
+
+.rteDiv {
+	display: block;
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+
+.rteiframe
+{
+	border:1px solid #777;
+	background-color:#FFF;
+}
+
+.rteselectbox
+{
+	font-size:11px;
+}
+
+
+.dny-edit-title
+{
+	border:0px;
+	padding:3px;
+	margin:0px;
+	background: #D1DCEB; 
+	color: #3A4F6C; 
+}
+
+
+/* ======================================== */
+/* TABS
+/* ======================================== */
+
+.tabon
+{
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	background-color:#FFF;
+	padding:8px;
+	padding-bottom:9px;
+	font-size:10px;
+	float:left;
+	width:auto;
+	margin-top:3px;
+}
+
+.taboff
+{
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background-color: #B5C3D9;
+	color: #333;
+	padding: 8px;
+	font-size:10px;
+	float: left;
+	width: auto;
+	margin-top:3px;
+}
+
+.tabon a:link, 
+.tabon a:visited, 
+.tabon a:active
+{
+	text-decoration:none;
+	color: #000;
+}
+
+.taboff a:link, 
+.taboff a:visited, 
+.taboff a:active
+{
+	text-decoration:none;
+	color: #333;
+}
+
+.mya-back
+{
+	background: #072A66;
+	margin:1px;
+}
+
+.mya-content
+{
+	background: #FFF;
+	padding:8px;
+	margin:1px;
+	border: 1px solid #777;
+}
+
+/* -------------------------------- */
+/* Create PM box defaults           */
+/* -------------------------------- */
+
+.iframeshim
+{
+	position:absolute;
+	display:none;
+	background: #FFF;
+	filter:alpha(opacity=0);
+	border:0px;
+	width:auto;
+	height:auto;
+}
+
+
+
+/* -------------------------------- */
+/* Experimental                     */
+/* -------------------------------- */
+
+.popupmenu
+{
+   background: #F0F5FA;
+   border: 1px solid #3A4F6C;
+   text-align:left;
+   font-size:10px;
+   white-space:nowrap;
+   /*padding:3px 5px 3px 3px;*/
+   /*width:300px;*/
+}
+
+.popupmenu-item
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+	border-bottom: 1px solid #C2CFDF;
+}
+
+.popupmenu-item-last
+{
+	padding: 5px;
+	/*margin-top:4px;*/
+	white-space: nowrap;
+}
+
+.popmenubutton
+{
+	width:120px;
+	white-space:nowrap;
+	background-color: #C2CFDF;
+	border:1px solid #3A4F6C;
+	color: #3A4F6C;
+	font-weight:bold;
+	float:right;
+	height:18px;
+	text-align:center;
+	margin:0px;
+	font-size:11px;
+	padding:3px;
+}
+
+
+.popmenubutton a:link, 
+.popmenubutton a:visited,
+.popupmenu-item a:link, 
+.popupmenu-item a:visited,
+.popupmenu-item-last a:link, 
+.popupmenu-item-last a:visited
+{ 
+	color: #3A4F6C; 
+	text-decoration: none;
+}
+
+.popmenubutton a:hover, 
+.popupmenu-item a:hover, 
+.popupmenu-item-last a:hover
+{ 
+	color: #5176B5; 
+	text-decoration: none;
+}
+
+.popupmenu-category
+{ 
+	background: transparent url(style_images/1/tile_sub.gif);
+	border-top: 1px solid #5176B5;
+	border-bottom: 1px solid #5176B5;
+	color: #3A4F6C; 
+	font-size: 10px;
+	font-weight: bold; 
+	letter-spacing: 1px;
+	margin: 0; 
+	padding: 5px; 
+}
+</style> 
+ 
+</head> 
+<body>
+<div id="ipbwrapper">
+<!--ipb.javascript.start-->
+<script type="text/javascript">
+ //<![CDATA[
+ var ipb_var_st            = "";
+ var ipb_lang_tpl_q1       = "Введите номер страницы, на которую хотите перейти.";
+ var ipb_var_s             = "7b124c98e9d3a96023fd051ca933a142";
+ var ipb_var_phpext        = "php";
+ var ipb_var_base_url      = "http://www.prepody.ru/index.html?";
+ var ipb_var_image_url     = "style_images/1";
+ var ipb_input_f           = "";
+ var ipb_input_t           = "";
+ var ipb_input_p           = "";
+ var ipb_var_cookieid      = "";
+ var ipb_var_cookie_domain = "";
+ var ipb_var_cookie_path   = "/";
+ var ipb_md5_check         = "880ea6a14ea49e853634fbdc5015a024";
+ var ipb_new_msgs          = 0;
+ var use_enhanced_js       = 0;
+ var use_charset       = "windows-1251";
+var ipb_myass_chars_lang = "Вы ввели слишком мало символов для поиска";
+ //]]>
+</script>
+<script type="text/javascript" src='jscripts/ipb_global.js'></script>
+<script type="text/javascript" src='jscripts/ips_menu.js'></script>
+<script type="text/javascript" src='style_images/1/folder_js_skin/ips_menu_html.js'></script>
+<!--ipb.javascript.end-->
+<div class="borderwrap">
+	<div id="logostrip"><a href='http://www.prepody.ru/index.html?'><!--ipb.logo.start--><img src='style_images/1/logo4.gif' style='vertical-align:top' alt='IPB' border='0' /><!--ipb.logo.end--></a></div>
+	<div id="submenu">
+		<p class="home"><!--ipb.leftlinks.start--><a href="http://www.reshebnik.ru">Решебник.Ру</a>&nbsp;<a href="http://www.prepody.ru/ipb.html?act=boardrules">Правила форума</a><!--ipb.leftlinks.end--></p>
+		<p><!--ipb.rightlinks.start-->	<a href="http://www.prepody.ru/ipb.html?act=Help">Помощь</a><a href="http://www.prepody.ru/ipb.html?act=Search&amp;f=">Поиск</a><a href="http://www.prepody.ru/ipb.html?act=Members">Пользователи</a><a href="http://www.prepody.ru/ipb.html?act=calendar">Календарь</a>
+		<!--ipb.rightlinks.end--></p>
+	</div>
+</div><!-- / End board header -->
+<div id="userlinksguest">
+	<p class="pcen"><b>Здравствуйте, гость</b> ( <a href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=00">Вход</a> | <a href="http://www.prepody.ru/ipb.html?act=Reg&amp;CODE=00">Регистрация</a> )	</p>
+</div>
+<div id="navstrip"><img src='style_images/1/nav.gif' border='0'  alt='&gt;' />&nbsp;<a href='http://www.prepody.ru/main.html'>Образовательный студенческий форум</a></div>
+<!--IBF.NEWPMBOX-->
+<script type="text/javascript">
+//<![CDATA[
+// Set up img vars
+var img_markers = {
+	'bc_new.gif' : 'bc_nonew.gif',
+	'bf_new.gif' : 'bf_nonew.gif',
+	'br_new.gif' : 'br_nonew.gif'
+};
+var regex_markers = 'bc_new.gif|bf_new.gif|br_new.gif';
+//]]>
+</script>
+<script type="text/javascript" src="jscripts/ipb_board.js"></script>
+<table cellspacing="0" class="newslink">
+	<tr>
+		<td><b>С возвращением, последний раз вы были здесь : <span>Сегодня, 16:42</span></b><!-- IBF.NEWSLINK --></td>
+		<td align="right" valign="middle"><form action="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=01&amp;CookieDate=1" method="post">
+				<input type="text" size="20" name="UserName" onfocus="this.value=''" value="Имя пользователя" />
+				<input type="password" size="20" name="PassWord" onfocus="this.value=''" value="ibfrules" />
+				<input class="button" type="image" src="style_images/1/login-button.gif" />
+			</form>		</td>
+	</tr>
+</table>
+<br /><div class="borderwrap" style="display:none" id="fc_1">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(1, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum1.html">Высшая математика</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_1">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(1, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum1.html">Высшая математика</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-3' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=3&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum3.html">Векторный анализ</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">92</td>
+			<td align="center" class="row1">426</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17657.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>11.2.2022, 11:48<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17657.html?view=getnewpost' title='К первому непрочитанному сообщению: uhbC34444'>uhbC34444</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user15736.html'>uhbC34444</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-4' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=4&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum4.html">Графики (исследование функций)</a></b><br /><span class="forumdesc"><a href="http://reshebnik.ru/solutions/3/" target=_blank>Принципы и образцы решений</a><br /><i></i></span></td>
+			<td align="center" class="row1">509</td>
+			<td align="center" class="row1">2 817</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17354.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>11.10.2021, 15:26<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17354.html?view=getnewpost' title='К первому непрочитанному сообщению: Высшая математика'>Высшая математика</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14985.html'>Protutor</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-5' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=5&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum5.html">Дифференциальные уравнения</a></b><br /><span class="forumdesc"><a href="http://reshebnik.ru/solutions/5/" target=_blank>Принципы и образцы решений</a><br /><i></i></span></td>
+			<td align="center" class="row1">911</td>
+			<td align="center" class="row1">5 363</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17136.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>22.6.2020, 12:15<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17136.html?view=getnewpost' title='К первому непрочитанному сообщению: Метод Линдштедта-Пуанкаре'>Метод Линдштедта-Пуанкаре</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14761.html'>ClassicStud</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-6' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=6&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum6.html">Дифференцирование (производные)</a></b><br /><span class="forumdesc"><a href="http://reshebnik.ru/solutions/2/" target=_blank>Принципы и образцы решений</a><br /><i></i></span></td>
+			<td align="center" class="row1">774</td>
+			<td align="center" class="row1">4 094</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17095.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>31.12.2019, 5:28<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17095.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите срочно, производные n-го порядка'>Помогите срочно, производны...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14169.html'>Андрей Гордиенко</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-7' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=7&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum7.html">Интегралы</a></b><br /><span class="forumdesc"><a href="http://reshebnik.ru/solutions/4/" target=_blank>Принципы и образцы решений</a><br /><i></i></span></td>
+			<td align="center" class="row1">1 459</td>
+			<td align="center" class="row1">7 993</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17510.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>8.5.2021, 6:15<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17510.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите вычислить тройной интеграл'>Помогите вычислить тройной ...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14911.html'>Елизалек</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-8' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=8&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum8.html">Линейная алгебра и аналитическая геометрия</a></b><br /><span class="forumdesc"><a href="http://reshebnik.ru/solutions/10/" target=_blank>Принципы и образцы решений по  линейной алгебре</a><br><a href="http://reshebnik.ru/solutions/9/" target=_blank>Принципы и образцы решений по аналитической геометрии</a><br /><i></i></span></td>
+			<td align="center" class="row1">1 098</td>
+			<td align="center" class="row1">6 649</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic15317.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>9.8.2021, 18:23<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic15317.html?view=getnewpost' title='К первому непрочитанному сообщению: составить каноническое уравнение эллипса'>составить каноническое урав...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user946.html'>Вальдемар</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-9' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=9&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum9.html">Пределы</a></b><br /><span class="forumdesc"><a href="http://reshebnik.ru/solutions/1/" target=_blank>Принципы и образцы решений</a><br /><i></i></span></td>
+			<td align="center" class="row1">828</td>
+			<td align="center" class="row1">4 885</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17093.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>24.12.2019, 5:33<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17093.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите решить'>Помогите решить</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14169.html'>Андрей Гордиенко</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-10' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=10&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum10.html">Ряды</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">745</td>
+			<td align="center" class="row1">3 804</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17533.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>19.7.2021, 8:38<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17533.html?view=getnewpost' title='К первому непрочитанному сообщению: Возникли трудности с заданием'>Возникли трудности с заданием</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14958.html'>Barton2012</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-11' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=11&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum11.html">Теория вероятностей</a></b><br /><span class="forumdesc"><br /><i>Модераторы:  <a href='http://www.prepody.ru/user23.html'>Ботаник</a></i></span></td>
+			<td align="center" class="row1">1 967</td>
+			<td align="center" class="row1">11 395</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17574.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>6.10.2021, 7:13<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17574.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите с решением задачи'>Помогите с решением задачи</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14981.html'>adelina95</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-12' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=12&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum12.html">ТФКП и операционное исчисление</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">262</td>
+			<td align="center" class="row1">1 246</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic16096.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>27.10.2019, 20:02<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic16096.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите решить'>Помогите решить</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14661.html'>risotto16271</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-13' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=13&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum13.html">Уравнения мат. физики</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">44</td>
+			<td align="center" class="row1">168</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic15977.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>8.10.2019, 18:35<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic15977.html?view=getnewpost' title='К первому непрочитанному сообщению: Присоединенные функции Лежандра'>Присоединенные функции Лежа...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14661.html'>risotto16271</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-14' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=14&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum14.html">Разное</a></b><br /><span class="forumdesc">здесь задаются вопросы из разделов высшей математики, которые не представлены выше отдельными ветками Форума.<br /><i></i></span></td>
+			<td align="center" class="row1">506</td>
+			<td align="center" class="row1">2 252</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17126.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>8.6.2020, 19:37<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17126.html?view=getnewpost' title='К первому непрочитанному сообщению: Определенный интеграл'>Определенный интеграл</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14753.html'>SS-Borshevsky258</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-42' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=42&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum42.html">Платное решение задач</a></b><br /><span class="forumdesc">Здесь можно оставить заявку на платное решение задач<br /><i></i></span></td>
+			<td align="center" class="row1">130</td>
+			<td align="center" class="row1">321</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic16745.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>18.11.2018, 3:55<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic16745.html?view=getnewpost' title='К первому непрочитанному сообщению: Линейная интерполяция'>Линейная интерполяция</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14566.html'>MiMax</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><div class="borderwrap" style="display:none" id="fc_15">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(15, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum15.html">Физика</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_15">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(15, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum15.html">Физика</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-16' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=16&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum16.html">Механика</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">293</td>
+			<td align="center" class="row1">853</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17151.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>14.9.2020, 16:04<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17151.html?view=getnewpost' title='К первому непрочитанному сообщению: Теория вероятностей'>Теория вероятностей</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14781.html'>Bobik322</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-17' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=17&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum17.html">Молекулярная физика и термодинамика</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">161</td>
+			<td align="center" class="row1">309</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic16706.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>26.1.2016, 17:54<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic16706.html?view=getnewpost' title='К первому непрочитанному сообщению: Вопрос жизни и смерти&#33;('>Вопрос жизни и смерти!(</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user13996.html'>nikita142</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-18' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=18&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum18.html">Электричество</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">201</td>
+			<td align="center" class="row1">987</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic16987.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>2.4.2018, 13:45<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic16987.html?view=getnewpost' title='К первому непрочитанному сообщению: Метод эквивалентного генератора'>Метод эквивалентного генера...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14484.html'>Marylin</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-19' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=19&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum19.html">Магнетизм</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">41</td>
+			<td align="center" class="row1">78</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17077.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>29.7.2019, 11:31<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17077.html?view=getnewpost' title='К первому непрочитанному сообщению: Физика магнита.'>Физика магнита.</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14654.html'>StanislavDoljenko</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-20' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=20&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum20.html">Оптика</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">65</td>
+			<td align="center" class="row1">80</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic8404.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>13.3.2016, 19:39<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic8404.html?view=getnewpost' title='К первому непрочитанному сообщению: Дифракционная решетка'>Дифракционная решетка</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14.html'>venja</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-21' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=21&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum21.html">Атомная и ядерная физика</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">51</td>
+			<td align="center" class="row1">82</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17042.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>25.11.2018, 8:13<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17042.html?view=getnewpost' title='К первому непрочитанному сообщению: помогите решить задачу на реактивность'>помогите решить задачу на р...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14573.html'>arata</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-22' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=22&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum22.html">Разное</a></b><br /><span class="forumdesc">Не вошедшее в вышеперечисленные разделы. Здесь можно также оставить заявку на платное решение.<br /><i></i></span></td>
+			<td align="center" class="row1">121</td>
+			<td align="center" class="row1">353</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17096.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>25.1.2020, 9:22<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17096.html?view=getnewpost' title='К первому непрочитанному сообщению: Самодельные подъемно-складные ворота'>Самодельные подъемно-складн...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14699.html'>Morro</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><div class="borderwrap" style="display:none" id="fc_36">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(36, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum36.html">Теоретическая механика</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_36">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(36, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum36.html">Теоретическая механика</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-37' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=37&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum37.html">Статика</a></b><br /><span class="forumdesc"><br /><i>Модераторы:  <a href='http://www.prepody.ru/user1835.html'>Вячеслав Анатольевич</a></i></span></td>
+			<td align="center" class="row1">129</td>
+			<td align="center" class="row1">228</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17485.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>26.3.2021, 11:12<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17485.html?view=getnewpost' title='К первому непрочитанному сообщению: Теоретическая механика'>Теоретическая механика</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14877.html'>Maksim264</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-38' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=38&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum38.html">Кинематика</a></b><br /><span class="forumdesc"><br /><i>Модераторы:  <a href='http://www.prepody.ru/user1835.html'>Вячеслав Анатольевич</a></i></span></td>
+			<td align="center" class="row1">87</td>
+			<td align="center" class="row1">176</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17532.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>18.7.2021, 17:37<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17532.html?view=getnewpost' title='К первому непрочитанному сообщению: ПРЕЦЕССИЯ волчков и ПРЕЦЕССИЯ обкатки зубчатых колёс'>ПРЕЦЕССИЯ волчков и ПРЕЦЕСС...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14956.html'>ВМБ</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-39' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=39&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum39.html">Динамика</a></b><br /><span class="forumdesc"><br /><i>Модераторы:  <a href='http://www.prepody.ru/user1835.html'>Вячеслав Анатольевич</a></i></span></td>
+			<td align="center" class="row1">43</td>
+			<td align="center" class="row1">37</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17027.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>27.10.2018, 3:55<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17027.html?view=getnewpost' title='К первому непрочитанному сообщению: Кинетическая и потенциальная энергия'>Кинетическая и потенциальна...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14541.html'>nicks</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><div class="borderwrap" style="display:none" id="fc_40">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(40, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum40.html">Сопротивление материалов</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_40">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(40, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum40.html">Сопротивление материалов</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-41' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=41&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum41.html">Сопротивление материалов</a></b><br /><span class="forumdesc"><br /><i>Модераторы:  <a href='http://www.prepody.ru/user1835.html'>Вячеслав Анатольевич</a></i></span></td>
+			<td align="center" class="row1">59</td>
+			<td align="center" class="row1">97</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17139.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>7.7.2020, 4:10<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17139.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите оценить прочность профильной трубы'>Помогите оценить прочность ...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14768.html'>nickcin</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><div class="borderwrap" style="display:none" id="fc_43">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(43, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum43.html">Химия</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_43">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(43, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum43.html">Химия</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-44' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=44&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum44.html">Органическая химия</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">34</td>
+			<td align="center" class="row1">67</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17030.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>7.11.2018, 18:31<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17030.html?view=getnewpost' title='К первому непрочитанному сообщению: «Химия на английском»: образовательный проект для медицинских классов'>«Химия на английском»: обра...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14550.html'>Ekaterina-1980</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-45' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=45&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum45.html">Неорганическая и общая химия</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">150</td>
+			<td align="center" class="row1">291</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic10836.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>25.6.2019, 9:13<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic10836.html?view=getnewpost' title='К первому непрочитанному сообщению: как находится валентность элемента'>как находится валентность э...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14647.html'>Valensa</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-46' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=46&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum46.html">Аналитическая химия</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">1</td>
+			<td align="center" class="row1">0</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic15218.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>18.11.2012, 19:10<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic15218.html?view=getnewpost' title='К первому непрочитанному сообщению: помогите пожалуйста с химией'>помогите пожалуйста с химией</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user12061.html'>Sadistka5</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-47' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=47&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum47.html">Физическая химия</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">42</td>
+			<td align="center" class="row1">40</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17171.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>13.11.2020, 8:23<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17171.html?view=getnewpost' title='К первому непрочитанному сообщению: Стипендии в нефтяном техническом университете'>Стипендии в нефтяном технич...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14803.html'>mariyklihko37</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><div class="borderwrap" style="display:none" id="fc_23">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(23, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum23.html">Другие дисциплины</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_23">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(23, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum23.html">Другие дисциплины</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-25' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=25&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum25.html">Алгебра</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">561</td>
+			<td align="center" class="row1">3 775</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17675.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>24.2.2022, 15:38<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17675.html?view=getnewpost' title='К первому непрочитанному сообщению: Надежный банковский перевод'>Надежный банковский перевод</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user13960.html'>laperino</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-31' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=31&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum31.html">Геометрия</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">494</td>
+			<td align="center" class="row1">2 026</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17641.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>22.12.2021, 18:02<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17641.html?view=getnewpost' title='К первому непрочитанному сообщению: Непонятная задача по геометрии'>Непонятная задача по геометрии</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user15347.html'>Сергей1.1.3</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-24' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=24&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum24.html">Информатика / Программирование</a></b><br /><span class="forumdesc"><br /><i>Модераторы:  <a href='http://www.prepody.ru/user10.html'>alxdr</a>, <a href='http://www.prepody.ru/user897.html'>creer</a></i></span></td>
+			<td align="center" class="row1">737</td>
+			<td align="center" class="row1">2 619</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17642.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>26.12.2021, 13:31<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17642.html?view=getnewpost' title='К первому непрочитанному сообщению: Информатика'>Информатика</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user15380.html'>fnttt</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-32' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=32&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum32.html">Другие дисциплины</a></b><br /><span class="forumdesc"><br /><i></i></span></td>
+			<td align="center" class="row1">334</td>
+			<td align="center" class="row1">756</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic10670.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>6.1.2021, 18:32<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic10670.html?view=getnewpost' title='К первому непрочитанному сообщению: Помогите разобраться с задачкой))'>Помогите разобраться с зада...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14838.html'>nwnebel</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><div class="borderwrap" style="display:none" id="fc_27">
+	<div class="maintitlecollapse">
+		<p class="expand"><a href="javascript:togglecategory(27, 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum27.html">Беседка</a></p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_27">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory(27, 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;<a href="http://www.prepody.ru/forum27.html">Беседка</a></p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr> 
+			<th colspan="2" width="66%">Форум</th>
+			<th align="center" width="7%">Тем</th>
+			<th align="center" width="7%">Ответов</th>
+			<th width="35%">Последнее сообщение</th>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-28' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=28&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum28.html">Свободное общение</a></b><br /><span class="forumdesc">Общение на любые темы<br /><i></i></span></td>
+			<td align="center" class="row1">257</td>
+			<td align="center" class="row1">2 664</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17663.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>22.2.2022, 4:39<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17663.html?view=getnewpost' title='К первому непрочитанному сообщению: blogsandarticlesshop'>blogsandarticlesshop</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user15754.html'>fiufiu</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-29' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=29&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum29.html">Рассказ о себе</a></b><br /><span class="forumdesc">Дневники постоянных участников Форума<br /><i></i></span></td>
+			<td align="center" class="row1">24</td>
+			<td align="center" class="row1">215</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17528.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>25.6.2021, 19:56<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17528.html?view=getnewpost' title='К первому непрочитанному сообщению: laperino'>laperino</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user13960.html'>laperino</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-30' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=30&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum30.html">Обсуждение Форума</a></b><br /><span class="forumdesc">Замечания и предложения по Форуму<br /><i></i></span></td>
+			<td align="center" class="row1">29</td>
+			<td align="center" class="row1">400</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic7233.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>30.9.2018, 23:52<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic7233.html?view=getnewpost' title='К первому непрочитанному сообщению: на форуме есть чат?'>на форуме есть чат?</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user14531.html'>dezzzus</a></span></td>
+		</tr><tr> 
+			<td align="center" class="row2" width="1%"><a id='f-34' href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=04&amp;f=34&amp;fromforum=&amp;i=1" title="Отметить форум прочитанным?"><img src='style_images/1/bf_new.gif' border='0'  alt='Есть новые сообщения' /></a></td>
+			<td class="row2"><b><a href="http://www.prepody.ru/forum34.html">Барахолка</a></b><br /><span class="forumdesc">Объявления купли-продажи, услуг от постоянных посетителей форума. Строго запрещены объявления о продаже дипломов и т.п.<br /><i></i></span></td>
+			<td align="center" class="row1">196</td>
+			<td align="center" class="row1">165</td>
+			<td class="row1" nowrap="nowrap"><a href="http://www.prepody.ru/topic17660.html?view=getlastpost" title="К последнему сообщению"><img src='style_images/1/lastpost.gif' border='0'  alt='Последнее сообщение' /></a> <span>17.2.2022, 9:44<br /><b>Тема:</b>&nbsp;<a href='http://www.prepody.ru/topic17660.html?view=getnewpost' title='К первому непрочитанному сообщению: Сеть мошеннических колл-центров из Киева'>Сеть мошеннических колл-цен...</a><br /><b>Автор:</b> <a href='http://www.prepody.ru/user15734.html'>hornidas81</a></span></td>
+		</tr><tr> 
+			<td class="catend" colspan="5"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<br /><!-- Board Stats -->
+<div class="toplinks"><span><a href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=06">Удалить установленные форумом cookies</a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Login&amp;CODE=05">Отметить все сообщения прочитанными</a></span></div>
+<div class="borderwrap" style="display:none" id="fc_stat">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory('stat', 0);"><img src='style_images/1/exp_plus.gif' border='0'  alt='Развернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;Статистика форума</p>
+	</div>
+	<div class="subtitlediv"><a href="http://www.prepody.ru/ipb.html?act=search&amp;CODE=getactive"><font title='Список активных тем за день'>Активные темы</font></a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Stats&amp;CODE=leaders"><font title='Список администраторов и модераторов форума'>Администрация</font></a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Stats"><font title='Десятка пользователей, у которых больше всего сообщений на форуме за сегодняшний день'>Активные сегодня</font></a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Members&amp;max_results=10&amp;sort_key=posts&amp;sort_order=desc"><font title='Десятка пользователей, у которых больше всего сообщений на форуме'>Самые активные</font></a></div>
+	<div class="formsubtitle"><p class="members">81 408 сообщений &#0124; 15 785 пользователей</p>		<p>200 пользователей в онлайне</p>
+	</div>
+</div>
+<div class="borderwrap" style="display:show" id="fo_stat">
+	<div class="maintitle">
+		<p class="expand"><a href="javascript:togglecategory('stat', 1);"><img src='style_images/1/exp_minus.gif' border='0'  alt='Свернуть' /></a></p>
+		<p><img src='style_images/1/nav_m.gif' border='0'  alt='&gt;' width='8' height='8' />&nbsp;Статистика форума</p>
+	</div>
+	<table class='ipbtable' cellspacing="1">
+		<tr>
+			<th align="right" colspan="2"><a href="http://www.prepody.ru/ipb.html?act=search&amp;CODE=getactive"><font title='Список активных тем за день'>Активные темы</font></a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Stats&amp;CODE=leaders"><font title='Список администраторов и модераторов форума'>Администрация</font></a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Stats"><font title='Десятка пользователей, у которых больше всего сообщений на форуме за сегодняшний день'>Активные сегодня</font></a> &middot; <a href="http://www.prepody.ru/ipb.html?act=Members&amp;max_results=10&amp;sort_key=posts&amp;sort_order=desc"><font title='Десятка пользователей, у которых больше всего сообщений на форуме'>Самые активные</font></a>
+			</th>
+		</tr><tr>
+			<td class="formsubtitle" colspan="2">200 посетителей за последние 15 минут</td>
+		</tr>
+		<tr>
+			<td class="row1" width="1%"><img src='style_images/1/user.gif' border='0'  alt='Активные пользователи' /></td>
+			<td class="row2">
+				<b>200</b> гостей, <b>0</b> пользователей <b>0</b> скрытых пользователей
+				<div class="thin">Yandex Bot, 
+oBot, 
+Google Bot<br /><br /><a href='http://www.prepody.ru/ipb.html?act=Members&amp;max_results=30&amp;filter=4&amp;sort_order=asc&amp;sort_key=members_display_name'><b><span style='color:red'>Руководители</span></b></a>&nbsp;|&nbsp;<a href='http://www.prepody.ru/ipb.html?act=Members&amp;max_results=30&amp;filter=7&amp;sort_order=asc&amp;sort_key=members_display_name'><span style='color:green'><b>Преподаватели</b></span></a>&nbsp;|&nbsp;<a href='http://www.prepody.ru/ipb.html?act=Members&amp;max_results=30&amp;filter=9&amp;sort_order=asc&amp;sort_key=members_display_name'><span style='color:orange'><b>Активисты</b></span></a>&nbsp;|&nbsp;<a href='http://www.prepody.ru/ipb.html?act=Members&amp;max_results=30&amp;filter=10&amp;sort_order=asc&amp;sort_key=members_display_name'>Продвинутые</a>&nbsp;|&nbsp;<a href='http://www.prepody.ru/ipb.html?act=Members&amp;max_results=30&amp;filter=3&amp;sort_order=asc&amp;sort_key=members_display_name'>Пользователи</a></div>
+				<b>Полный список по:</b> <a href="http://www.prepody.ru/ipb.html?act=Online&amp;CODE=listall&amp;sort_key=click">последним действиям</a>, <a href="http://www.prepody.ru/ipb.html?act=Online&amp;CODE=listall&amp;sort_key=name&amp;sort_order=asc&amp;show_mem=reg">именам пользователей</a>
+			</td>
+		</tr>
+		<!--IBF.WHOSCHATTING--><tr>
+			<td class="formsubtitle" colspan="2">Поздравляем с днем рождения наших пользователей:</td>
+		</tr>
+		<tr>
+			<td class="row1" width="1%"><img src='style_images/1/calen.gif' border='0'  alt='Календарь' /></td>
+			<td class="row2"><b>4</b> пользователей празднуют сегодня свой день рождения<br /><a href='http://www.prepody.ru/user4785.html'>Grappeato</a>(<b>40</b>),
+<a href='http://www.prepody.ru/user6866.html'>С_А_Ш_А</a>(<b>29</b>),
+<a href='http://www.prepody.ru/user13457.html'>lewdquota90</a>(<b>33</b>),
+<a href='http://www.prepody.ru/user13571.html'>Матвейка27</a>(<b>28</b>)</td>
+		</tr><tr>
+			<td class="formsubtitle" colspan="2">Будущие календарные события (в пределах 5 дней)</td>
+		</tr>
+		<tr>
+			<td class="row1" width="1%"><img src='style_images/1/calen.gif' border='0'  alt='Календарь' /></td>
+			<td class="row2">Будущие календарные события отсутствуют</td>
+		</tr><tr>
+			<td class="formsubtitle" colspan="2">Статистика форума</td>
+		</tr>
+		<tr>
+			<td class="row1" width="1%"><img src='style_images/1/stats.gif' border='0'  alt='Статистика форума' /></td>
+			<td class="row2">На форуме сообщений: <b>81 408</b><br />Зарегистрировано пользователей: <b>15 785</b><br />Приветствуем последнего зарегистрированного по имени <b><a href='http://www.prepody.ru/user15792.html'>inanesat</a></b><br />Рекорд посещаемости форума — <b>957</b>, зафиксирован — <b>7.2.2012, 13:36</b></td>
+		</tr><tr> 
+			<td class="catend" colspan="2"><!-- no content --></td>
+		</tr>
+	</table>
+</div>
+<!-- Board Stats --><!-- no content --><a href="http://www.tipovik.ru" target=blank><font size=1>решебник, решения задачника кузнецов</font></a> | <a href="http://phys.reshebnik.ru" target=blank><font size=1>решение задач физика</font></a> | <a href="http://www.reshebnik.ru/econometrica" target=blank><font size=1>решение задач эконометрика</font></a>
+<table cellspacing="0" id="gfooter">
+	<tr>
+		<td width="45%"><img id="rsssyndication" src='style_images/1/rss.png' border='0' alt='-' class='ipd' />
+<script type="text/javascript">
+//<![CDATA[
+  menu_build_menu(
+  "rsssyndication",
+  new Array( "<a href='http://www.prepody.ru/ipb.html?act=rssout&amp;id=1' style='color:black'>RSS</a>",
+"<a href='http://www.prepody.ru/ipb.html?act=rssout&amp;type=calendar&amp;id=1' style='color:black'>Календарь: Основной календарь</a>"
+           ) );
+//]]>
+</script> </td>
+		<td width="10%" align="center" nowrap="nowrap"><a href="lofiversion/index.php"><b>Текстовая версия</b></a></td>
+		<td width="45%" align="right" nowrap="nowrap">Сейчас: 27.2.2022, 16:42</td>
+	</tr>
+</table>
+<script type='text/javascript'>
+//<![CDATA[
+menu_do_global_init();//]]>
+</script>
+<!-- Яндекс.Директ -->
+<div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(54808, "yandex_ad", {
+            ad_format: "direct",
+            font_size: 0.8,
+            type: "horizontal",
+            limit: 3,
+            title_font_size: 3,
+            links_underline: false,
+            site_bg_color: "FFFFFF",
+            header_bg_color: "FEEAC7",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            sitelinks_color: "0000CC",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script>
+
+<HR><div><STRONG><font color=blue>Книжки в помощь</font></STRONG>: <a href="http://www.ozon.ru/context/detail/id/2423933/?partner=reshebnik">"Сборник заданий по высшей математике"</a> Кузнецов Л.А., <a href="http://www.ozon.ru/context/detail/id/3250383/?partner=reshebnik">"Сборник заданий по высшей математике"</a> Чудесенко В.Ф., <a href="http://www.ozon.ru/context/detail/id/3243963/?partner=reshebnik">"Индивидуальные задания по высшей математике"</a> Рябушко А.П., и <a href="http://www.ozon.ru/context/catalog/id/1000295/?partner=reshebnik">другие</a>.</div><HR>
+ 
+<!-- Copyright Information -->
+        				  <div align='center' class='copyright'>
+        				  	<a href='http://www.ibresource.ru/' style='text-decoration:none' target='_blank'>Русская версия</a> <a href='http://www.invisionboard.com' style='text-decoration:none' target='_blank'>Invision Power Board</a>
+        				  	v2.1.7 &copy; 2022 &nbsp;IPS, Inc.
+        				  </div>
+		<!-- / Copyright --><BR><P align=center><!--Rating@Mail.ru COUNTEr--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=1257666"'+
+' target=_top><img src="http://d0.c3.b3.a1.top.list.ru/counter'+
+'?id=1257666;t=77;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=38/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=1257666"><img
+src="http://d0.c3.b3.a1.top.list.ru/counter?js=na;id=1257666;t=77"
+border=0 height=31 width=38
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+ <!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t44.10;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";i"+escape("Жж"+document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border=0 width=31 height=31><\/a>")//--></script><!--/LiveInternet-->
+<BR></P><BR><P align=center><STRONG>Зеркало сайта Решебник.Ру</STRONG> - <a href="http://reshebnik.org.ru" target=_blank>reshebnik.org.ru</a></P><BR><BR>
+</div>
+</body> 
+</html>
