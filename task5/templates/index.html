@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Search</title>
+</head>
+<body>
+<form method="POST" action="/">
+    <label for="query">Введите запрос</label>
+    <input id="query" type="search" name="query" value="{{query}}">
+    <button type="submit">Поиск</button>
+</form>
+{% if result %}
+<h3> Нашлось:</h3>
+{% for item in result %}
+<p>{{ item }}</p>
+{% endfor %}
+{% else %}
+<p> Не нашлось, либо не были введен запрос для поиска</p>
+{% endif %}
+</body>
+</html>

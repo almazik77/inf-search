@@ -35,3 +35,11 @@ python3 task3/main.py
 ```bash
 python3 task4/main.py
 ```
+
+#### Task 5
+
+##### Run script
+
+```bash
+python3 task5/main.py
+```
