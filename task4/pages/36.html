@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>NULLcode Studio | Игры, Unity, Скрипты</title>
+<meta name="description" content="Изучаем игрострой, вместе с Unity. Готовые скрипты, проекты и полезные мелочи!">
+<meta name="keywords" content="игры, программирование, c#, C Sharp, Unity, Unity3D, готовые проекты для Unity, уроки, полезные советы, новости игр, 3d, юнити, юнити 3д">
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)">
+<link rel="search" type="application/opensearchdescription+xml" href="https://null-code.ru/index.php?do=opensearch" title="NULLcode Studio | Игры, Unity, Скрипты">
+<link rel="canonical" href="https://null-code.ru/">
+<link rel="alternate" type="application/rss+xml" title="NULLcode Studio | Игры, Unity, Скрипты" href="https://null-code.ru/rss.xml">
+<link href="/engine/editor/css/default.css?v=25" rel="stylesheet" type="text/css">
+<script src="/engine/classes/js/jquery.js?v=25"></script>
+<script src="/engine/classes/js/jqueryui.js?v=25" defer></script>
+<script src="/engine/classes/js/dle_js.js?v=25" defer></script>
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="shortcut icon" href="/templates/Default/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/templates/Default/images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/templates/Default/images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/templates/Default/images/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/templates/Default/images/touch-icon-ipad-retina.png">
+	<meta property="og:image" content="/templates/Default/images/logo.png">
+	<meta name='wmail-verification' content='894fb5a71b80af3b' />
+	<meta name="yandex-verification" content="5144462d7f9ee3f3" />
+	<meta name="google-site-verification" content="ERJ4GMEoTf3SIMTBUGmW96JVJZ3DitCR8-O8ttTdsM4" />
+	<link href="/templates/Default/css/engine.css" type="text/css" rel="stylesheet">
+	<link href="/templates/Default/css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+iframe {
+    max-width: 100%;
+    width: 500px;
+    height: 281px;
+}
+</style>    
+	<div class="page">
+		<div class="wrp">
+			<div class="body">
+				<!-- Левая колонка -->
+				<div id="body_left">
+					<div class="body_left_in">
+					<!-- Шапка -->
+					<header id="header">
+						<!-- Логотип -->
+						<a href="/" title="NULLcode Studio">
+							<img class="logotype" src="/templates/Default/images/logo.png">
+						</a>
+						<!-- / Логотип -->
+						<div class="loginpane">
+	
+	
+	<a href="#" id="loginbtn" class="h_btn login">
+		<svg class="icon n_ico icon-login"><use xlink:href="#icon-login"></use></svg>
+		<svg class="icon m_ico icon-login_m"><use xlink:href="#icon-login_m"></use></svg>
+		<span class="title_hide">Войти</span>
+		<span class="icon_close">
+			<i class="mt_1"></i><i class="mt_2"></i>
+		</span>
+	</a>
+	<div id="login_drop" class="head_drop">
+		<div class="hd_pad">
+			<form class="login_form" method="post">
+				<div class="soc_links">
+					
+					
+					
+					
+					
+					
+				</div>
+
+				<ul>
+					<li class="form-group">
+						<label for="login_name">Логин:</label>
+						<input placeholder="Логин:" type="text" name="login_name" id="login_name" class="wide">
+					</li>
+					<li class="form-group">
+						<label for="login_password">Пароль</label>
+						<input placeholder="Пароль" type="password" name="login_password" id="login_password" class="wide">
+					</li>
+					<li>
+						<button class="btn" onclick="submit();" type="submit" title="Войти">
+							<b>Войти</b>
+						</button>
+					</li>
+				</ul>
+
+				<input name="login" type="hidden" id="login" value="submit">
+				<div class="login_form__foot">
+					<a class="right" href="https://null-code.ru/index.php?do=register"><b>Регистрация</b></a>
+					<a href="https://null-code.ru/index.php?do=lostpassword">Забыли пароль?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</div>
+						<!-- Кнопка вызова меню -->
+						<button class="h_btn" id="menubtn" title="Меню сайта">
+							<span class="menu_toggle">
+								<i class="mt_1"></i><i class="mt_2"></i><i class="mt_3"></i>
+							</span>
+						</button>
+						<div class="menu_logo">
+						<a href="https://yasobe.ru/na/null_code" title="Помощь проекту..." rel="nofollow" target="_blank">
+							<img class="logotype" src="/templates/Default/images/donate.png">
+						</a>
+						</div>
+						<div class="menu_logo">
+						<a href="https://play.google.com/store/apps/dev?id=7565973134784221364" title="Наши проекты в Google Play" rel="nofollow" target="_blank">
+							<img class="logotype" src="/templates/Default/images/GooglePlay.png">
+						</a>
+						</div>
+						<div class="menu_logo">
+						<a href="https://boosty.to/null-code" title="Подписка на все наши проекты!" rel="nofollow" target="_blank">
+							<img class="logotype" src="/templates/Default/images/boosty.png">
+						</a>
+						</div>
+						
+					</header>
+					<!-- / Шапка -->
+					</div>
+					<!-- Кнопка "Наверх" -->
+					<a href="/" id="upper"><svg class="icon icon-up"><use xlink:href="#icon-up"></use></svg></a>
+					<!-- / Кнопка "Наверх" -->
+					<div id="menu">
+						<div class="greenmenu">
+	<!-- Поиск -->
+	<form id="q_search" method="post">
+		<div class="q_search">
+			<input id="story" name="story" placeholder="Поиск по сайту..." type="search">
+			<button class="q_search_btn" type="submit" title="Найти"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg><span class="title_hide">Найти</span></button>
+		</div>
+		<input type="hidden" name="do" value="search">
+		<input type="hidden" name="subaction" value="search">
+	</form>
+	<!-- / Поиск -->
+	<nav class="menu">
+		<a href="/project/" title="Готовые проекты Unity">Готовые проекты Unity</a>
+		<a href="/scripts/" title="Пишем скрипты C#">Пишем скрипты C#</a>
+		<a href="/games/" title="Игра своими руками">Игра своими руками</a>
+		<a href="/solution/" title="Разные полезные мелочи">Разные полезные мелочи</a>
+		<a href="https://store.unity.com/ru" title="Скачать новейшую версию Unity" rel="nofollow" target="_blank">Скачать Unity</a>
+		<a href="/index.php?do=search&amp;mode=advanced" title="Расширенный поиск" rel="nofollow">Расширенный поиск</a>
+		<a href="/index.php?action=mobile" title="Мобильная версия сайта" rel="nofollow">Мобильная версия</a>
+		
+	</nav>
+</div>
+					</div>
+				</div>
+				<!-- / Левая колонка -->
+				<div class="body_right">
+					
+					<!-- Карусель и новости -->
+					<aside id="topside" class="structure">
+						<div id="topside_left" class="str_left">
+							
+<!-- Карусель (http://getbootstrap.com/javascript/#carousel) -->
+<div id="carousel-main" class="carousel slide" data-ride="carousel">
+	<a class="slide_prev" href="#carousel-main" role="button" data-slide="prev" title="Назад">
+		<span>
+			<svg class="icon n_ico icon-left"><use xlink:href="#icon-left"></use></svg>
+			<svg class="icon m_ico icon-arrow_left"><use xlink:href="#icon-arrow_left"></use></svg>
+		</span>
+	</a>
+	<a class="slide_next" href="#carousel-main" role="button" data-slide="next" title="Вперед">
+		<span>
+			<svg class="icon n_ico icon-right"><use xlink:href="#icon-right"></use></svg>
+			<svg class="icon m_ico icon-arrow_right"><use xlink:href="#icon-arrow_right"></use></svg>
+		</span>
+	</a>
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<div class="carousel-caption">
+				<div class="carousel-caption_in">
+					<div class="title">Unity</div>
+					<div class="text">Изучаем игрострой!</div>
+				</div>
+			</div>
+			<div class="cover" style="background-image: url(/templates/Default/images/tmp/slide_1.jpg);"></div>
+		</div>
+		<div class="item">
+			<div class="carousel-caption">
+				<div class="carousel-caption_in">
+					<div class="title">Скрипты</div>
+					<div class="text">Уникальный индусский код!</div>
+				</div>
+			</div>
+			<div class="cover" style="background-image: url(/templates/Default/images/tmp/slide_2.jpg);"></div>
+		</div>
+		<div class="item">
+			<div class="carousel-caption">
+				<div class="carousel-caption_in">
+					<div class="title">Проекты</div>
+					<div class="text">Готовые паки уроков!</div>
+				</div>
+			</div>
+			<div class="cover" style="background-image: url(/templates/Default/images/tmp/slide_3.jpg);"></div>
+		</div>
+	</div>
+</div>
+<!-- / Карусель -->
+
+						</div>
+						<div id="topside_right" class="str_right">
+							<!-- Новые новости в рэндоме -->
+							<div class="bignews">
+								<div class="item">
+	<a href="https://null-code.ru/scripts/236-upravlenie-personazhem-myshkoj-na-platformah-2d.html" title="Управление персонажем, мышкой на платформах 2D">
+		<div class="item_cont">
+			<b class="date"><time datetime="2021-12-26">26/12</time></b>
+			<span class="title">Управление персонажем, мышкой на платформах 2D</span>
+		</div>
+		<div class="item_bg cover" style="background-image: url(https://null-code.ru/uploads/posts/2021-12/1640512596_45.png)"></div>
+	</a>
+	
+</div><div class="item">
+	<a href="https://null-code.ru/project/235-obnovlennyj-menedzher-dlja-raboty-s-admob.html" title="Обновленный менеджер для работы с AdMob">
+		<div class="item_cont">
+			<b class="date"><time datetime="2021-12-09">09/12</time></b>
+			<span class="title">Обновленный менеджер для работы с AdMob</span>
+		</div>
+		<div class="item_bg cover" style="background-image: url(https://null-code.ru/uploads/posts/2021-12/1639054841_1561461562_s_6isb6l_400x400.jpg)"></div>
+	</a>
+	
+</div>
+							</div>
+							<!-- / Новые новости в рэндоме -->
+						</div>
+					</aside>
+					<!-- / Карусель и новости -->
+					
+					
+					<div id="mainside" class="structure">
+						<div class="str_left">
+							
+							
+							
+							<section id="content">
+							<div id='dle-content'><article class="block story shortstory">
+	
+	<h2 class="title"><a href="https://null-code.ru/solution/241-neskolko-primerov-unitywebrequest.html">Несколько примеров UnityWebRequest</a></h2>
+	<div class="story_top">
+		
+		<time class="date grey" datetime="2022-02-21">21/02/2022</time>
+	</div>
+	<div class="text">
+	<div class="article-img"><img src="/uploads/posts/2022-02/1645403226_snimok-kopija.png" alt="Постер к новости: Несколько примеров UnityWebRequest" title="Несколько примеров UnityWebRequest"></div>
+		Набор методов основанных на UnityWebRequest для загрузки текста, файлов или картинок. Это простой и удобный вспомогательный скрипт, если нужно делать подобные запросы с сервера. Например, загрузить какие-то текстовые настройки игры или json файл, либо же определенную картинку. Мы реализовали так же загрузку файла с выводом прогресс бара загрузки, через стандартный Slider, и в случае загрузки массива файлов, статус выводится так же в бар загрузки, в этом случае он ...
+		
+	</div>
+	<div class="story_tools">
+		<div class="story_tools_in">
+			<a href="https://null-code.ru/solution/241-neskolko-primerov-unitywebrequest.html" title="Читать подробнее: Несколько примеров UnityWebRequest" class="btn"><span class="more_icon"><i></i><i></i><i></i></span></a>
+		
+			<div class="rate">
+				
+				
+				<div class="rate_like" title="Мне нравится">
+				<a href="#" onclick="doRate('plus', '241'); return false;" >
+					<svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg>
+					<span id="ratig-layer-241" class="ignore-select"><span class="ratingtypeplus ignore-select" >0</span></span>
+				</a>
+				</div>
+				
+				
+				
+			</div>
+		
+		</div>
+		<ul class="meta grey">
+			<li class="meta_author" title="Автор">
+				<svg class="icon icon-author"><use xlink:href="#icon-author"></use></svg><a onclick="ShowProfile('Light', 'https://null-code.ru/user/Light/', '0'); return false;" href="https://null-code.ru/user/Light/">Light</a>
+			</li>
+			<li class="meta_coms" title="Комментариев: 0"><a href="https://null-code.ru/solution/241-neskolko-primerov-unitywebrequest.html#comment"><svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>0</a></li>
+			<li class="meta_views" title="Просмотров: 44"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg>44</li>
+		</ul>
+	</div>
+</article><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Адаптивный -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3980897124328090"
+     data-ad-slot="9741695763"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><article class="block story shortstory">
+	
+	<h2 class="title"><a href="https://null-code.ru/project/240-koleso-fortuny.html">Колесо фортуны</a></h2>
+	<div class="story_top">
+		
+		<time class="date grey" datetime="2022-02-12">12/02/2022</time>
+	</div>
+	<div class="text">
+	<div class="article-img"><img src="/uploads/posts/2022-02/1644666791_images.png" alt="Постер к новости: Колесо фортуны" title="Колесо фортуны"></div>
+		Вариант реализации колеса фортуны, работающий на карутинах и рейкасте. Шаблон создан так, чтобы поверх него можно было легко разместить своё вариант колеса, главное, чтобы лепестки совпадали. Иначе говоря, менять что-либо в генераторе колеса, кроме ключей секций, не нужно. Просто сверху лепим шкурку и готово. Для колеса возможны два варианта спина, случайный и определенный. Можно крутануть фортуну с заранее известным результатом. ...
+		
+	</div>
+	<div class="story_tools">
+		<div class="story_tools_in">
+			<a href="https://null-code.ru/project/240-koleso-fortuny.html" title="Читать подробнее: Колесо фортуны" class="btn"><span class="more_icon"><i></i><i></i><i></i></span></a>
+		
+			<div class="rate">
+				
+				
+				<div class="rate_like" title="Мне нравится">
+				<a href="#" onclick="doRate('plus', '240'); return false;" >
+					<svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg>
+					<span id="ratig-layer-240" class="ignore-select"><span class="ratingtypeplus ignore-select" >3</span></span>
+				</a>
+				</div>
+				
+				
+				
+			</div>
+		
+		</div>
+		<ul class="meta grey">
+			<li class="meta_author" title="Автор">
+				<svg class="icon icon-author"><use xlink:href="#icon-author"></use></svg><a onclick="ShowProfile('Light', 'https://null-code.ru/user/Light/', '0'); return false;" href="https://null-code.ru/user/Light/">Light</a>
+			</li>
+			<li class="meta_coms" title="Комментариев: 0"><a href="https://null-code.ru/project/240-koleso-fortuny.html#comment"><svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>0</a></li>
+			<li class="meta_views" title="Просмотров: 173"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg>173</li>
+		</ul>
+	</div>
+</article><article class="block story shortstory">
+	
+	<h2 class="title"><a href="https://null-code.ru/scripts/239-google-admob-unity-ads.html">Google AdMob + Unity Ads</a></h2>
+	<div class="story_top">
+		
+		<time class="date grey" datetime="2022-01-28">28/01/2022</time>
+	</div>
+	<div class="text">
+	<div class="article-img"><img src="/uploads/posts/2022-01/1643374960_5451.png" alt="Постер к новости: Google AdMob + Unity Ads" title="Google AdMob + Unity Ads"></div>
+		Работа сразу с двумя рекламными сетями одновременно, через единого менеджера. Основная идея проекта в том, чтобы можно было подгружать рекламу в тот момент, когда она не доступна в одной сети, тогда автоматически будет запрошена другая сеть. Таким образом исключается потеря дохода, так как мало вероятно, что две сети сразу будут не доступны. Например, игроку нужно набить бонуса через реворд, когда он посмотрел ролик от Google, сразу же может еще раз запустить ролик ...
+		
+	</div>
+	<div class="story_tools">
+		<div class="story_tools_in">
+			<a href="https://null-code.ru/scripts/239-google-admob-unity-ads.html" title="Читать подробнее: Google AdMob + Unity Ads" class="btn"><span class="more_icon"><i></i><i></i><i></i></span></a>
+		
+			<div class="rate">
+				
+				
+				<div class="rate_like" title="Мне нравится">
+				<a href="#" onclick="doRate('plus', '239'); return false;" >
+					<svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg>
+					<span id="ratig-layer-239" class="ignore-select"><span class="ratingtypeplus ignore-select" >6</span></span>
+				</a>
+				</div>
+				
+				
+				
+			</div>
+		
+		</div>
+		<ul class="meta grey">
+			<li class="meta_author" title="Автор">
+				<svg class="icon icon-author"><use xlink:href="#icon-author"></use></svg><a onclick="ShowProfile('Light', 'https://null-code.ru/user/Light/', '0'); return false;" href="https://null-code.ru/user/Light/">Light</a>
+			</li>
+			<li class="meta_coms" title="Комментариев: 0"><a href="https://null-code.ru/scripts/239-google-admob-unity-ads.html#comment"><svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>0</a></li>
+			<li class="meta_views" title="Просмотров: 266"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg>266</li>
+		</ul>
+	</div>
+</article><article class="block story shortstory">
+	
+	<h2 class="title"><a href="https://null-code.ru/project/238-mehanika-dlja-sborki-igry-pazl-tetris.html">Механика для сборки игры «пазл-тетрис»</a></h2>
+	<div class="story_top">
+		
+		<time class="date grey" datetime="2022-01-26">26/01/2022</time>
+	</div>
+	<div class="text">
+	<div class="article-img"><img src="/uploads/posts/2022-01/1643159111_5444.png" alt="Постер к новости: Механика для сборки игры «пазл-тетрис»" title="Механика для сборки игры «пазл-тетрис»"></div>
+		Рабочая механика для быстрой сборки игры «пазл-тетриса», где для настройки визуального вида и самих форм пазлов, нужно всего несколько кликов и немного графики. Управление настроено как под десктоп, так и под мобильные устройство. Настройки форм и визуального их вида, вынесены в отдельные ассеты, что дает возможность быстро добавлять или убирать новые фигуры пазлов. Настройки механики вынесены также в отдельный ассет для удобства. Игровой цикл построен так, что ...
+		
+	</div>
+	<div class="story_tools">
+		<div class="story_tools_in">
+			<a href="https://null-code.ru/project/238-mehanika-dlja-sborki-igry-pazl-tetris.html" title="Читать подробнее: Механика для сборки игры «пазл-тетрис»" class="btn"><span class="more_icon"><i></i><i></i><i></i></span></a>
+		
+			<div class="rate">
+				
+				
+				<div class="rate_like" title="Мне нравится">
+				<a href="#" onclick="doRate('plus', '238'); return false;" >
+					<svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg>
+					<span id="ratig-layer-238" class="ignore-select"><span class="ratingtypeplus ignore-select" >0</span></span>
+				</a>
+				</div>
+				
+				
+				
+			</div>
+		
+		</div>
+		<ul class="meta grey">
+			<li class="meta_author" title="Автор">
+				<svg class="icon icon-author"><use xlink:href="#icon-author"></use></svg><a onclick="ShowProfile('Light', 'https://null-code.ru/user/Light/', '0'); return false;" href="https://null-code.ru/user/Light/">Light</a>
+			</li>
+			<li class="meta_coms" title="Комментариев: 0"><a href="https://null-code.ru/project/238-mehanika-dlja-sborki-igry-pazl-tetris.html#comment"><svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>0</a></li>
+			<li class="meta_views" title="Просмотров: 270"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg>270</li>
+		</ul>
+	</div>
+</article><article class="block story shortstory">
+	
+	<h2 class="title"><a href="https://null-code.ru/project/237-nabor-dlja-sozdanija-igr-mach3.html">Набор для создания игр Mach3</a></h2>
+	<div class="story_top">
+		
+		<time class="date grey" datetime="2022-01-13">13/01/2022</time>
+	</div>
+	<div class="text">
+	<div class="article-img"><img src="/uploads/posts/2022-01/1642088689_1.png" alt="Постер к новости: Набор для создания игр Mach3" title="Набор для создания игр Mach3"></div>
+		 Готовый набор механик мач3, в комплекте с редактором уровней. Основная идея в том, что тут редактор сделан отдельно от самой игры, это позволяет передать билд редактора другому человеку, который вообще не разбирается в программировании, а только умеет создавать интересные каты для игры. В игровую логику встроены также скрипты для озвучки действий на поле игры, имеются готовые примеры, и, так же встроен скрипт для проигрывания пула эффектов, то есть, под любое ...
+		
+	</div>
+	<div class="story_tools">
+		<div class="story_tools_in">
+			<a href="https://null-code.ru/project/237-nabor-dlja-sozdanija-igr-mach3.html" title="Читать подробнее: Набор для создания игр Mach3" class="btn"><span class="more_icon"><i></i><i></i><i></i></span></a>
+		
+			<div class="rate">
+				
+				
+				<div class="rate_like" title="Мне нравится">
+				<a href="#" onclick="doRate('plus', '237'); return false;" >
+					<svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg>
+					<span id="ratig-layer-237" class="ignore-select"><span class="ratingtypeplus ignore-select" >6</span></span>
+				</a>
+				</div>
+				
+				
+				
+			</div>
+		
+		</div>
+		<ul class="meta grey">
+			<li class="meta_author" title="Автор">
+				<svg class="icon icon-author"><use xlink:href="#icon-author"></use></svg><a onclick="ShowProfile('Light', 'https://null-code.ru/user/Light/', '0'); return false;" href="https://null-code.ru/user/Light/">Light</a>
+			</li>
+			<li class="meta_coms" title="Комментариев: 2"><a href="https://null-code.ru/project/237-nabor-dlja-sozdanija-igr-mach3.html#comment"><svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>2</a></li>
+			<li class="meta_views" title="Просмотров: 599"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg>599</li>
+		</ul>
+	</div>
+</article><article class="block story shortstory">
+	
+	<h2 class="title"><a href="https://null-code.ru/scripts/236-upravlenie-personazhem-myshkoj-na-platformah-2d.html">Управление персонажем, мышкой на платформах 2D</a></h2>
+	<div class="story_top">
+		
+		<time class="date grey" datetime="2021-12-26">26/12/2021</time>
+	</div>
+	<div class="text">
+	<div class="article-img"><img src="/uploads/posts/2021-12/1640512596_45.png" alt="Постер к новости: Управление персонажем, мышкой на платформах 2D" title="Управление персонажем, мышкой на платформах 2D"></div>
+		Основная идея заключается в том, чтобы управлять персонажем на ровных платформах. Задумка под классическую механику, где нужно действиями управлять только мышкой. Движение по ровному коллайдеру влево и вправо, прыжок между платформами и возможность карабкаться по лестнице. Суть в том, что в этой системе ну нужно «запекать» пути для поиска, здесь механика такая, что куда поставил бокс-коллайдер, там и можно ходить. А в местах, где можно прыгать или лазать, ...
+		
+	</div>
+	<div class="story_tools">
+		<div class="story_tools_in">
+			<a href="https://null-code.ru/scripts/236-upravlenie-personazhem-myshkoj-na-platformah-2d.html" title="Читать подробнее: Управление персонажем, мышкой на платформах 2D" class="btn"><span class="more_icon"><i></i><i></i><i></i></span></a>
+		
+			<div class="rate">
+				
+				
+				<div class="rate_like" title="Мне нравится">
+				<a href="#" onclick="doRate('plus', '236'); return false;" >
+					<svg class="icon icon-like"><use xlink:href="#icon-like"></use></svg>
+					<span id="ratig-layer-236" class="ignore-select"><span class="ratingtypeplus ignore-select" >6</span></span>
+				</a>
+				</div>
+				
+				
+				
+			</div>
+		
+		</div>
+		<ul class="meta grey">
+			<li class="meta_author" title="Автор">
+				<svg class="icon icon-author"><use xlink:href="#icon-author"></use></svg><a onclick="ShowProfile('Light', 'https://null-code.ru/user/Light/', '0'); return false;" href="https://null-code.ru/user/Light/">Light</a>
+			</li>
+			<li class="meta_coms" title="Комментариев: 0"><a href="https://null-code.ru/scripts/236-upravlenie-personazhem-myshkoj-na-platformah-2d.html#comment"><svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>0</a></li>
+			<li class="meta_views" title="Просмотров: 619"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg>619</li>
+		</ul>
+	</div>
+</article><div class="block navigation ignore-select">
+	<div class="page_next-prev">
+		<span class="page_prev" title="Предыдущая страница">
+			<span><svg class="icon icon-left"><use xlink:href="#icon-left"></use></svg></span>
+		</span>
+		<span class="page_next" title="Следующая страница">
+			<a href="https://null-code.ru/page/2/"><svg class="icon icon-right"><use xlink:href="#icon-right"></use></svg></a>
+		</span>
+	</div>
+	<div class="pages"><span>1</span> <a href="https://null-code.ru/page/2/">2</a> <a href="https://null-code.ru/page/3/">3</a> <a href="https://null-code.ru/page/4/">4</a> <a href="https://null-code.ru/page/5/">5</a> <a href="https://null-code.ru/page/6/">6</a> <a href="https://null-code.ru/page/7/">7</a> <a href="https://null-code.ru/page/8/">8</a> <a href="https://null-code.ru/page/9/">9</a> <a href="https://null-code.ru/page/10/">10</a> <span class="nav_ext">...</span> <a href="https://null-code.ru/page/39/">39</a></div>
+</div></div>
+							</section>
+							
+						</div>
+						<aside class="str_right" id="rightside">
+
+		<div class="block">
+		<div class="social" align="center">
+			<a href="https://vk.com/null_code" title="Наша группа VK" rel="nofollow" target="_blank"><img src="/templates/Default/images/vk.png"></a>
+			<a href="https://twitter.com/NULLcode_Studio" title="Мы в Twitter" rel="nofollow" target="_blank"><img src="/templates/Default/images/t.png"></a>
+            <a href="/rss.xml" title="Лента RSS" rel="nofollow" target="_blank"><img src="/templates/Default/images/rss.png"></a>
+        </div>
+	</div>
+	<div class="block_sep"></div>
+	
+	<div class="block">
+		<ul class="block_tabs">
+			
+			<li class="active">
+				<a title="Популярное" href="#news_top" aria-controls="news_top" data-toggle="tab">
+					Популярное
+				</a>
+			</li>
+			
+			<li>
+				<a title="Обсуждаемое" href="#news_coms" aria-controls="news_coms" data-toggle="tab">
+					Обсуждаемое
+				</a>
+			</li>
+			
+		</ul>
+		<div class="tab-content">
+			
+			<div class="tab-pane active" id="news_top"><div class="story_line">
+	<a href="https://null-code.ru/project/232-igry-ot-nashej-komandy.html" title="Игры от нашей команды">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2021-06/1622747857_skull_ico.png)"></i>
+		<div>
+			<b class="date"><time datetime="2021-10-02">02/10/2021</time></b>
+			<span class="title-top">Игры от нашей команды</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/solution/233-kak-sdelat-snimok-chasti-jekrana.html" title="Как сделать снимок части экрана?">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/unity-logo.jpg)"></i>
+		<div>
+			<b class="date"><time datetime="2021-10-04">04/10/2021</time></b>
+			<span class="title-top">Как сделать снимок части экрана?</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/project/237-nabor-dlja-sozdanija-igr-mach3.html" title="Набор для создания игр Mach3">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2022-01/1642088689_1.png)"></i>
+		<div>
+			<b class="date"><time datetime="2022-01-13">13/01/2022</time></b>
+			<span class="title-top">Набор для создания игр Mach3</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/scripts/236-upravlenie-personazhem-myshkoj-na-platformah-2d.html" title="Управление персонажем, мышкой на платформах 2D">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2021-12/1640512596_45.png)"></i>
+		<div>
+			<b class="date"><time datetime="2021-12-26">26/12/2021</time></b>
+			<span class="title-top">Управление персонажем, мышкой на платформах 2D</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/project/235-obnovlennyj-menedzher-dlja-raboty-s-admob.html" title="Обновленный менеджер для работы с AdMob">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2021-12/1639054841_1561461562_s_6isb6l_400x400.jpg)"></i>
+		<div>
+			<b class="date"><time datetime="2021-12-09">09/12/2021</time></b>
+			<span class="title-top">Обновленный менеджер для работы с AdMob</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/scripts/239-google-admob-unity-ads.html" title="Google AdMob + Unity Ads">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2022-01/1643374960_5451.png)"></i>
+		<div>
+			<b class="date"><time datetime="2022-01-28">28/01/2022</time></b>
+			<span class="title-top">Google AdMob + Unity Ads</span>
+		</div>
+	</a>
+</div></div>
+			
+			<div class="tab-pane" id="news_coms">
+				<div class="story_line">
+	<a href="https://null-code.ru/solution/87-2d-platformer-strelba.html" title="2D платформер, стрельба">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2015-11/1446537543_snimok.png)"></i>
+		<div>
+			<b class="date"><time datetime="2015-11-03">03/11/2015</time></b>
+			<span class="title-top">2D платформер, стрельба</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/project/147-menyu-vybora-sceny-s-sohraneniem.html" title="Меню выбора сцены с сохранением">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2016-08/1471759577_7777.png)"></i>
+		<div>
+			<b class="date"><time datetime="2016-08-21">21/08/2016</time></b>
+			<span class="title-top">Меню выбора сцены с сохранением</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/project/180-prodvinutyy-inventar-personazha.html" title="Продвинутый инвентарь персонажа">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2017-06/1496303445_latest.png)"></i>
+		<div>
+			<b class="date"><time datetime="2017-06-01">01/06/2017</time></b>
+			<span class="title-top">Продвинутый инвентарь персонажа</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/scripts/10-fps-skript-upravleniiya-ot-pervogo-lica.html" title="FPS скрипт управлениия от первого лица">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2015-03/1426074524_bez-imeni-1.png)"></i>
+		<div>
+			<b class="date"><time datetime="2015-03-11">11/03/2015</time></b>
+			<span class="title-top">FPS скрипт управлениия от первого лица</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/scripts/45-skript-dvizheniya-2d-personazha.html" title="Скрипт движения 2D персонажа">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2015-06/1433573349_plaxis-2d_0.png)"></i>
+		<div>
+			<b class="date"><time datetime="2015-06-07">07/06/2015</time></b>
+			<span class="title-top">Скрипт движения 2D персонажа</span>
+		</div>
+	</a>
+</div><div class="story_line">
+	<a href="https://null-code.ru/project/17-menyu-dlya-igry-unity-project.html" title="Меню для игры [Unity Project]">
+		<i class="image cover" style="background-image: url(https://null-code.ru/uploads/posts/2015-03/1427013130_bez-imeni-1.png)"></i>
+		<div>
+			<b class="date"><time datetime="2015-03-22">22/03/2015</time></b>
+			<span class="title-top">Меню для игры [Unity Project]</span>
+		</div>
+	</a>
+</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- / Популярные, похожие, обсуждаемые -->
+	
+	<div class="block_sep"></div>
+	
+<div class="block">
+		<div align="center">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:280px;height:560px"
+     data-ad-client="ca-pub-3980897124328090"
+     data-ad-slot="2536992964"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		</div>
+	</div>
+	<div class="block_sep"></div>
+	
+	<script>
+<!--
+function doVote( event ){
+
+	
+	var vote_check = $('#dle-vote input:radio[name=vote_check]:checked').val();
+	
+	if (typeof vote_check == "undefined" &&  event == "vote") {
+		return false;
+	}
+	
+	ShowLoading('');
+
+	$.get(dle_root + "engine/ajax/controller.php?mod=vote", { vote_id: "4", vote_action: event, vote_check: vote_check, vote_skin: dle_skin, user_hash: dle_login_hash }, function(data){
+
+		HideLoading('');
+
+		$("#vote-layer").fadeOut(500, function() {
+			$(this).html(data);
+			$(this).fadeIn(500);
+		});
+
+	});
+}
+//-->
+</script><div id='vote-layer'><div id="votes" class="block">
+	<h4 class="vote_title">Ваша платформа для разработки?</h4>
+	<div class="vote_more"><a href="#" onclick="ShowAllVotes(); return false;">Другие опросы...</a></div>
+	
+	<form method="post" name="vote">
+	
+		<div class="vote_list">
+			<div id="dle-vote"><div class="vote"><input id="vote_check0" name="vote_check" type="radio" value="0" /><label for="vote_check0"> PC, Mac, Linux</label></div><div class="vote"><input id="vote_check1" name="vote_check" type="radio" value="1" /><label for="vote_check1"> Xbox, PS, Vita</label></div><div class="vote"><input id="vote_check2" name="vote_check" type="radio" value="2" /><label for="vote_check2"> Android, iOS</label></div><div class="vote"><input id="vote_check3" name="vote_check" type="radio" value="3" /><label for="vote_check3"> WebGL</label></div></div>
+		</div>
+	
+	
+		<input type="hidden" name="vote_action" value="vote">
+		<input type="hidden" name="vote_id" id="vote_id" value="4">
+		<button title="Голосовать" class="btn" type="submit" onclick="doVote('vote'); return false;" ><b>Голосовать</b></button>
+		<button title="Результаты опроса" class="vote_result_btn" type="button" onclick="doVote('results'); return false;" >
+			<span>
+				<i class="vr_1"></i>
+				<i class="vr_2"></i>
+				<i class="vr_3"></i>
+			</span>
+		</button>
+	</form>
+	
+</div>
+<div class="block_sep"></div></div>
+
+	<div class="block">
+		<h4 class="title"><b>Комментарии</b></h4>
+		<ul class="lastcomm">
+			<li>
+	<a href="https://null-code.ru/solution/81-kak-sdelat-dveri-s-fizikoy-i-bez.html#comment" title="Как сделать двери, с физикой и без?">
+		<svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>
+		<span>maks03408, По вопросам заказов, обращайтесь в личном сообщении....</span>
+		<b>Light</b>
+	</a>
+</li><li>
+	<a href="https://null-code.ru/solution/81-kak-sdelat-dveri-s-fizikoy-i-bez.html#comment" title="Как сделать двери, с физикой и без?">
+		<svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>
+		<span>Можешь ответить на коммент? Который вверху?...</span>
+		<b>maks03408</b>
+	</a>
+</li><li>
+	<a href="https://null-code.ru/solution/81-kak-sdelat-dveri-s-fizikoy-i-bez.html#comment" title="Как сделать двери, с физикой и без?">
+		<svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>
+		<span>Я хочу чтобы дверь открывалась на кнопку. Т.е. в игре будет лабиринт где-то будет кнопка ты на неё...</span>
+		<b>maks03408</b>
+	</a>
+</li><li>
+	<a href="https://null-code.ru/project/180-prodvinutyy-inventar-personazha.html#comment" title="Продвинутый инвентарь персонажа">
+		<svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>
+		<span>Было бы не плохо если-бы было видео с созданием всей системы или ещё лучше урок. Тогда было бы на...</span>
+		<b>spidfiar</b>
+	</a>
+</li><li>
+	<a href="https://null-code.ru/games/72-igrushka-zmeyka-snake-v-2d.html#comment" title="Игрушка «Змейка» / Snake в 2D">
+		<svg class="icon icon-coms"><use xlink:href="#icon-coms"></use></svg>
+		<span>клас тілки інструкция є по збору...</span>
+		<b>omg</b>
+	</a>
+</li>
+		</ul>
+	</div>
+	<!-- /
+	<div class="block_sep"></div>
+	<div class="block">
+		<div align="center">
+			<a href="/project.html" title="NULLcode Games" ><img src="/templates/Default/images/ng.gif"></a>
+        </div>
+	</div>
+	-->
+	
+</aside>
+						<div class="rightside_bg"></div>
+					</div>
+					<footer id="footer">
+						<div class="footer grey">
+	<!-- Копирайт -->
+	<div class="copyright">
+		Copyright © 2015-2022 NULLcode Studio.<br>При частичном или полном копировании материалов сайта, обратная гиперссылка обязательна.<br><script>(function(){var script = document.createElement('script');script.type = 'text/javascript';script.async = true;script.charset = 'utf-8';script.src = 'https://152фз.рф/widget/7a56cf141150b6b128ab7bd6ee97070a';document.getElementsByTagName('head')[0].appendChild(script);})();</script><div id="fz_wrap"></div>
+	</div>
+	<!-- / Копирайт -->
+</div>
+					</footer>
+				</div>
+			</div>
+			<div class="foot grey">
+
+	<div class="foot_links">
+		<a href="/statistics.html">Статистика</a>
+	<a href="/index.php?do=feedback">Контакты</a>
+	<a href="/rules.html">Правила</a>
+
+	</div>
+	<!-- / Мы в соц.сетях -->
+	<!-- Счетчики -->
+	<ul class="counters">
+		<li>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.3;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+		</li>
+		<li>
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=29812949&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/29812949/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:29812949,lang:'ru'});return false}catch(e){}" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter29812949 = new Ya.Metrika({
+                    id:29812949,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/29812949" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+		</li>
+	</ul>
+	<!-- / Счетчики -->
+</div>
+		</div>
+	</div>
+	<script>
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '2a5e7c2bc7fcb3ef5f2394526e6019c313fae7ef';
+var dle_group      = 5;
+var dle_skin       = 'Default';
+var dle_wysiwyg    = '0';
+var quick_wysiwyg  = '1';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить", "Удалить", "Загрузка. Пожалуйста, подождите..."];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведёт к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст Вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной ошибке на странице';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_reply_title= 'Ответ на комментарий';
+var dle_tree_comm  = '0';
+var dle_del_news   = 'Удалить статью';
+var dle_sub_agree  = 'Вы действительно хотите подписаться на комментарии к данной публикации?';
+var allow_dle_delete_news   = false;
+
+//-->
+</script>
+	<script type="text/javascript" src="/templates/Default/js/lib.js"></script>
+	<script type="text/javascript" src="/templates/Default/js/jquery.lockfixed.js"></script>
+	<script type="text/javascript" src="/templates/Default/js/svgxuse.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function($){
+			$.get("/templates/Default/images/sprite.svg", function(data) {
+			  var div = document.createElement("div");
+			  div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
+			  document.body.insertBefore(div, document.body.childNodes[0]);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+    (function($) {
+        $.lockfixed("#flow",{offset: {top: 10, bottom: 10}});
+    })(jQuery);
+    </script>
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

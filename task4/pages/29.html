@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>hpc@cmc | Высокопроизводительные вычисления на ВМК МГУ</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="canonical" href="http://hpc.cmc.msu.ru/" />
+<meta name="copyright" content="Факультет ВМК МГУ имени М. В. Ломоносова" />
+<meta name="description" content="Высокопроизводительные вычисления на факультете ВМК МГУ имени М. В. Ломоносова, вопросы использования суперкомпьютеров IBM Blue Gene/P и IBM eServer pSeries 690 Regatta" />
+<meta name="google-site-verification" content="zdFu9rOxlmI4iHCBQB_jLHpn-EsT33nWz78qX9DuKcA" />
+<meta name="msvalidate.01" content="0A192745C9471C6F756CB43ED7A6FC2A" />
+<meta name="y_key" content="766c58ac53cb7e0e" />
+<link rel="alternate" type="application/rss+xml" title="hpc@cmc RSS" href="http://hpc.cmc.msu.ru/rss.xml" />
+<link rel="shortcut icon" href="/sites/hpc.cmc.msu.ru/files/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/dhtml_menu/dhtml_menu.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/google_cse/google_cse.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/hpc.cs.msu.ru/modules/geshifilter/geshifilter.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/extlink/extlink.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/biblio/biblio.css?v" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/hpc.cs.msu.ru/themes/irina/style.css?v" />
+<link type="text/css" rel="stylesheet" media="screen" href="/sites/all/modules/iconizer/files_icons.css?v" />
+  <!--[if IE]>
+  <link type="text/css" rel="stylesheet" href="/sites/hpc.cmc.msu.ru/themes/irina/fix-ie.css" />
+  <![endif]-->
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="logo_wrapper">
+                <div id="left_logo">
+          <a href="/" title="На главную"><img src="/sites/hpc.cs.msu.ru/themes/irina/logo.png" alt="На главную" /></a>
+        </div>                <div id="site_name">
+          <a href="/" title="На главную">hpc@cmc</a>
+        </div>                <div id="site_slogan">
+          Высокопроизводительные вычисления на ВМК МГУ        </div>        <div id="right_logo">
+          <img src="/sites/hpc.cmc.msu.ru/themes/irina/images/right-logo.png" alt="Logo of the CMC Faculty" width="120" height="107" />
+        </div>
+      </div><!-- id="logo_wrapper" -->
+      <div id="nav">
+                <ul class="links"><li class="menu-198 first"><a href="/bgp" title="Описание вычислительного комплекса IBM Blue Gene/P">Blue Gene/P</a></li>
+<li class="menu-1841"><a href="/polus" title="Описание вычислительного комплекса IBM Polus">Polus</a></li>
+<li class="menu-1816"><a href="/tesla" title="Tesla CMC">Tesla CMC</a></li>
+<li class="menu-215"><a href="/common" title="Общие вопросы">Общие вопросы</a></li>
+<li class="menu-259"><a href="/registration" title="Регистрация на высокопроизводительных системах ВМК МГУ">Регистрация</a></li>
+<li class="menu-221"><a href="/support" title="Техническая поддержка">Поддержка</a></li>
+<li class="menu-1875"><a href="/OpenData" title="Данные собранные на системе и доступные для анализа">Отрытые данные</a></li>
+<li class="menu-222 last"><a href="/links" title="Полезные ссылки">Cсылки</a></li>
+</ul>              </div>
+    </div><!-- id="header" -->
+    <div id="sidebar">
+            <div class="block block-menu" id="block-menu-menu-workload">
+    <h3 class="title">Состояние систем</h3>
+    <div class="content"><ul class="menu"><li class="leaf first last dhtml-menu "><a href="/bgp/workload" title="" id="dhtml_menu-1771">Blue Gene/P</a></li>
+</ul></div>
+ </div>
+<div class="block block-menu" id="block-menu-primary-links">
+    <h3 class="title">Справочная информация</h3>
+    <div class="content"><ul class="menu"><li class="expanded first no-dhtml "><a href="/bgp" title="Описание вычислительного комплекса IBM Blue Gene/P" id="dhtml_menu-198">Blue Gene/P</a><ul class="menu"><li class="leaf first no-dhtml "><a href="/bgp/beginners" title="Для новых пользователей" id="dhtml_menu-273">Новым пользователям</a></li>
+<li class="leaf  no-dhtml "><a href="/bgp/quickstart" title="Быстрый старт работы на системе Blue Gene/P" id="dhtml_menu-224">Быстрый старт</a></li>
+<li class="leaf  no-dhtml "><a href="/bgp/access" title="Подключение к Blue Gene/P" id="dhtml_menu-199">Подключение</a></li>
+<li class="collapsed  no-dhtml "><a href="/bgp/development" title="Общие рекомендации по разработке программ для Blue Gene/P" id="dhtml_menu-200">Разработка программ</a></li>
+<li class="collapsed  no-dhtml "><a href="/bgp/jobs" title="Запуск заданий на Blue Gene/P" id="dhtml_menu-205">Запуск заданий</a></li>
+<li class="collapsed  no-dhtml "><a href="/bgp/soft" title="Программное обеспечение" id="dhtml_menu-211">Программное обеспечение</a></li>
+<li class="leaf  no-dhtml "><a href="/bgp/docs" title="Ссылки на документацию по Blue Gene/P" id="dhtml_menu-212">Официальная документация</a></li>
+<li class="leaf  no-dhtml "><a href="/bgp/faq" title="Часто задаваемые вопросы по Blue Gene/P" id="dhtml_menu-213">FAQ</a></li>
+<li class="leaf  no-dhtml "><a href="/bgp/links" title="Суперкомпьютеры серии IBM Blue Gene в университетах, лабораториях, индустрии" id="dhtml_menu-223">Серия Blue Gene в мире</a></li>
+<li class="leaf  no-dhtml "><a href="/bgp/photos" title="Фотографии системы Blue Gene/P" id="dhtml_menu-245">Фотографии</a></li>
+<li class="leaf last no-dhtml "><a href="/bgp/pubs" title="Некоторые публикации по результатам расчетов на Blue Gene/P и Polus" id="dhtml_menu-1357">Публикации</a></li>
+</ul></li>
+<li class="expanded  no-dhtml "><a href="/polus" title="Описание вычислительного комплекса IBM Polus" id="dhtml_menu-1841">Polus</a><ul class="menu"><li class="leaf first no-dhtml "><a href="/node/245" title="Подключение к системе Polus" id="dhtml_menu-1853">Подключение</a></li>
+<li class="leaf  no-dhtml "><a href="/node/241" title="Компиляция программ" id="dhtml_menu-1845">Компиляция</a></li>
+<li class="collapsed  no-dhtml "><a href="/node/242" title="Запуск заданий" id="dhtml_menu-1847">Запуск заданий</a></li>
+<li class="collapsed last no-dhtml "><a href="/node/246" title="Программное обеспечение" id="dhtml_menu-1855">Программное обеспечение</a></li>
+</ul></li>
+<li class="expanded  no-dhtml "><a href="/tesla" title="Tesla CMC" id="dhtml_menu-1816">Tesla CMC</a><ul class="menu"><li class="collapsed first no-dhtml "><a href="/tesla/soft" title="Программное обеспечение установленное на Tesla CMC" id="dhtml_menu-1833">Программное обеспечение</a></li>
+<li class="leaf last no-dhtml "><a href="/tesla/publications" title="Публикаци работ проведённых с исgользованием Tesla CMC" id="dhtml_menu-1826">Публикации</a></li>
+</ul></li>
+<li class="expanded  no-dhtml "><a href="/common" title="Общие вопросы" id="dhtml_menu-215">Общие вопросы</a><ul class="menu"><li class="leaf first no-dhtml "><a href="/common/ssh" title="Работа с удаленными системами c использованием SSH" id="dhtml_menu-216">Доступ по SSH</a></li>
+<li class="leaf last no-dhtml "><a href="/node/255" title="Отчет об использовании суперкомпьютерного комплекса ВМК." id="dhtml_menu-1873">Отчеты</a></li>
+</ul></li>
+<li class="expanded  no-dhtml "><a href="/registration" title="Регистрация на высокопроизводительных системах ВМК МГУ" id="dhtml_menu-259">Регистрация</a><ul class="menu"><li class="leaf first no-dhtml "><a href="/regulations" title="Регламент доступа" id="dhtml_menu-397">Регламент доступа</a></li>
+<li class="leaf  no-dhtml "><a href="/common/password" title="Выбор стойкого пароля" id="dhtml_menu-217">Выбор пароля</a></li>
+<li class="leaf  no-dhtml "><a href="/studentgroup" title="Доступ для групп студентов" id="dhtml_menu-1837">Группы студентов</a></li>
+<li class="leaf  no-dhtml "><a href="/registration/security-certificate" title="Предпреждения о сертификатах безопасности защищенных соединений" id="dhtml_menu-312">Безопасность соединения</a></li>
+<li class="leaf last no-dhtml "><a href="/rules" title="Правила доступа и использования ресурсов суперкомпьютерного комплекса" id="dhtml_menu-731">Правила доступа</a></li>
+</ul></li>
+<li class="leaf  no-dhtml "><a href="/support" title="Техническая поддержка" id="dhtml_menu-221">Поддержка</a></li>
+<li class="collapsed  no-dhtml "><a href="/OpenData" title="Данные собранные на системе и доступные для анализа" id="dhtml_menu-1875">Отрытые данные</a></li>
+<li class="leaf last no-dhtml "><a href="/links" title="Полезные ссылки" id="dhtml_menu-222">Cсылки</a></li>
+</ul></div>
+ </div>
+<div class="block block-menu" id="block-menu-menu-useful-links">
+    <h3 class="title">Полезные ссылки</h3>
+    <div class="content"><ul class="menu"><li class="leaf first dhtml-menu "><a href="http://cmc.msu.ru" title="Факультет ВМК МГУ имени М. В. Ломоносова" id="dhtml_menu-1349">Факультет вычислительной математики и кибернетики МГУ</a></li>
+<li class="leaf  dhtml-menu "><a href="http://msu.ru" title="Московский государственный университет имени М. В. Ломоносова" id="dhtml_menu-1350">Московский государственный университет имени М. В. Ломоносова</a></li>
+<li class="leaf  dhtml-menu "><a href="http://hpc.msu.ru" title="" id="dhtml_menu-1352">Суперкомпьютерный комплекс Московского университета</a></li>
+<li class="leaf  dhtml-menu "><a href="http://parallel.ru" title="Информационно-аналитический центр по параллельным вычислениям" id="dhtml_menu-1356">parallel.ru</a></li>
+<li class="leaf last dhtml-menu "><a href="http://academy.hpc-russia.ru" title="" id="dhtml_menu-1351">Летняя суперкомпьютерная академия</a></li>
+</ul></div>
+ </div>
+<div class="block block-block" id="block-block-2">
+    <h3 class="title"></h3>
+    <div class="content"><form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="011488773996674991110:ffiqszpzkei" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="28" />
+    <input type="submit" name="sa" value="Поиск" />
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=ru"></script>
+
+</div>
+ </div>
+    </div><!-- id="sidebar" -->
+    <div id="content">
+                  <h1></h1>
+                              <div id="node-55" class="node sticky">
+<h1><a href="/bgp/intro">Суперкомпьютер IBM Blue Gene/P на факультете ВМК МГУ</a></h1><div class="submitted"></div>
+<div class="content clear-block"><p>
+<img src="/sites/hpc.cmc.msu.ru/files/bgp-cmc-msu.png" width="240" height="270" align="right" title="Суперкомпьютер IBM Blue Gene/P, установленный на факультете ВМК МГУ имени М. В. Ломоносова" alt="Параллельный компьютер IBM Blue Gene/P факультета ВМК МГУ имени М. В. Ломоносова. Фото (с) А. В. Позднеев" />
+С 2008 года на факультете ВМК МГУ имени 
+<span class="nobr">М. В. Ломоносова</span>
+работает суперкомпьютер IBM Blue Gene/P, который является одной из первых систем
+данной серии среди установленных в мире.
+Архитектура Blue Gene была предложена компанией IBM в рамках проекта 
+по исследованию возможностей достижения новых рубежей в супервычислениях.
+Более крупные машины данной серии в настоящее время занимают лидирующие
+позиции в списке пятисот самых мощных компьютеров мира
+<a href="http://www.top500.org/" title="Home | TOP500 Supercomputing Sites">Top500</a>,
+а машина Blue Gene/P, установленная на ВМК МГУ, 
+в редакции рейтинга от <span class="nobr">18 ноября</span> 2008 года оказалась на
+<a href="http://top500.org/system/ranking/9575" title="Blue Gene/P Solution | TOP500 Supercomputing Sites">128-м месте</a> (в редакции от 16 ноября 2009 года &mdash; 348-е место).
+В списке самых высокопроизводительных компьютеров стран СНГ, опубликованном 22 сентября 2009 года,
+она находится на
+<a href="http://www.supercomputers.ru/?page=rating" title="TOP 50 | Суперкомпьютеры">4-й строчке</a>.
+</p>
+<p>
+Система IBM Blue Gene/P принадлежит к новому семейству суперкомпьютеров,
+обладающих высокой производительностью, масштабируемостью, возможностью
+обрабатывать данные большего объема, потребляя при этом значительно меньше
+энергии и занимая меньшую площадь по сравнению с предыдущими системами.
+</p>
+</div>
+<div class="nodeLinks"><ul class="links inline"><li class="node_read_more first last"><a href="/bgp/intro" title="Перейти к материалу «Суперкомпьютер IBM Blue Gene/P на факультете ВМК МГУ»">Читать далее</a></li>
+</ul></div></div><div id="node-238" class="node">
+<h1><a href="/node/238">Система BlueGene/P доступна из интернета без OpenVPN</a></h1><div class="submitted"><ul class="links inline"><li class="taxonomy_term_17 first"><a href="/taxonomy/term/17" rel="tag" title="">Новости</a></li>
+<li class="taxonomy_term_15 last"><a href="/taxonomy/term/15" rel="tag" title="">Blue Gene/P</a></li>
+</ul>tiger - чт, 02 октября 2014 - 18:06</div>
+<div class="content clear-block"><p>Система  BlueGene/P была переведена на доступ по <a href="https://wiki.cs.msu.ru/Main/SShKeys#A_235_193_203_208_207_204_213_222_201_212_216_47_211_207_218_196_193_212_216_ssh_45_203_204_192_222"> Ssh-ключам </a>. Это решает проблему с простыми паролями, которые пользователи могли бы себе поставить и повышает безопасность доступа.</p>
+<p>В связи с переходом на ключи и отменой паролей доступ на систему теперь открыт из сети Интернет, а не только из сети факультета ВМК. Команда технической поддержки надеется, что Вы оцените удобство и простоту входа на систему.</p>
+</div>
+</div><div id="node-211" class="node">
+<h1><a href="/node/211">Обновление прикладного программного обеспечения на Blue Gene/P </a></h1><div class="submitted"><ul class="links inline"><li class="taxonomy_term_17 first"><a href="/taxonomy/term/17" rel="tag" title="">Новости</a></li>
+<li class="taxonomy_term_15 last"><a href="/taxonomy/term/15" rel="tag" title="">Blue Gene/P</a></li>
+</ul>vseleznv - пт, 28 июня 2013 - 18:38</div>
+<div class="content clear-block"><p>
+<img src="/sites/hpc.cmc.msu.ru/files/vmdscene.png" width="237" height="270" align="right" alt="Визуализация биомолекулы" />
+На Blue Gene/P в тестовом режиме заработала система <a href="/bgp/soft/modules">modules</a>. В настоящее время через нее доступны следующие библиотеки и программы:
+</p>
+<ul>
+<li><a href="/bgp/soft/fftw">FFTW</a> &mdash; высокопроизводительная библиотека, реализующая функции быстрого преобразования Фурье</li>
+<li><a href="/bgp/soft/gromacs">Gromacs</a> &mdash; пакет для моделирования биомолекулярных систем методами молекулярной динамики</li>
+</ul>
+<p>
+Свои замечания и предложения по установке и настройке дополнительного программного обеспечения вы можете сообщить <a href="http://support.cmc.msu.ru">службе технической поддержки</a> (раздел "Суперкомпьютеры").
+</p> </div>
+</div><div id="node-206" class="node">
+<h1><a href="/node/206">Время жизни задач со статусом &quot;H&quot; в очереди задач на BlueGene/P.</a></h1><div class="submitted"><ul class="links inline"><li class="taxonomy_term_18 first"><a href="/taxonomy/term/18" rel="tag" title="">Объявления</a></li>
+<li class="taxonomy_term_15 last"><a href="/taxonomy/term/15" rel="tag" title="">Blue Gene/P</a></li>
+</ul>tiger - пн, 26 декабря 2011 - 08:18</div>
+<div class="content clear-block"><p>С целью уменьшения количества задач в очереди, и обеспечения более удобного чтения вывода команды "llq" Задачи находящиеся в статусе User Hold более 7 дней будут удаляться.<br />
+Если вы хотите вывести свою задачу из статуса User Hold, чтобы она начала выполняться воспользуйтесь командой<br />
+llhold -r jobid</p>
+</div>
+</div><div id="node-203" class="node">
+<h1><a href="/node/203">BG/P: Прекращен доступ с фиксированных IP-адресов</a></h1><div class="submitted"><ul class="links inline"><li class="taxonomy_term_18 first"><a href="/taxonomy/term/18" rel="tag" title="">Объявления</a></li>
+<li class="taxonomy_term_15 last"><a href="/taxonomy/term/15" rel="tag" title="">Blue Gene/P</a></li>
+</ul>root - чт, 10 ноября 2011 - 12:34</div>
+<div class="content clear-block"><p>Вниманию пользователей вычислительной системы BG/P!</p>
+<p>Доступ к BG/P с фиксированных IP-адресов прекращен. Для того, чтобы иметь возможность подключаться к BG/P с факультетских компьютеров и через факультетскую сеть Wi-Fi, вам необходимо получить VPN-сертификат.</p>
+<p>Для получения VPN-сертификата вам следует оформить заявку на сайте <a href="http://support.cmc.msu.ru" title="http://support.cmc.msu.ru">http://support.cmc.msu.ru</a> в разделе «Суперкомпьютеры». Если вы прежде не использовали указанный сайт, то при регистрации укажите тот же адрес электронной почты, который был указан вами при оформлении учетной записи для BG/P.</p>
+<p>Инструкция по настройке VPN-соединения представлена на <a href="/common/vpn">данном сайте</a> и <a href="http://wiki.cmc.msu.ru/Main/OpenVPNConfig">веб-сайте службы технической поддержки факультета ВМК</a>.</p>
+<p>При возникновении любых вопросов, пожалуйста, оставляйте свои заявки в разделе «Суперкомпьютеры» веб-сайта <a href="http://support.cmc.msu.ru" title="http://support.cmc.msu.ru">http://support.cmc.msu.ru</a>.</p>
+</div>
+</div><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="/node?page=1" title="Перейти к странице 2" class="active">2</a></li>
+<li class="pager-item"><a href="/node?page=2" title="Перейти к странице 3" class="active">3</a></li>
+<li class="pager-item"><a href="/node?page=3" title="Перейти к странице 4" class="active">4</a></li>
+<li class="pager-item"><a href="/node?page=4" title="Перейти к странице 5" class="active">5</a></li>
+<li class="pager-item"><a href="/node?page=5" title="Перейти к странице 6" class="active">6</a></li>
+<li class="pager-item"><a href="/node?page=6" title="Перейти к странице 7" class="active">7</a></li>
+<li class="pager-next"><a href="/node?page=1" title="Перейти к следующей странице" class="active">следующая ›</a></li>
+<li class="pager-last last"><a href="/node?page=6" title="Перейти к последней странице" class="active">последняя »</a></li>
+</ul></div>            <a href="http://hpc.cmc.msu.ru/rss.xml" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="hpc@cmc RSS" width="16" height="16" /></a>    </div><!-- id="content" -->
+  </div><!-- id="container" -->
+  <div id="footer">
+    <div class="content">
+            <div class="block block-block" id="block-block-1">
+    <h3 class="title"></h3>
+    <div class="content"><table class="null"  border="0" width="100%" cellpadding="0" cellspacing="0" bordercolor="#638EC6">
+
+<thead  border="0" width="100%" cellpadding="0" cellspacing="0" bordercolor="#638EC6">
+</thead>
+
+<tbody border="0" width="100%" cellpadding="0" cellspacing="0" bordercolor="#638EC6">
+
+<tr>
+
+<td align="left">
+<p>Все материалы сайта доступны по лицензии:<br/><a href="http://creativecommons.org/licenses/by/4.0/deed.ru" hreflang="ru" class="underline" rel="license" target="_blank">Creative Commons Attribution 4.0 International</a></p> 
+</td>
+
+<td align="right">
+<small><a href="/about">О сайте</a> | <a href="/contact">Контактная форма</a> | <a href="/forum/6">Сообщить об ошибке</a></small>
+</td>
+
+</tr>
+
+
+<tr>
+
+
+<td width="50%" align="left">
+<a href="http://drupal.org"><img src="/misc/powered-blue-80x15.png" alt="Сайт работает на Drupal — открытой системе управления контентом" title="Сайт работает на Drupal — открытой системе управления контентом" width="80" height="15" /></a>
+</td>
+
+
+<td width="50%" align="right">
+
+<!-- Google Analytics --><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4905683-3");
+pageTracker._trackPageview();
+</script><!-- /Google -->
+
+<!-- YaMetrics begin -->
+<script type="text/javascript"><!--
+var ya_cid=159698;
+//--></script>
+<script src="http://bs.yandex.ru/resource/watch.js" type="text/javascript"></script>
+<noscript><div style="display: inline;"><img src="http://bs.yandex.ru/watch/159698" width="1" height="1" alt="" /></div></noscript>
+<!-- YaMetrics end -->
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t26.11;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='88' height='15'><\/a>")
+//--></script><!--/LiveInternet-->
+
+</td>
+
+
+</tr>
+
+</tbody>
+</table>
+</div>
+ </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="/misc/jquery.js?v"></script>
+<script type="text/javascript" src="/misc/drupal.js?v"></script>
+<script type="text/javascript" src="/sites/all/modules/dhtml_menu/dhtml_menu.js?v"></script>
+<script type="text/javascript" src="/sites/all/modules/extlink/extlink.js?v"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "dhtmlMenu": { "siblings": "siblings", "clone": "clone", "slide": 0, "relativity": 0, "children": 0, "doubleclick": 0 }, "extlink": { "extTarget": 0, "extClass": "ext", "extSubdomains": 1, "extExclude": "(cmc\\.msu\\.ru)|(msu\\.ru)", "extInclude": "", "extAlert": 0, "extAlertText": "This link will take you to an external web site. We are not responsible for their content.", "mailtoClass": 0 } });
+//--><!]]>
+</script>
+</html>

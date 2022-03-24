@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Школа профессий SMART SCHOOL - это центр развития способностей у детей и подростков в области современных компьютерных технологий. Наша цель дать старт детям в освоении программирования и WEB дизайна. Чтобы стать профессионалом в будущем дети должны обязательно учиться у хорошего наставника, который может заразить их своим увлечением и поможет им поверить в свои возможности. Мы создали комфортные условия для обучения: современные компьютерные классы, маленькие группы до 5 человек, шаговая доступность от метро." />
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'BjSui4':{'hash':'5d7c80f58d565fb4f6d3cd4194bc63d6'}},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="/bitrix/cache/css/s1/bizsolutions.alpha/kernel_main/kernel_main.css?151758179026347" type="text/css"  rel="stylesheet" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin" type="text/css"  rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/bizsolutions.alpha/page_aaa703c88b70befea23b2c538cc817b6/page_aaa703c88b70befea23b2c538cc817b6.css?15030483893518" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/bizsolutions.alpha/template_42dee9f5b6061db83d8e69c5326c4678/template_42dee9f5b6061db83d8e69c5326c4678.css?1503048389395879" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/bizsolutions.alpha/kernel_main/kernel_main.js?1517581790290266"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.min.js?15030469468699"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?147774130611191"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/bitrix/templates/bizsolutions.alpha/components/bitrix/news.list/index.slider/script.js','/bitrix/templates/bizsolutions.alpha/plugins/jquery/jquery.js','/bitrix/templates/bizsolutions.alpha/plugins/jquery/jquery-migrate.js','/bitrix/templates/bizsolutions.alpha/plugins/bootstrap/js/bootstrap.js','/bitrix/templates/bizsolutions.alpha/plugins/bootstrap.validator/js/bootstrap-validator.js','/bitrix/templates/bizsolutions.alpha/plugins/back-to-top.js','/bitrix/templates/bizsolutions.alpha/plugins/smoothScroll.js','/bitrix/templates/bizsolutions.alpha/plugins/jquery.flexslider/js/jquery.flexslider.js','/bitrix/templates/bizsolutions.alpha/plugins/owl-carousel/owl.carousel.js','/bitrix/templates/bizsolutions.alpha/plugins/jquery.parallax.js','/bitrix/templates/bizsolutions.alpha/plugins/counter/waypoints.js','/bitrix/templates/bizsolutions.alpha/plugins/counter/jquery.counterup.js','/bitrix/templates/bizsolutions.alpha/js/custom.js','/bitrix/templates/bizsolutions.alpha/js/app.js','/bitrix/templates/bizsolutions.alpha/js/plugins/owl-carousel.js']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/bitrix/templates/bizsolutions.alpha/components/bitrix/news.list/index.slider/style.css','/bitrix/templates/bizsolutions.alpha/plugins/bootstrap/css/bootstrap.css','/bitrix/templates/bizsolutions.alpha/plugins/bootstrap.validator/css/bootstrap-validator.css','/bitrix/templates/bizsolutions.alpha/css/ie8.css','/bitrix/templates/bizsolutions.alpha/css/blocks.css','/bitrix/templates/bizsolutions.alpha/css/plugins.css','/bitrix/templates/bizsolutions.alpha/css/app.css','/bitrix/templates/bizsolutions.alpha/css/style.css','/bitrix/templates/bizsolutions.alpha/css/headers/header-default.css','/bitrix/templates/bizsolutions.alpha/css/headers/header-v1.css','/bitrix/templates/bizsolutions.alpha/css/footers/footer-v1.css','/bitrix/templates/bizsolutions.alpha/plugins/animate.css','/bitrix/templates/bizsolutions.alpha/plugins/line-icons/line-icons.css','/bitrix/templates/bizsolutions.alpha/plugins/owl-carousel/owl.carousel.css','/bitrix/templates/bizsolutions.alpha/css/colors.min.css','/bitrix/templates/bizsolutions.alpha/css/custom.css','/bitrix/templates/bizsolutions.alpha/components/bizsolutions/ajax.subsribe.news/.default/style.css']); </script>
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/bizsolutions.alpha/template_e433a6900183bfdb298393e7b79786ad/template_e433a6900183bfdb298393e7b79786ad.js?1503047287346115"></script>
+<script type="text/javascript" src="/bitrix/cache/js/s1/bizsolutions.alpha/page_60ee406b1fd56efeb6ef77c0623c82fd/page_60ee406b1fd56efeb6ef77c0623c82fd.js?1503048389705"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "e3193b559bfee2e062f0e920d01ed3e0"]); _ba.push(["host", "ucdo.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+    <title>Курсы для детей в школе профессий smart school, программирование для детей, школа программирования, javascrip для детей, php для детей, кружок по программированию, школа будущего, профессия программиста для ребенка </title>
+    </head>
+
+<body>
+    
+    <div class="wrapper">
+        <!--=== Header ===-->
+        <div class="header">
+            <div class="topbar-v1 visible-md-block visible-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-inline top-v1-contacts">
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto:info@ucdo.ru" class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Написать нам">info@ucdo.ru</a>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40996849 = new Ya.Metrika({
+                    id:40996849,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/40996849" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:89654072933" class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Позвонить нам">+7 (965) 407-29-33</a>                                </li>
+                                <li class="call-back">
+                                    <a href="/include/modals/modal.callback.php" class="btn-u btn-u-xs rounded" data-toggle="modal" data-target="#alpha-modal-sm">
+                                        <span class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Мы&nbsp;перезвоним&nbsp;сами">
+    <i class="fa fa-bell-o"></i> Заказать&nbsp;звонок
+</span>                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="topbar">
+                                <div id="bxdynamic_BjSui4_start" style="display:none"></div><ul class="loginbar list-inline text-center">
+            <li>
+            <a href="/personal/?register=yes">
+                Регистрация            </a>
+        </li>
+        <li class="topbar-devider"></li>
+        <li>
+            <a href="/personal/">
+                Вход            </a>
+        </li>
+    </ul><div id="bxdynamic_BjSui4_end" style="display:none"></div>                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                                <ul class="list-inline top-v1-data">
+                    <li id="bx_3218110189_13">
+                <a href="http://vk.com/smartschoolmsk" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Официальная группа Smart School ВКонтакте">
+                    <i class="fa fa-vk"></i>
+                </a>
+            </li>
+                        <li id="bx_3218110189_14">
+                <a href="https://www.facebook.com/groups/smartschoolmsk/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Официальный фейсбук Smart School">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+                        <li id="bx_3218110189_15">
+                <a href="https://twitter.com/SmartSchoolMsk" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Официальный твиттер Smart School">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+                        <li id="bx_3218110189_17">
+                <a href="http://ok.ru/group/53439989219419" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="bottom" data-original-title="Официальная группа Smart School">
+                    <i class="fa fa-odnoklassniki"></i>
+                </a>
+            </li>
+                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Logo -->
+                <div class="pull-left">
+                    <span style="font-family: Arial, Helvetica; font-size: 20pt;"><a class="logo" href="/" style="text-decoration: none"><img src="/include/images/logo.gif" width="59" height="84">
+<span style="color: #00aeef;">S</span><span style="color: #707070;">MART</span> <span style="color: #f3731f;">S</span><span style="color: #7d7d7d;">CHOOL</span><!--<br><span style="color: #7d7d7d; font-size: 12pt;">ш к о л а &nbsp; &nbsp; &nbsp; п р о ф е с с и й</span>--></a></span>
+                </div>
+                <!-- End Logo -->
+
+                <!-- Toggle get grouped for better mobile display -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Переключение навигации</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <!-- End Toggle -->
+            </div><!--/end container-->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+                <div class="container">
+                    <!-- Search Block -->
+                    <ul class="nav navbar-nav">
+    <li>
+        <i class="search fa fa-search search-btn"></i>
+
+        <div class="search-open">
+            <form action="/search/index.php">
+                <div class="input-group animated fadeInDown">
+                    <input type="text" name="q" class="form-control" placeholder="Что искать?">
+                    <span class="input-group-btn">
+                        <button class="btn-u" type="submit" name="s">
+                            Поиск                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </li>
+</ul>                    <!-- End Search Block -->
+
+                    <!-- Menu Block -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                        <a href="/">Главная</a>
+                    </li>
+                                        <li class="dropdown">
+                        <a href="/about/" class="dropdown-toggle" data-toggle="dropdown">О компании</a>
+                        <ul class="dropdown-menu">
+                                        <li><a href="/about">О нас</a></li>
+                                        <li><a href="/about/clients/">Все курсы</a></li>
+                                        <li><a href="/about/details/">Реквизиты</a></li>
+                    </ul></li>                    <li class="dropdown">
+                        <a href="/services/" class="dropdown-toggle" data-toggle="dropdown">Курсы</a>
+                        <ul class="dropdown-menu">
+                                        <li><a href="/services/web-design/">Курсы по профессии веб дизайнер</a></li>
+                                        <li><a href="/services/web-programmist/">Курсы по профессии веб программист</a></li>
+                                        <li><a href="/services/razrabotchik-prilozheniy/">Курсы по профессии разработчик приложений</a></li>
+                                        <li><a href="/services/it-specialist/">Курсы по профессии it-специалист</a></li>
+                    </ul></li>                    <li><a href="/news/">Новости</a></li>
+                                        <li><a href="/contacts/">Контакты</a></li>
+                        </ul>
+                        <!-- End Menu Block -->
+                </div><!--/end container-->
+            </div><!--/navbar-collapse-->
+        </div>
+        <!--=== End Header ===-->
+
+        
+    <!-- Begin Slider -->
+        <div class="alpha-wrap">
+        <div id="alpha-slider" class="flexslider alpha-slider" style="height: 500px;">
+            <ul class="slides alpha-slides fill">
+                                    <li class="fill shading" style="background-image: url('/upload/iblock/a4f/a4fc2b37e3f27fefacf98c58dd09308e.jpg');">
+                                                    <div class="container fill">
+                                <div class="alpha-caption fill">
+                                                                                <div class="col-md-12 fill">
+                                                <div class="caption caption-text vertical-align fill text-center">
+                                                    <div>
+                                                        <div class="alpha-ch1">Smart school</div>
+                                                        <div class="alpha-ch2">
+                                                            <div>Принципиально новая школа профессий для детей</div>
+                                                        </div>
+                                                                                                                    <div class="alpha-ch3">
+                                                                                                                                    <a href="about/" class="btn-u btn-u-blue">
+                                                                        О школе                                                                    </a>
+                                                                                                                                    <a href="/about/clients/" class="btn-u btn-u-green">
+                                                                        Выбрать курс                                                                    </a>
+                                                                                                                            </div>
+                                                                                                                </div>
+                                                </div>
+                                            </div>
+                                                                            </div>
+                            </div>
+                                            </li>
+                                    <li class="fill shading" style="background-image: url('/upload/iblock/abb/abb9cf0a9314ace2c108c01f8ba54834.jpg');">
+                                                    <div class="container fill">
+                                <div class="alpha-caption fill">
+                                                                                <div class="col-md-12 fill">
+                                                <div class="caption caption-text vertical-align fill text-center">
+                                                    <div>
+                                                        <div class="alpha-ch1">Курс верстки html и css</div>
+                                                        <div class="alpha-ch2">
+                                                            <div>25 ребят и 5 девочек закончили в сентябре курс верстки html и css</div>
+                                                        </div>
+                                                                                                                    <div class="alpha-ch3">
+                                                                                                                                    <a href="/services/web-design/osnovi-html-css/" class="btn-u btn-u-blue">
+                                                                        Записаться на курс                                                                    </a>
+                                                                                                                            </div>
+                                                                                                                </div>
+                                                </div>
+                                            </div>
+                                                                            </div>
+                            </div>
+                                            </li>
+                                    <li class="fill shading" style="background-image: url('/upload/iblock/87a/87aec5154ad37d664243f1a437cb163d.jpg');">
+                                                    <div class="container fill">
+                                <div class="alpha-caption fill">
+                                                                                <div class="col-md-12 fill">
+                                                <div class="caption caption-text vertical-align fill text-center">
+                                                    <div>
+                                                        <div class="alpha-ch1">Акции и подарки</div>
+                                                        <div class="alpha-ch2">
+                                                            <div>Подарки, текущие акции, сезонные скидки</div>
+                                                        </div>
+                                                                                                                    <div class="alpha-ch3">
+                                                                                                                                    <a href="/news/aktsii-podarki/" class="btn-u btn-u-orange">
+                                                                        подробнее                                                                    </a>
+                                                                                                                            </div>
+                                                                                                                </div>
+                                                </div>
+                                            </div>
+                                                                            </div>
+                            </div>
+                                            </li>
+                                    <li class="fill shading" style="background-image: url('/upload/iblock/3ee/3eeace80d5029cf38dbe452fe82f383e.jpg');">
+                                                    <div class="container fill">
+                                <div class="alpha-caption fill">
+                                                                                <div class="col-md-12 fill">
+                                                <div class="caption caption-text vertical-align fill text-center">
+                                                    <div>
+                                                        <div class="alpha-ch1">Компьютерная аудитория</div>
+                                                        <div class="alpha-ch2">
+                                                            <div>Индивидуальные рабочие места для каждого слушателя</div>
+                                                        </div>
+                                                                                                            </div>
+                                                </div>
+                                            </div>
+                                                                            </div>
+                            </div>
+                                            </li>
+                            </ul>
+        </div>
+        <div class="alpha-nav hidden-xs">
+            <a href="" class="flex-prev"><i class="fa fa-angle-left"></i></a>
+            <div class="alpha-bullets"></div>
+            <a href="" class="flex-next"><i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+        <!-- End Slider -->
+
+    <div class="container content">
+        <!-- Begin Highlights -->
+            <div class="row equal-height-columns">
+                    <div class="col-sm-4 sm-margin-bottom-20">
+                <div class="easy-block-v3 service-or equal-height-column" style="height: 160px;" id="bx_1373509569_23">
+                    <div class="service-bg"></div>
+                                            <i class="icon-trophy"></i>
+                                        <div class="inner-faq-b">
+                        <h3>
+                                                            <a href="/services/">Открытые уроки</a>
+                                                    </h3>
+                                                    <p>Бесплатные открытые уроки проходят в первую субботу каждого месяца.</p>
+                                            </div>
+                </div>
+            </div>
+                    <div class="col-sm-4 sm-margin-bottom-20">
+                <div class="easy-block-v3 service-or equal-height-column" style="height: 160px;" id="bx_1373509569_24">
+                    <div class="service-bg"></div>
+                                            <i class="icon-present"></i>
+                                        <div class="inner-faq-b">
+                        <h3>
+                                                            <a href="/news/aktsii-podarki/">Акции, подарки</a>
+                                                    </h3>
+                                                    <p>Оплата частями в рассрочку каждый месяц!</p>
+                                            </div>
+                </div>
+            </div>
+                    <div class="col-sm-4 sm-margin-bottom-20">
+                <div class="easy-block-v3 service-or equal-height-column" style="height: 160px;" id="bx_1373509569_25">
+                    <div class="service-bg"></div>
+                                            <i class="icon-diamond"></i>
+                                        <div class="inner-faq-b">
+                        <h3>
+                                                            <a href="/services/">Выгодное предложение</a>
+                                                    </h3>
+                                                    <p>При покупке двух курсов скидка 20%. При покупке трех курсов скидка 30%</p>
+                                            </div>
+                </div>
+            </div>
+            </div>
+            <!-- End Highlights -->
+
+    </div>
+
+    <div class="bg-grey">
+        <div class="container content-sm">
+            <!-- Service Blocks -->
+                <div class="heading heading-v1 margin-bottom-40">
+        <h2>Наши задачи</h2>
+    </div>
+    <div class="row content-boxes-v2 margin-bottom-30">
+                    <div class="col-md-4 md-margin-bottom-30" id="bx_3485106786_45">
+                <h2 class="heading-sm">
+                                            <a class="link-bg-icon" href="#">
+                    
+                                                    <i class="icon-custom icon-sm rounded-x icon-rocket"></i>
+                                                    <span>Помочь</span>
+
+                                            </a>
+                                    </h2>
+                                    <hr class="no-margin margin-bottom-10">
+                    <p>Помочь детям уже сейчас начать собирать свое портфолио для дальнейшей профессиональной деятельности, поступления в ВУЗы, участия в конкурсах. Все сделанные работы и проекты во время обучения добавятся в их копилку.</p>
+                            </div>
+                    <div class="col-md-4 md-margin-bottom-30" id="bx_3485106786_46">
+                <h2 class="heading-sm">
+                                            <a class="link-bg-icon" href="#">
+                    
+                                                    <i class="icon-custom icon-sm rounded-x icon-layers"></i>
+                                                    <span>Заложить</span>
+
+                                            </a>
+                                    </h2>
+                                    <hr class="no-margin margin-bottom-10">
+                    <p>Заложить ребенку надежный фундамент знаний и навыков уже в раннем возрасте, чтобы им легче было в будущем определиться с выбором профессии. Ведь для хорошего программиста большую роль играет не наличие высшего образования, а развитые  способности в области программирования и интернет технологий.</p>
+                            </div>
+                    <div class="col-md-4 md-margin-bottom-30" id="bx_3485106786_47">
+                <h2 class="heading-sm">
+                                            <a class="link-bg-icon" href="#">
+                    
+                                                    <i class="icon-custom icon-sm rounded-x icon-like"></i>
+                                                    <span>Привить</span>
+
+                                            </a>
+                                    </h2>
+                                    <hr class="no-margin margin-bottom-10">
+                    <p>Привить ребенку знания компьютерных технологий на доступном для них уровне. Мы практикуем индивидуальный подход к каждому, понимая, что все дети разные и уровень их подготовки отличается. Ребенок будет чувствовать, что он обязательно справится с поставленной задачей и получит поддержку от наставника</p>
+                            </div>
+                    <div class="col-md-4 md-margin-bottom-30" id="bx_3485106786_48">
+                <h2 class="heading-sm">
+                                            <a class="link-bg-icon" href="#">
+                    
+                                                    <i class="icon-custom icon-sm rounded-x icon-graduation"></i>
+                                                    <span>Научить</span>
+
+                                            </a>
+                                    </h2>
+                                    <hr class="no-margin margin-bottom-10">
+                    <p>Научить работать в команде и обрести уверенность в себе, что просто необходимо для работы над большими проектами и коллективными разработками.</p>
+                            </div>
+                    <div class="col-md-4 md-margin-bottom-30" id="bx_3485106786_49">
+                <h2 class="heading-sm">
+                                            <a class="link-bg-icon" href="#">
+                    
+                                                    <i class="icon-custom icon-sm rounded-x icon-calculator"></i>
+                                                    <span>Решить</span>
+
+                                            </a>
+                                    </h2>
+                                    <hr class="no-margin margin-bottom-10">
+                    <p>Научить творчески подходить к решению задач и найти цель  в жизни, разбудить скрытые возможности и талант ребенка. Только пробуя разные направления можно найти свое увлечение и развивать дальше свои способности.</p>
+                            </div>
+                    <div class="col-md-4 md-margin-bottom-30" id="bx_3485106786_50">
+                <h2 class="heading-sm">
+                                            <a class="link-bg-icon" href="#">
+                    
+                                                    <i class="icon-custom icon-sm rounded-x icon-fire"></i>
+                                                    <span>Увлечь</span>
+
+                                            </a>
+                                    </h2>
+                                    <hr class="no-margin margin-bottom-10">
+                    <p>Увлечь детей новым интересным и перспективным занятием. Разжечь в них желание постоянно развиваться и учиться дальше более сложным программам.</p>
+                            </div>
+            </div>
+                <!-- End Service Blokcs -->
+        </div>
+    </div>
+
+    <div class="purchase">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 animated fadeInLeft">
+                    <span data-header="true">Бесплатная помощь в подборе профессии для вашего ребенка</span>
+<p>
+    Наш специалист поможет выбрать наиболее подходящий курс для вашего ребенка. 
+</p>                </div>
+                <div class="col-md-3 btn-buy animated fadeInRight">
+                    <a href="/include/modals/modal.order.php" class="btn-u btn-u-lg" data-toggle="modal" data-target="#alpha-modal">
+    <i class="fa fa-cloud-download"></i> Задать вопрос
+</a>                </div>
+            </div>
+        </div>
+    </div><!--/row-->
+
+    <div class="bg-grey">
+        <div class="container content-sm">
+            <div class="row equal-height-columns">
+                <div class="col-md-6">
+                    <!-- About Panel with Equal Height -->
+                    <div class="panel panel-white equal-height-column no-margin-bottom">
+                        <div class="panel-heading overflow-h">
+                            <div class="clearfix">
+    <h3 class="panel-title pull-left">
+        <i class="fa fa-question-circle"></i> О компании
+    </h3>
+    <a href="/about/" class="btn-u btn-u-sm pull-right">Подробнее</a>
+</div>                        </div>
+                        <div class="panel-body">
+                            <h4>Информация о компании</h4>
+<p>
+	 Школа профессий <span style="color: #00aeef;">S</span><span style="color: #707070;">MART</span> <span style="color: #f3731f;">S</span><span style="color: #7d7d7d;">CHOOL</span> - это центр развития способностей у детей и подростков в области современных компьютерных технологий. Мы открылись в апреле 2015 года. Наша цель дать старт детям в освоении программирования и WEB дизайна. Чтобы стать профессионалом в будущем дети должны обязательно учиться у хорошего наставника, который может заразить их своим увлечением и поможет им поверить в свои возможности. Мы создали комфортные условия для обучения: современные компьютерные классы, маленькие группы до 5 человек, шаговая доступность от метро Курская, охрана.
+</p>
+<!--<ul class="list-unstyled margin-bottom-20">
+	<li><i class="fa fa-check color-green"></i> Измените иконку блока (585 вариантов) </li>
+	<li><i class="fa fa-check color-green"></i> Задайте заголовок блока</li>
+	<li><i class="fa fa-check color-green"></i> Измените текст кнопки и задайте ссылку для перехода</li>
+	<li><i class="fa fa-check color-green"></i> Оформите текст </li>
+</ul>-->                        </div>
+                    </div>
+                    <!-- End About Panel with Equal Height -->
+                </div>
+
+                <div class="col-md-6">
+                                            <div class="panel panel-white equal-height-column no-margin-bottom">
+                            <div class="panel-body">
+                                <div class="responsive-video">
+                                    <iframe src="https://www.youtube.com/embed/zZSF-gq_GE0" frameborder="0" allowfullscreen></iframe>                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Parallax Counter -->
+                <!-- End Parallax Counter -->
+
+        <div class="bg-grey">
+            <div class="container content-sm">
+                <div class="row equal-height-columns">
+                    <div class="col-md-6">
+                        <!-- Panel with Testimonials -->
+                            <div class="panel panel-white equal-height-column">
+        <div class="panel-heading overflow-h">
+            <h3 class="panel-title pull-left">
+                <i class="fa fa-commenting-o"></i>
+                Отзывы клиентов            </h3>
+        </div>
+        <div class="panel-body testimonials-v6">
+            <div id="testimonials-1" class="carousel slide testimonials testimonials-v1">
+                <div class="carousel-inner">
+                                            <div class="item active clearfix" id="bx_565502798_42">
+                            <p>Сын получил первый в жизни диплом &quot;Веб верстальщик&quot;&#41;&#41; Теперь по вечерам не болтается в интернете без дела! Говорит, что скоро начнет зарабатывать деньги&#41;&#41;&#41; Спасибо школе ...</p>
+                            <div class="testimonial-info">
+                                <img src="/upload/iblock/f3d/f3de0379035c7d62ed8575b666b8bdcc.jpg" alt="Светлана Филова">
+                                <span class="testimonial-author">
+                                    Светлана Филова                                    <em>Курс веб верстальщик, Костя Филов, 14 лет</em>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="item clearfix" id="bx_565502798_43">
+                            <p>Закончили курс в сентябре 2016, сейчас записались на практический курс по программированию PHP. Плюс центра: близко от метро, охрана, молодые преподаватели, рассрочка и скидки на следующие курсы, рядо...</p>
+                            <div class="testimonial-info">
+                                <img src="/upload/iblock/b5f/b5fdae02a188aaea67555486b949b6b5.jpg" alt="Екатерина Иванова">
+                                <span class="testimonial-author">
+                                    Екатерина Иванова                                    <em>Курс Основы программирования, мама Елизаветы, 15 лет</em>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="item clearfix" id="bx_565502798_44">
+                            <p>Прошел курс по программированию на javascript. До этого проходил обучение тут по специальности Верстальщик. Спасибо преподавателю Артему.&nbsp;&nbsp;Начал делать свой первый профессиональный сайт.</p>
+                            <div class="testimonial-info">
+                                <img src="/upload/iblock/95c/95cd343623767807cb4c56e013cc14c8.jpg" alt="Сергей">
+                                <span class="testimonial-author">
+                                    Сергей                                    <em>Курс Веб программирование: javascript, 14 лет</em>
+                                </span>
+                            </div>
+                        </div>
+                                    </div>
+
+                <div class="carousel-arrow">
+                    <a class="left carousel-control" href="#testimonials-1" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right carousel-control" href="#testimonials-1" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+                            <!-- End Panel with Testimonials -->
+                    </div>
+
+                    <div class="col-md-6">
+                        <!-- Panel with News Slider -->
+<div class="panel panel-white equal-height-column no-margin-bottom">
+    <div class="panel-heading overflow-h">
+        <h3 class="panel-title pull-left"><i class="fa fa-newspaper-o"></i> Последние новости</h3>
+        <a href="/news/" class="btn-u btn-u-sm pull-right">Все новости</a>
+    </div>
+    <div class="panel-body">
+                    <ul class="list-unstyled owl-ts-v1">
+                                    <li class="item" id="bx_1454625752_70">
+                        <h4>
+                            <a href="/news/aktsii-podarki/">Акции, подарки</a>
+                        </h4>
+                                                    <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="/upload/iblock/306/3060f5c2cf35b09b81662ebbb4bf54f3.jpg" alt="Акции, подарки">
+                                    <div class="md-margin-bottom-20"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>1.При покупке 2-х курсов Вы получаете скидку в размере 20&#37; &#40;акция действует в момент приобретения на оба приобретаемых курса&#41;<br />
+<br />
+2.При покупке 3-х курсов Вы получаете скидку в размере 30&#37;...</p>
+                                </div>
+                            </div>
+                                            </li>
+                                    <li class="item" id="bx_1454625752_26">
+                        <h4>
+                            <a href="/news/news-python-12102016/">Поздравляем наших юных выпускников. </a>
+                        </h4>
+                                                    <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="/upload/iblock/987/987348b41ffb5722c5490ec7e898fb4b.jpg" alt="Поздравляем наших юных выпускников. ">
+                                    <div class="md-margin-bottom-20"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>Поздравляем выпускников курса &quot;Программирование на языке Python&quot;! Вот и подошел к концу очередной курс по программе «Программирование на языке Python».&nbsp;&nbsp;На итоговом занятии ребята ...</p>
+                                </div>
+                            </div>
+                                            </li>
+                                    <li class="item" id="bx_1454625752_28">
+                        <h4>
+                            <a href="/news/news-frends/">Давайте дружить ;)</a>
+                        </h4>
+                                                    <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="/upload/iblock/85c/85cbe5d7097584d99a231b2701e46ccb.jpg" alt="Давайте дружить ;)">
+                                    <div class="md-margin-bottom-20"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>Давайте дружить!&#41; Развиваем таланты и раскрываем способности наших деток посредством информационных ресурсов. </p>
+                                </div>
+                            </div>
+                                            </li>
+                                    <li class="item" id="bx_1454625752_27">
+                        <h4>
+                            <a href="/news/news-anons-qt/">Анонс курса «Фреймворк QT»</a>
+                        </h4>
+                                                    <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="/upload/iblock/f13/f13c80900489c37d9688a95d70c9d63b.jpg" alt="Анонс курса «Фреймворк QT»">
+                                    <div class="md-margin-bottom-20"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p> Анонс курса. По просьбам наших выпускников, наша команда разработала и выпустила в жизнь новый курс – «Фреймворк QT». </p>
+                                </div>
+                            </div>
+                                            </li>
+                                    <li class="item" id="bx_1454625752_85">
+                        <h4>
+                            <a href="/news/pravilo-obrabotki-personalnoy-informatsii/">Правило обработки персональной информации</a>
+                        </h4>
+                                                    <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-responsive" src="/upload/iblock/cae/cae5a53b21ffcda6b0c6b4ccf84af7df.jpg" alt="Правило обработки персональной информации">
+                                    <div class="md-margin-bottom-20"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p>Я согласен&#40;а&#41; на обработку моих персональных данных. <br />
+<br />
+В соответствии со статьей 9&nbsp;&nbsp;Федерального закона от 27 июля 2006 года N 152­ФЗ «О персональных данных», даю&nbsp;&nbsp;согласие...</p>
+                                </div>
+                            </div>
+                                            </li>
+                            </ul>
+            </div>
+</div><!-- End Panel with News Slider -->                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container content-sm">
+        <!-- Owl Clients v1 -->
+            <div class="heading heading-v1 margin-bottom-40">
+        <h2>Все курсы</h2>
+    </div>
+    <div class="owl-clients-v1">
+                    <div class="item text-center" id="bx_3322728009_29">
+                                    <img src="/upload/iblock/e44/e44acc1793f65051ae746a25701bf991.gif" alt="Основы HTML верстки и CSS ">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_30">
+                                    <img src="/upload/iblock/53d/53d97bf009af305e77271fc0e94b002e.gif" alt="Курсы UX и UI дизайна">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_31">
+                                    <img src="/upload/iblock/bf4/bf41bba776cf8b444e8cd46b129bb920.gif" alt="Photoshop для веб">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_32">
+                                    <img src="/upload/iblock/b69/b6941d4ac4db064a7ec0757caa5feca9.gif" alt="Курс основы программирования">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_33">
+                                    <img src="/upload/iblock/a9f/a9f6eb3fb3471a20fc3b31aafbf17cdb.gif" alt="Веб программирование: JavaScript и Ajax">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_34">
+                                    <img src="/upload/iblock/672/6720a5bca6f5cc14b77f89d89a575103.gif" alt="Веб программирование: PHP и MySQL">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_35">
+                                    <img src="/upload/iblock/e42/e42882df831fd8968810424c984b2d48.gif" alt="Язык программирования Ruby">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_36">
+                                    <img src="/upload/iblock/982/98214b1664e8c4fd0e18d0d62b0ba688.gif" alt="Framework Ruby On Rails">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_37">
+                                    <img src="/upload/iblock/b4e/b4e3e610be85b748b10ca03eb70f47cd.gif" alt="Язык программирования Python">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_86">
+                                    <img src="/upload/iblock/2d3/2d34b417ac577bc0026537ed51bbb474.gif" alt="Framework Django">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_87">
+                                    <img src="/upload/iblock/3d5/3d516c2d1756ce858cb1086be208c09e.gif" alt="Qt framework">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_88">
+                                    <img src="/upload/iblock/b24/b24e1989e99151572dbcfc1f055211d4.gif" alt="Язык программирования C++">
+                            </div>
+                    <div class="item text-center" id="bx_3322728009_89">
+                                    <img src="/upload/iblock/8ab/8ab37b6ab98f0677309e1b799d18885e.gif" alt="IT специалист (сборка и модернизация компьютеров, системный администратор)">
+                            </div>
+            </div>
+            <!-- End Owl Clients v1 -->
+    </div>
+
+        
+            <!--=== Footer Version 1 ===-->
+            <div class='footer-v1'>
+                <div class='footer'>
+                    <div class='container'>
+                        <div class='row'>
+                            <!-- About -->
+                            <div class='col-md-3 md-margin-bottom-40'>
+                                <!-- Logo -->
+                                <div class='pull-left'>
+                                    <a href="/">
+    <img src="/include/images/logo.gif" width="59" height="84" alt="Logo">
+</a>                                </div>
+                                <!-- End Logo -->
+
+                                <div class='company-info margin-bottom-20'>
+                                    <p>
+    Принципиально новая школа профессий для детей и подростков
+</p>                                </div>
+                            </div>
+                            <!-- End About -->
+
+                            <!-- Link List -->
+                            <div class='col-md-3 md-margin-bottom-40'>
+                                <div class='headline'><h2>Полезные Ссылки</h2></div>
+
+                                    <ul class="list-unstyled link-list">
+                        <li class="active">
+                    <a href="/">Главная</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                                <li>
+                    <a href="/about/">О компании</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                                <li>
+                    <a href="/services/">Курсы</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                                <li>
+                    <a href="/news/">Новости</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                                <li>
+                    <a href="/contacts/">Контакты</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                    </ul>
+                                </div><!--/col-md-3-->
+                            <!-- End Link List -->
+
+                            <!-- Address -->
+                            <div class='col-md-3 map-img md-margin-bottom-40'>
+                                <div class='headline'><h2>Наши Контакты</h2></div>
+
+                                <address class='md-margin-bottom-40'>
+                                    ул. Земляной Вал д. 7<br>
+ г. Москва, РФ <br>
+ Телефон: <a href="tel:89654072933">+7 (965) 407-29-33</a> <br>
+ E-Mail: <a href="mailto:info@ucdo.ru">info@ucdo.ru</a>                                </address>
+                            </div><!--/col-md-3-->
+                            <!-- End Address -->
+
+                            <!-- Latest -->
+                            <div class='col-md-3 md-margin-bottom-40'>
+                                <div class='posts'>
+                                    <div class='headline'><h2>Форма подписки</h2></div>
+
+                                    <div class='company-info margin-bottom-20'>
+                                        273 абитуриентов уже получают самую полезную информацию. А Вы среди них?                                    </div>
+
+                                    <script type="text/javascript">if (window.location.hash != '' && window.location.hash != '#') top.BX.ajax.history.checkRedirectStart('bxajaxid', '42ce1e8c90f6b5531004fed293a7ae28')</script><div id="comp_42ce1e8c90f6b5531004fed293a7ae28">
+
+<form id="emailAddressForm" class="footer-subsribe" action="/" method="post"><input type="hidden" name="bxajaxid" id="bxajaxid_42ce1e8c90f6b5531004fed293a7ae28_8BACKi" value="42ce1e8c90f6b5531004fed293a7ae28" /><input type="hidden" name="AJAX_CALL" value="Y" /><script type="text/javascript">
+function _processform_8BACKi(){
+	var obForm = top.BX('bxajaxid_42ce1e8c90f6b5531004fed293a7ae28_8BACKi').form;
+	top.BX.bind(obForm, 'submit', function() {BX.ajax.submitComponentForm(this, 'comp_42ce1e8c90f6b5531004fed293a7ae28', true)});
+	top.BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
+}
+if (top.BX('bxajaxid_42ce1e8c90f6b5531004fed293a7ae28_8BACKi'))
+	_processform_8BACKi();
+else
+	top.BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
+</script>
+    <div class="input-group">
+        <div class="form-group has-feedback">
+            <input type="text" name="email" class="form-control" placeholder="Ваш E-Mail">
+        </div>
+        <span class="input-group-btn">
+            <button class="btn-u" type="submit">Подписаться</button>
+        </span>
+    </div>
+
+    <div id="subscribeFormMsg">
+            </div>
+</form>
+
+<script>
+    $(function () {
+        $('#emailAddressForm').bootstrapValidator({
+            container: '#subscribeFormMsg',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                email: {
+                    validators: {
+                        emailAddress: {
+                            message: '<div class="alert alert-danger">Введите корректный E-Mail</div>'
+                        },
+                        notEmpty: {
+                            message: '<div class="alert alert-danger">Укажите Ваш E-Mail</div>'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script></div><script type="text/javascript">if (top.BX.ajax.history.bHashCollision) top.BX.ajax.history.checkRedirectFinish('bxajaxid', '42ce1e8c90f6b5531004fed293a7ae28');</script><script type="text/javascript">top.BX.ready(BX.defer(function() {window.AJAX_PAGE_STATE = new top.BX.ajax.component('comp_42ce1e8c90f6b5531004fed293a7ae28'); top.BX.ajax.history.init(window.AJAX_PAGE_STATE);}))</script>                                </div>
+                            </div><!--/col-md-3-->
+                            <!-- End Latest -->
+                        </div>
+                    </div>
+                </div><!--/footer-->
+
+                <div class='copyright'>
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-md-4'>
+                                <p>
+    2016 ©  Школа профессий "<span style="color: #00aeef;">S</span>MART <span style="color: #f3731f;">S</span>CHOOL".  <br>Все права защищены.
+</p>
+<script type="text/javascript" src="//cdn.perezvoni.com/widget/js/przv.js?przv_code=22059-496440c83-96440c83-f11a3d8c217-ec846496440c83-c846"></script>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+                            </div>
+                            <!-- Composite Banner -->
+                            <div class="col-sm-4">
+                                <div class="text-center margin-top-10" id="bx-composite-banner"></div>
+                            </div>
+                            <!-- Social Links -->
+                            <div class='col-md-4'>
+                                    <ul class="footer-socials list-inline">
+                    <li id="bx_651765591_13">
+                <a href="http://vk.com/smartschoolmsk" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" data-original-title="Официальная группа Smart School ВКонтакте">
+                    <i class="fa fa-vk"></i>
+                </a>
+            </li>
+                        <li id="bx_651765591_14">
+                <a href="https://www.facebook.com/groups/smartschoolmsk/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" data-original-title="Официальный фейсбук Smart School">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+                        <li id="bx_651765591_15">
+                <a href="https://twitter.com/SmartSchoolMsk" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" data-original-title="Официальный твиттер Smart School">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+                        <li id="bx_651765591_17">
+                <a href="http://ok.ru/group/53439989219419" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" data-original-title="Официальная группа Smart School">
+                    <i class="fa fa-odnoklassniki"></i>
+                </a>
+            </li>
+                </ul>
+                                </div>
+                            <!-- End Social Links -->
+                        </div>
+                    </div>
+                </div><!--/copyright-->
+            </div>
+            <!--=== End Footer Version 1 ===-->
+
+            <div class="modal fade" id="alpha-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="alpha-modal-sm" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+        </div><!--/wrapper-->
+                <script type='text/javascript'>
+            jQuery(document).ready(function() {
+                App.init();
+                App.initCounter();
+                App.initParallaxBg();
+                OwlCarousel.initOwlCarousel();
+
+                // Bootstrap remote Modal Box clear content on hide
+                $('#alpha-modal, #alpha-modal-sm').on('hidden.bs.modal', function (e) {
+                    $(e.target).removeData('bs.modal');
+                });
+            });
+        </script>
+        <!--[if lt IE 9]>
+            <script src="/bitrix/templates/bizsolutions.alpha/plugins/respond.min.js"></script>
+            <script src="/bitrix/templates/bizsolutions.alpha/plugins/html5shiv.min.js"></script>
+            <script src="/bitrix/templates/bizsolutions.alpha/plugins/placeholder-IE-fixes.min.js"></script>
+        <![endif]-->
+    </body>
+</html><!--2ec6a69d3cf12147a212768dc39be02e-->

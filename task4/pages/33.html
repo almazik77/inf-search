@@ -1,0 +1,678 @@
+<html>
+<head>
+<title>
+Кафедра АСУ
+</title>
+
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4271A4">
+<link rel="stylesheet" type="text/css" href="/bugtraq.css">
+<style>
+<!--
+body {font-family: sans-serif; font-size: 10pt;}
+#popup-parent 
+{
+	opacity: 0.89;
+	background: #FFF;
+	width: 100%;
+	height: 100%;
+	display: none;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 100;
+}
+#popup-wnd
+{
+	width: 320px;
+	background-clip: padding-box;
+	background-color: #FFF;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	left: 50%;
+	top: 10%;
+	margin-left: -160px;
+	position: fixed;
+	outline: medium none;
+	z-index: 1050;
+}
+.popup-body
+{
+	position: relative;
+	overflow-y: auto;
+	padding: 15px;
+	max-height: 400px;
+}
+-->
+</style>
+
+<script type="text/javascript">
+function SetCookie(cookieName, cookieValue, nDays)
+{
+	var today = new Date();
+	var expire = new Date();
+	if (nDays==null || nDays==0)
+		nDays=1;
+	expire.setTime(today.getTime() + 3600000*24*nDays);
+	document.cookie = cookieName+"="+escape(cookieValue)+";expires="+expire.toGMTString()+"; path=/";
+}
+
+function popup_trigger(mode) 
+{
+	SetCookie('vty', 1, 100);
+	document.getElementById('popup-parent').onclick = popup_handler;
+	document.getElementById('popup-parent').style.display = mode;
+}
+
+function popup_handler(e) 
+{
+	if (e.target.nodeName != 'A') 
+	{
+		popup_trigger('none');
+	}      
+}
+</script>
+
+
+<style>
+<!--
+
+
+-->
+</style>
+<base href="//asugubkin.ru/" target=_top>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" href="http://feeds.bugtraq.ru/asu-news" title="asugubkin.ru: новости">
+<link rel="alternate" type="application/rss+xml" href="http://feeds.bugtraq.ru/asu-all" title="asugubkin.ru: все материалы">
+<script type="text/javascript">
+window.onload = function () 
+{
+	if(window.innerWidth < 400)
+	{
+		window.scrollBy(135, 0);
+	}
+}
+</script>
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+<script>
+	var OneSignal = OneSignal || [];
+		OneSignal.push(["init", {
+			appId: "84e8c575-eaad-4654-988f-f317c941511c",
+			autoRegister: true,
+			welcomeNotification: {
+			title: 'asugubkin.ru',
+			message: 'Спасибо за подписку!'
+		},
+		promptOptions: {
+			showCredit: false, // Hide Powered by OneSignal
+			actionMessage: 'хочет показывать уведомления:',
+			exampleNotificationTitleDesktop: 'Пример уведомления',
+			exampleNotificationMessageDesktop: 'Ваше устройство подписано на уведомления',
+			exampleNotificationTitleMobile: ' Пример уведомления',
+			exampleNotificationMessageMobile: 'Ваше устройство подписано на уведомления',
+			exampleNotificationCaption: '(можно отписаться в любой момент)',
+			acceptButtonText: 'Продолжить'.toUpperCase(),
+			cancelButtonText: 'Нет, спасибо'.toUpperCase()
+		},
+		notifyButton: {
+			enable: true,
+			enable: true,
+			size: 'medium',
+			theme: 'default',
+			position: 'bottom-left',
+			prenotify: true,
+			showCredit: false,
+			offset: {
+				bottom: '30px',
+				left: '45px', // Only applied if bottom-left
+				right: '0px' // Only applied if bottom-right
+			},
+			text: {
+				'tip.state.unsubscribed': 'Подписаться на уведомления',
+				'tip.state.subscribed': "Вы подписаны на уведомления",
+				'tip.state.blocked': "Вы заблокировали уведомления",
+				'message.prenotify': 'Щелкните, чтобы подписаться на уведомления',
+				'message.action.subscribed': "Спасибо за подписку!",
+				'message.action.resubscribed': "Вы подписаны на уведомления",
+				'message.action.unsubscribed': "Вы больше не будете получать уведомления",
+				'dialog.main.title': 'Управлять подпиской',
+				'dialog.main.button.subscribe': 'ПОДПИСАТЬСЯ',
+				'dialog.main.button.unsubscribe': 'ОТПИСАТЬСЯ',
+				'dialog.blocked.title': 'Разблокировать подписку',
+				'dialog.blocked.message': "Следуйте этим инструкциям, чтобы разрешить уведомления:"
+			}
+		}
+	}]);
+	OneSignal.push(["setDefaultTitle", "asugubkin.ru"]);
+</script>
+
+<link rel="stylesheet" href="/js/fancy/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="/js/fancy/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<link rel="stylesheet" href="/js/fancy/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/fancy/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="/js/fancy/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/js/fancy/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="/js/fancy/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<link href="/js/bootstrap/css/asu-bootstrap.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body bgcolor=white leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" onload="popup_trigger('block')"><div id="popup-parent">
+<div id="popup-wnd">
+<div class="popup-body">
+<h3>Получать обновления:</h3>
+<p><a href="http://feeds.bugtraq.ru/asu-news" target=_blank><img src=/img/rss.png width=48 height=48 title=RSS alt=RSS border=0></a>
+<a href="http://facebook.com/asugubkin" target=_blank><img src=/img/fb.png width=48 height=48 title=Facebook alt=Facebook border=0></a>
+<a href="http://twitter.com/asugubkin" target=_blank><img src=/img/tw.png width=48 height=48 title=Twitter alt=Twitter border=0></a>
+<a href="http://vk.com/asugubkin" target=_blank><img src=/img/vk.png width=48 height=48 title=ВКонтакте alt=ВКонтакте border=0></a>
+<a href="https://telegram.me/asugubkin" target=_blank><img src="/img/tg.png" width=48 height=48 alt="Telegram" title="Telegram" border=0></a>
+<center>
+<iframe src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fasugubkin&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=standard&amp;show_faces=true&amp;appId=125372920840133" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+<a href="#" onclick="popup_trigger('none'); return false"><b>Перейти к материалам сайта</b></a>
+</center>
+</div>
+</div>
+</div>
+
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<td width=126 valign=bottom><a href="//asugubkin.ru/" target=_top><img src="/img/logo1.gif" border=0 width=126 height=73 alt="asugubkin.ru"></a></td>
+		<td width=174  valign=bottom><a href="//asugubkin.ru/" target=_top><img src="/img/title.gif" border=0 width=174 height=73 alt="asugubkin.ru"></a></td>
+		<td align=right valign=middle>
+<img src="/img/head.gif" border=0 width=449 height=71></td>
+	</tr>
+	<tr>
+		<td width=126 valign=top><a href="//asugubkin.ru/"><img src="/img/logo2.gif" border=0 width=126 height=17 alt="asugubkin.ru"></a></td>
+		<td width="100%" valign="middle" bgcolor="#4271A4" colspan=2 class=mt>
+		<!--top menu -->
+		<nobr>
+		<a href="//asugubkin.ru/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;главная</a>&nbsp;&nbsp;&nbsp;
+<a href="//asugubkin.ru/about/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;о кафедре</a>&nbsp;&nbsp;&nbsp;<a href="//asugubkin.ru/news/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;новости</a>&nbsp;&nbsp;&nbsp;<a href="//asugubkin.ru/study/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;учебная работа</a>&nbsp;&nbsp;&nbsp;<a href="//asugubkin.ru/science/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;наука</a>&nbsp;&nbsp;&nbsp;<a href="//asugubkin.ru/staff/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;сотрудники</a>&nbsp;&nbsp;&nbsp;<a href="//asugubkin.ru/resources/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;ресурсы</a>&nbsp;&nbsp;&nbsp;<a href="//asugubkin.ru/40/" class=hmt><img src="/img/sqb.gif" border="0" width="8" height="8">&nbsp;&nbsp;юбилей</a>&nbsp;&nbsp;&nbsp;		</nobr>
+		<!--/top menu -->
+		</td>
+	</tr>
+</table>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<td width=126 valign=top bgcolor="#E6E6E6"><a href="//asugubkin.ru/"><img src="/img/logo3.gif" border=0 width=126 height=34 alt="asugubkin.ru"></a></td>
+		<td width=8 valign=top background="/img/vl1t.gif" bgcolor="#E6E6E6"><img src="/img/vl1.gif" border=0 width=8 height=34></td>
+		<td valign="top" align=left>
+			<table border=0 cellpadding=1 cellspacing=1>
+				<tr><td valign=top><nobr><a href="//asugubkin.ru/">asugubkin.ru</a>
+
+                </nobr></td></tr>
+				<tr><td bgcolor="#E6E6E6"><img src="/img/dot.gif" border=0 width=1 height=1></td></tr>
+			</table>
+		</td>
+		<td align=right>
+		
+		</td>
+	</tr>
+	<tr>
+		<td width=126 bgcolor="#E6E6E6" background="/img/menubg.gif" valign=top colspan=2>
+<!-- left menu-->
+<table width=134 border=0 cellpadding=0 cellspacing=0 bgcolor="#E6E6E6">
+<tr>
+<td width=18 valign=top background="/img/ml-l.gif"><a href="/index.html"><img src="/img/menult.gif" border=0 width=18 height=25></a></td>
+<td valign=top width=105 class=mltitle><a href="/index.html" class=hmltitle>ASUGUBKIN.RU</a></td>
+<td width=11  background="/img/vl0.gif"><img src="/img/vl0.gif" border=0 width=11 height=25></td>
+</tr>
+<tr>
+<td width=18><img src="/img/ml-l.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18 background="/img/ml-s.gif"><img src="/img/ml-s.gif" border=0 width=18 height=16></td>
+<td align=right width=105 class=mls bgcolor=white><a href="index.html" class=hml>главная</a></td>
+<td width=11  background="/img/vl0s.gif"><a href="index.html"><img src="/img/mr-s.gif" border=0 width=11 height=16 alt="главная"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/about/" class=hml>о кафедре</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/about/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="о кафедре"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/news/" class=hml>новости</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/news/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="новости"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/study/" class=hml>учебная работа</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/study/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="учебная работа"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/science/" class=hml>наука</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/science/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="наука"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/staff/" class=hml>сотрудники</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/staff/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="сотрудники"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/resources/" class=hml>ресурсы</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/resources/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="ресурсы"></a></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=10></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=10></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=3></td>
+<td width=116 align=right colspan=2><img src="/img/vl0.gif" border=0 width=11 height=3></td>
+</tr>
+<tr>
+<td width=18><img src="/img/dot.gif" border=0 width=18 height=16></td>
+<td valign=top align=right width=105 class=ml><a href="/40/" class=hml>юбилей</a></td>
+<td width=11 background="/img/vl0.gif"><a href="/40/"><img src="/img/mr-l.gif" border=0 width=11 height=16 alt="юбилей"></a></td>
+</tr>
+</table>
+<!-- /left menu-->
+<center>
+<br>
+<br>
+<br>
+<img src="/img/t100.gif" border=0 width=100 height=100>
+<br>
+<br>
+</center>
+
+        <img src="/img/dot.gif" border=0 width=134 height=1>
+		</td>
+		<td width=100% valign=top colspan=2>
+			<table width=100% cellpadding=0 cellspacing=0 border=0>
+			<tr>
+				<td width=10><img src="/img/dot.gif" width="10" height="1"></td>
+<td width=100% valign=top align=center>
+
+<br>
+<div class=l align=left>
+<table width=100% border=0 cellpadding=0 cellspacing=10 class=sep>
+<tr valign=top>
+<td width=100% class=text>
+<a href="/about/news/" target=_top><span class=caption2>Новости кафедры АСУ РГУ нефти и газа (НИУ) имени И.М. Губкина</span></a><br><br>
+
+ 
+
+<a href="//asugubkin.ru/news/506.html"><span class=captionl><font color=red>Ликвидация задолженностей</font></span></a> // 
+<span class=ml> 14.02.22 14:02</span>
+<p class="l"><a href="//asugubkin.ru/study/.keep/debts.pdf?140222"><img src="/img/pdf48.png" border=0 width=48 height=48>График ликвидации академических задолженностей</a>.</p>
+
+<br>
+<p class=l align=left>
+
+<a href="//asugubkin.ru/news/505.html"><span class=captionl><font color=red>Заседание кафедры</font></span></a> // 
+<span class=ml> 26.01.22 15:14</span>
+<p class="l">27 &#1103;нвар&#1103; в 12:00 состоитс&#1103; заседание кафедры АСУ (аудитори&#1103; 1215а).</p>
+
+<p class="l">Повестка дн&#1103;:</p>
+
+<ol>
+<li>Об итогах зимней сессии.</li>
+<li>Об организации учебного процесса в весеннем семестре.</li>
+<li>Планова&#1103; учебна&#1103; нагрузка на 2022/2023 учебный год.</li>
+<li>Разное.</li>
+</ol>
+
+
+<br>
+<p class=l align=left>
+
+<a href="//asugubkin.ru/news/504.html"><span class=captionl><font color=red>Заседание кафедры</font></span></a> // 
+<span class=ml> 25.12.21 23:00</span>
+<p class="l">27 декабр&#1103; в 16:00 состоитс&#1103; заседание кафедры АСУ (аудитори&#1103; 1215а).</p>
+
+<p class="l">Повестка дн&#1103;:</p>
+
+<ol>
+<li>О текущей успеваемости и готовности к сессии.</li>
+<li>Разное.</li>
+</ol>
+
+
+<br>
+<p class=l align=left>
+
+<a href="//asugubkin.ru/news/503.html"><span class=captionl><font color=red>Заседание кафедры</font></span></a> // 
+<span class=ml> 29.11.21 16:04</span>
+<p class="l">30 но&#1103;бр&#1103; в 16:00 состоитс&#1103; заседание кафедры АСУ (аудитори&#1103; 1215а).</p>
+
+<p class="l">Повестка дн&#1103;:</p>
+
+<ol>
+<li>Организаци&#1103; учебного процесса.</li>
+<li>Разное.</li>
+</ol>
+
+
+<br>
+<p class=l align=left>
+
+<a href="//asugubkin.ru/news/502.html"><span class=captionl><font color=red>Заседание кафедры</font></span></a> // 
+<span class=ml> 22.10.21 18:49</span>
+<p class="l">25 окт&#1103;бр&#1103; в 16:00 состоитс&#1103; заседание кафедры АСУ (аудитори&#1103; 1215а).</p>
+
+<p class="l">Повестка дн&#1103;:</p>
+
+<ol>
+<li>Организаци&#1103; учебного процесса.</li>
+<li>Текуща&#1103; успеваемость и пересдачи.</li>
+<li>Разное.</li>
+</ol>
+
+
+<br>
+<p class=l align=left>
+
+<a href="//asugubkin.ru/news/501.html"><span class=captionl><font color=red>Заседание кафедры</font></span></a> // 
+<span class=ml> 26.09.21 18:49</span>
+<p class="l">27 сент&#1103;бр&#1103; в 16:00 состоитс&#1103; заседание кафедры АСУ (аудитори&#1103; 1215а).</p>
+
+<p class="l">Повестка дн&#1103;:</p>
+
+<ol>
+<li>Организаци&#1103; учебного процесса.</li>
+<li>Текуща&#1103; успеваемость и пересдачи.</li>
+<li>Аттестаци&#1103; аспирантов.</li>
+<li>Разное.</li>
+</ol>
+
+
+<br>
+<p class=l align=left>
+
+<a href="//asugubkin.ru/news/499.html"><span class=captionl><font color=red>Заседание кафедры</font></span></a> // 
+<span class=ml> 25.08.21 19:09</span>
+<p class="l">30 августа в 14:00 состоитс&#1103; заседание кафедры АСУ (аудитори&#1103; 1215а).</p>
+
+<p class="l">Повестка дн&#1103;:</p>
+
+<ol>
+<li>Расписание и учебна&#1103; нагрузка на новый учебный год.</li>
+<li>Готовность аудиторий.</li>
+<li>Организационные вопросы по новому набору.</li>
+<li>Разное.</li>
+</ol>
+
+
+<br>
+<p class=l align=left>
+
+ 
+
+<br><br>
+
+</td>
+<td width=250>
+<p class=c>
+<iframe width="250" height="140" src="https://www.youtube.com/embed/paom3Me3_7U?rel=0" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<table width=250  border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td bgcolor=#E6E6E6 width=100% style="padding-top:4px;padding-bottom:4px;padding-left:10px;">
+<span class=captionl>Нормативная информация</span></td></tr>
+<tr><td bgcolor=white><img src=/i/t.gif width=1 height=3></td></tr>
+<tr>
+<td bgcolor= "#FAFAFC" style="padding-right:10px;padding-left:10px;padding-top:10px">
+<a href="//asugubkin.ru/about/.keep/.about.pdf"><img src="/img/pdf48.png" border=0 width=48 height=48>Положение о кафедре</a><br>
+<a href="//asugubkin.ru/about/.keep/smk.asu.pdf"><img src="/img/pdf48.png" border=0 width=48 height=48>Документы СМК</a>
+<br><br>
+</td></tr></table>
+<br>
+<table width=250  border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td bgcolor=#E6E6E6 width=100% style="padding-top:4px;padding-bottom:4px;padding-left:10px;">
+<span class=captionl>Основные разделы</span></td></tr>
+<tr><td bgcolor=white><img src=/i/t.gif width=1 height=3></td></tr>
+<tr>
+<td bgcolor= "#FAFAFC" style="padding-right:10px;padding-left:10px">
+<dl style="margin-bottom:15px;margin-top:10px;">
+<dt><a href="/about/"><b>О кафедре</b></a>
+<dd>Информация о текущей деятельности и <a href="/about/history/">истории</a> кафедры.<br><br>
+<dt><a href="/study/"><b>Учебная работа</b></a>
+<dd>Основные направления учебной работы, текущее расписание.<br><br>
+<dt><a href="/study/practice/"><b>Практика</b></a>
+<dd>Практика: методические рекомендации, правила оформления.<br><br>
+<dt><a href="/science/"><b>Наука</b></a>
+<dd>Основные направления научной деятельности кафедры, участие в выставках и конференциях.<br><br>
+<dt><a href="/staff/"><b>Сотрудники</b></a>
+<dd>Личные страницы, информация о читаемых курсах.<br><br>
+<dt><a href="/resources/"><b>Ресурсы</b></a>
+<dd>Вспомогательные ресурсы, доступные студентам и сотрудникам кафедры.<br><br>
+<dt><a href="/40/"><b>Юбилей</b></a>
+<dd>Информация о юбилейных мероприятиях, посвященных 40-летию создания кафедры АСУ РГУ нефти и газа имени И.М.Губкина.
+</dl>
+</td></tr></table>
+
+<br>
+<table width=250  border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td bgcolor=#E6E6E6 width=100% style="padding-top:4px;padding-bottom:4px;padding-left:10px;">
+<span class=captionl>Трансляция</span></td></tr>
+<tr><td bgcolor=white><img src=/i/t.gif width=1 height=3></td></tr>
+<tr>
+<td bgcolor= "#FAFAFC" style="padding-right:10px;padding-left:10px;padding-top:10px">
+Получать обновления через:
+<br><br>
+<p align=center>
+<a href="http://feeds.bugtraq.ru/asu-news"><img src=/img/rss.png width=48 height=48 title=RSS alt=RSS border=0></a>
+<a href="http://facebook.com/asugubkin"><img src=/img/fb.png width=48 height=48 title=Facebook alt=Facebook border=0></a>
+<a href="http://twitter.com/asugubkin"><img src=/img/tw.png width=48 height=48 title=Twitter alt=Twitter border=0></a>
+<a href="http://vk.com/asugubkin"><img src=/img/vk.png width=48 height=48 title=ВКонтакте alt=ВКонтакте border=0></a>
+<br><a href="https://telegram.me/asugubkin"><img src="/img/tg.png" width=48 height=48 alt="Telegram" title="Telegram" border=0 vspace=5></a>
+<br><br>
+</td></tr></table>
+
+<br>
+<table width=250  border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td bgcolor=#E6E6E6 width=100% style="padding-top:4px;padding-bottom:4px;padding-left:10px;">
+<span class=captionl>Контактная информация</span></td></tr>
+<tr><td bgcolor=white><img src=/i/t.gif width=1 height=3></td></tr>
+<tr>
+<td bgcolor= "#FAFAFC" style="padding-right:10px;padding-left:10px;padding-top:10px">
+Телефон: +7 (499) 507-8523
+<br>E-Mail: <a href="mailto:asu@gubkin.ru">asu@gubkin.ru</a>
+<br><a href="http://www.gubkin.ru/faculty/automation_and_computer_science/chairs_and_departments/asu/">Раздел на сайте университета</a>
+<br><br>График работы: ведется прием с 10<sup>00</sup> до 16<sup>00</sup> ежедневно, кроме субботы и воскресенья.
+<br><br>
+</td></tr></table>
+</td>
+</tr>
+</table>
+
+
+
+<table width=100% border=0 cellpadding=0 cellspacing=10  class="sep10">
+<tr valign=top>
+<td width=50%>
+
+<table width=100%  border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td bgcolor=#E6E6E6 width=100% style="padding-top:4px;padding-bottom:4px;padding-left:10px;">
+<a href="/staff/" target=_top><span class=captionl><font color=#4271A4>Материалы сотрудников кафедры</font></span></a></td></tr>
+<tr><td bgcolor=white><img src=/i/t.gif width=1 height=3></td></tr>
+<tr>
+<td bgcolor= "#FAFAFC" style="padding-right:10px;padding-left:10px">
+
+ 
+
+<a href="//asugubkin.ru/staff/grigoryev/project.html">Проектирование и эксплуатация АСДУ в нефтегазовом комплексе</a> // 
+<a href="//asugubkin.ru/staff/grigoryev/">Григорьев Л.И.</a> // <span class=ml> 06.12.16 21:56</span><br>
+
+<a href="//asugubkin.ru/staff/grigoryev/intsys.html">Интегрированные системы автоматизированного управления. Методический материал к изучению курса.</a> // 
+<a href="//asugubkin.ru/staff/grigoryev/">Григорьев Л.И.</a> // <span class=ml> 06.12.16 20:37</span><br>
+
+<a href="//asugubkin.ru/staff/grigoryev/ident.html">Управление и идентификация. Методический материал к изучению курса.</a> // 
+<a href="//asugubkin.ru/staff/grigoryev/">Григорьев Л.И.</a> // <span class=ml> 06.12.16 20:34</span><br>
+
+<a href="//asugubkin.ru/staff/grigoryev/synintro.html">Введение в синергетику</a> // 
+<a href="//asugubkin.ru/staff/grigoryev/">Григорьев Л.И.</a> // <span class=ml> 06.12.16 20:16</span><br>
+
+<a href="//asugubkin.ru/staff/stepankina/aiexam.html">Системы ИИ. Вопросы к экзамену.</a> // 
+<a href="//asugubkin.ru/staff/stepankina/">Степанкина О.А.</a> // <span class=ml> 01.01.16 00:42</span><br>
+
+<a href="//asugubkin.ru/staff/dl/techproglabs.html">Современные технологии программирования. Задания на лабораторные работы.</a> // 
+<a href="//asugubkin.ru/staff/dl/">Леонов Д.Г.</a> // <span class=ml> 01.09.15 13:10</span><br>
+
+<a href="//asugubkin.ru/staff/dl/techprogschedule.html">Современные технологии программирования. Календарный план курса.</a> // 
+<a href="//asugubkin.ru/staff/dl/">Леонов Д.Г.</a> // <span class=ml> 01.09.15 13:00</span><br>
+
+<a href="//asugubkin.ru/staff/dl/ooplabs.html">Объектно-ориентированное проектирование и программирование. Задания на лабораторные работы.</a> // 
+<a href="//asugubkin.ru/staff/dl/">Леонов Д.Г.</a> // <span class=ml> 01.09.15 11:20</span><br>
+
+<a href="//asugubkin.ru/staff/dl/oopschedule.html">Объектно-ориентированное проектирование и программирование. Календарный план курса.</a> // 
+<a href="//asugubkin.ru/staff/dl/">Леонов Д.Г.</a> // <span class=ml> 01.09.15 11:00</span><br>
+
+<a href="//asugubkin.ru/staff/dl/infoseclabs.html">Методы и средства защиты информации. Задания на лабораторные работы.</a> // 
+<a href="//asugubkin.ru/staff/dl/">Леонов Д.Г.</a> // <span class=ml> 01.09.15 10:10</span><br>
+
+<a href="//asugubkin.ru/staff/dl/infosecschedule.html">Методы и средства защиты информации. Календарный план курса.</a> // 
+<a href="//asugubkin.ru/staff/dl/">Леонов Д.Г.</a> // <span class=ml> 01.09.15 10:00</span><br>
+
+<a href="//asugubkin.ru/staff/stepin/decisiontask.html">Теория выбора и принятия решений: расчетное домашнее задание</a> // 
+<a href="//asugubkin.ru/staff/stepin/">Степин Ю.П.</a> // <span class=ml> 10.09.14 13:36</span><br>
+
+<a href="//asugubkin.ru/staff/staff.html">Профессорско-преподавательский состав кафедры АСУ</a> // 
+<a href="//asugubkin.ru/staff/">сотрудники</a> // <span class=ml> 01.09.14 14:00</span><br>
+
+<a href="//asugubkin.ru/staff/stepin/decision.html">Компьютерные системы поддержки принятия решений, Теория выбора и принятия решений, Принятие решений и анализ рисков: календарный план выполнения домашних заданий по курсам</a> // 
+<a href="//asugubkin.ru/staff/stepin/">Степин Ю.П.</a> // <span class=ml> 07.02.14 18:07</span><br>
+
+<a href="//asugubkin.ru/staff/stepin/project.html">Проектирование автоматизированных систем управления: календарный план выполнения домашних заданий по курсу</a> // 
+<a href="//asugubkin.ru/staff/stepin/">Степин Ю.П.</a> // <span class=ml> 07.02.14 18:04</span><br>
+
+<br>
+ 
+<p class=r align=right><b><a href="/staff/">все материалы раздела</a></b>
+<br><br>
+
+</td></tr></table>
+
+</td>
+<td width=50%>
+
+<table width=100%  border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td bgcolor=#E6E6E6 width=100% style="padding-top:4px;padding-bottom:4px;padding-left:10px;">
+<a href="/study/" target=_top><span class=captionl><font color=#4271A4>Документы по учебной работе</font></span></a></td></tr>
+<tr><td bgcolor=white><img src=/i/t.gif width=1 height=3></td></tr>
+<tr>
+<td bgcolor= "#FAFAFC" style="padding-right:10px;padding-left:10px">
+
+ 
+
+<a href="//asugubkin.ru/study/diplom.html">Методические рекомендации по выпускным квалификационным работам</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 01.03.21 12:00</span><br>
+
+<a href="//asugubkin.ru/study/magentrance.html">Вопросы вступительного экзамена в магистратуру</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 19.02.19 19:19</span><br>
+
+<a href="//asugubkin.ru/study/magped.html">Рекомендации по отчетам магистрантов по педагогической практике</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 01.12.18 16:55</span><br>
+
+<a href="//asugubkin.ru/study/kurs.html">Методические рекомендации по курсовому проектированию</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 12.09.18 12:00</span><br>
+
+<a href="//asugubkin.ru/study/gosexam.html">Государственный экзамен по специальности</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 01.05.18 15:15</span><br>
+
+<a href="//asugubkin.ru/study/consult.html">Расписание еженедельных консультаций</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 01.03.18 20:04</span><br>
+
+<a href="//asugubkin.ru/study/rating.html">Правила рейтингового контроля</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 01.09.17 21:12</span><br>
+
+<a href="//asugubkin.ru/study/magnir.html">Рекомендации по отчетам магистрантов по НИР</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 03.02.16 16:49</span><br>
+
+<a href="//asugubkin.ru/study/practice/practice.html">Учебная практика для 1 курса факультета АиВТ. Материалы занятий.</a> // 
+<a href="//asugubkin.ru/study/practice/">практика</a> // <span class=ml> 01.07.12 14:56</span><br>
+
+<a href="//asugubkin.ru/study/aspirant.html">Педагогическая практика аспирантов: дополнение</a> // 
+<a href="//asugubkin.ru/study/">учебная работа</a> // <span class=ml> 26.03.06 16:32</span><br>
+
+<br>
+ 
+<p class=r align=right><b><a href="/study/">все материалы раздела</a></b>
+<br><br>
+</td></tr></table>
+
+</td>
+</tr>
+</table>
+<br>
+</div>
+</td>
+<td width=5><img src="/img/dot.gif" width="5" height="1"></td>
+</tr>
+</table>
+</td></tr>
+	<tr>
+		<td width=126 bgcolor="#E6E6E6" background="/img/menubg.gif" valign=top colspan=2 align=center>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t26.11;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за сегодня' "+
+"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet-->
+		</td>
+        <td align=center colspan=2 valign=bottom>
+<br>
+
+
+        </td>
+	</tr>
+</table>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td colspan=2><img src="/img/dot.gif" border=0 width=1 height=1></td></tr>
+<tr>
+<td width="45%" valign="middle" bgcolor="#4271A4" class=mt>
+<nobr>&nbsp;&nbsp;<a href="http://ezhe.ru/fri/10/" target=_self class=hmt><font color=white>Copyright &copy; 2001-2022 Dmitry Leonov</font></a></nobr>
+</td>
+<td width=10% valign=middle align=center class=mt bgcolor="#4271A4">
+<nobr>&nbsp;&nbsp;Page build time: 1 s&nbsp;&nbsp;</nobr>
+</td>
+<td width="45%" valign="middle" bgcolor="#4271A4" align=right class=mt>
+<nobr>Based on Vadim Derkach's design&nbsp;&nbsp;</nobr>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
