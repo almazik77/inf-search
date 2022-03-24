@@ -19,3 +19,11 @@ python3 task1/main.py
 ```bash
 python3 task2/main.py
 ```
+
+#### Task 3
+
+##### Run script
+
+```bash
+python3 task3/main.py
+```

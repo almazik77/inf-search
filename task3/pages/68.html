@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Php программирование, MySQL, JavaScript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" media="screen" type="text/css" title="Style" href="https://phpbuilder.ru/wp-content/themes/phpbuilder/style.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" media="screen" type="text/css" title="Style" href="/css/ie7.css"/>
+<![endif]-->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-29503984-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<link rel="icon" href="https://phpbuilder.ru/wp-content/themes/phpbuilder/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="https://phpbuilder.ru/wp-content/themes/phpbuilder/favicon.png" type="image/x-icon" />
+
+<!-- All in One SEO Pack 2.3.12.1 by Michael Torbert of Semper Fi Web Design[174,181] -->
+<meta name="description"  content="Программирование на PHP для начинающих, уроки по PHP, MySQL, JavaScript и другие веб-технологии, php форум" />
+
+<meta name="keywords"  content="Php программирование, MySQL, JavaScript, php, сайт на php, скрипты php, php программирование, php mysql, apache, обучение, форум php, веб-технологии, JavaScript" />
+
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Phpbuilder.ru &raquo; Лента комментариев к &laquo;Программирование на PHP для начинающих&raquo;" href="https://phpbuilder.ru/%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bd%d0%b0-php-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%87%d0%b8%d0%bd%d0%b0%d1%8e%d1%89%d0%b8%d1%85/feed" />
+<link rel='https://api.w.org/' href='https://phpbuilder.ru/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://phpbuilder.ru/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://phpbuilder.ru/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.22" />
+<link rel="canonical" href="https://phpbuilder.ru/" />
+<link rel='shortlink' href='https://phpbuilder.ru/' />
+<link rel="alternate" type="application/json+oembed" href="https://phpbuilder.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphpbuilder.ru%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://phpbuilder.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphpbuilder.ru%2F&#038;format=xml" />
+  <style>button#responsive-menu-button, #responsive-menu-container{display: none;-webkit-text-size-adjust: 100%}@media screen and (max-width: 615px){#responsive-menu-container{display: block}#responsive-menu-container{position: fixed;top: 0;bottom: 0;z-index: 99998;padding-bottom: 5px;margin-bottom: -5px;outline: 1px solid transparent;overflow-y: auto;overflow-x: hidden}#responsive-menu-container .responsive-menu-search-box{width: 100%;padding: 0 2%;border-radius: 2px;height: 50px;-webkit-appearance: none}#responsive-menu-container.push-left, #responsive-menu-container.slide-left{transform: translateX(-100%);-ms-transform: translateX(-100%);-webkit-transform: translateX(-100%);-moz-transform: translateX(-100%)}.responsive-menu-open #responsive-menu-container.push-left, .responsive-menu-open #responsive-menu-container.slide-left{transform: translateX(0);-ms-transform: translateX(0);-webkit-transform: translateX(0);-moz-transform: translateX(0)}#responsive-menu-container.push-top, #responsive-menu-container.slide-top{transform: translateY(-100%);-ms-transform: translateY(-100%);-webkit-transform: translateY(-100%);-moz-transform: translateY(-100%)}.responsive-menu-open #responsive-menu-container.push-top, .responsive-menu-open #responsive-menu-container.slide-top{transform: translateY(0);-ms-transform: translateY(0);-webkit-transform: translateY(0);-moz-transform: translateY(0)}#responsive-menu-container.push-right, #responsive-menu-container.slide-right{transform: translateX(100%);-ms-transform: translateX(100%);-webkit-transform: translateX(100%);-moz-transform: translateX(100%)}.responsive-menu-open #responsive-menu-container.push-right, .responsive-menu-open #responsive-menu-container.slide-right{transform: translateX(0);-ms-transform: translateX(0);-webkit-transform: translateX(0);-moz-transform: translateX(0)}#responsive-menu-container.push-bottom, #responsive-menu-container.slide-bottom{transform: translateY(100%);-ms-transform: translateY(100%);-webkit-transform: translateY(100%);-moz-transform: translateY(100%)}.responsive-menu-open #responsive-menu-container.push-bottom, .responsive-menu-open #responsive-menu-container.slide-bottom{transform: translateY(0);-ms-transform: translateY(0);-webkit-transform: translateY(0);-moz-transform: translateY(0)}#responsive-menu-container, #responsive-menu-container:before, #responsive-menu-container:after, #responsive-menu-container *, #responsive-menu-container *:before, #responsive-menu-container *:after{box-sizing: border-box;margin: 0;padding: 0}#responsive-menu-container #responsive-menu-search-box, #responsive-menu-container #responsive-menu-additional-content, #responsive-menu-container #responsive-menu-title{padding: 25px 5%}#responsive-menu-container #responsive-menu, #responsive-menu-container #responsive-menu ul{width: 100%}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu{display: none}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu.responsive-menu-submenu-open{display: block}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-1 a.responsive-menu-item-link{padding-left: 10%}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-2 a.responsive-menu-item-link{padding-left: 15%}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-3 a.responsive-menu-item-link{padding-left: 20%}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-4 a.responsive-menu-item-link{padding-left: 25%}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-5 a.responsive-menu-item-link{padding-left: 30%}#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-6 a.responsive-menu-item-link{padding-left: 35%}#responsive-menu-container li.responsive-menu-item{width: 100%;list-style: none}#responsive-menu-container li.responsive-menu-item a{width: 100%;display: block;text-decoration: none;padding: 0 5%;position: relative}#responsive-menu-container li.responsive-menu-item a .fa{margin-right: 15px}#responsive-menu-container li.responsive-menu-item a .responsive-menu-subarrow{position: absolute;top: 0;bottom: 0;text-align: center;overflow: hidden}#responsive-menu-container li.responsive-menu-item a .responsive-menu-subarrow .fa{margin-right: 0}button#responsive-menu-button .responsive-menu-button-icon-inactive{display: none}button#responsive-menu-button{z-index: 99999;display: none;overflow: hidden}button#responsive-menu-button img{max-width: 100%}.responsive-menu-label{display: inline-block;font-weight: 600;margin: 0 5px;vertical-align: middle}.responsive-menu-accessible{display: inline-block}.responsive-menu-accessible .responsive-menu-box{display: inline-block;vertical-align: middle}.responsive-menu-label.responsive-menu-label-top, .responsive-menu-label.responsive-menu-label-bottom{display: block;margin: 0 auto}}@media screen and (max-width: 615px){button#responsive-menu-button{padding: 0 0;display: inline-block;cursor: pointer;transition-property: opacity, filter;transition-duration: 0.15s;transition-timing-function: linear;font: inherit;color: inherit;text-transform: none;background-color: transparent;border: 0;margin: 0;overflow: visible}button#responsive-menu-button:hover{opacity: 1}.responsive-menu-box{width: 25px;height: 19px;display: inline-block;position: relative}.responsive-menu-inner{display: block;top: 50%;margin-top: -1.5px}.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after{width: 25px;height: 3px;background-color: #fff;border-radius: 4px;position: absolute;transition-property: transform;transition-duration: 0.15s;transition-timing-function: ease}.responsive-menu-inner::before, .responsive-menu-inner::after{content: "";display: block}.responsive-menu-inner::before{top: -8px}.responsive-menu-inner::after{bottom: -8px}.responsive-menu-boring .responsive-menu-inner, .responsive-menu-boring .responsive-menu-inner::before, .responsive-menu-boring .responsive-menu-inner::after{transition-property: none}.responsive-menu-boring.is-active .responsive-menu-inner{transform: rotate(45deg)}.responsive-menu-boring.is-active .responsive-menu-inner::before{top: 0;opacity: 0}.responsive-menu-boring.is-active .responsive-menu-inner::after{bottom: 0;transform: rotate(-90deg)}button#responsive-menu-button{width: 50px;height: 50px;background: #000;position: fixed;top: 5px;right: 5%}button#responsive-menu-button:hover{background: #000}button#responsive-menu-button .responsive-menu-box{color: #fff}.responsive-menu-label{color: #fff;font-size: 14px;line-height: 13px}button#responsive-menu-button{display: inline-block;transition: transform 0.5s, background-color 0.5s}}@media screen and (max-width: 615px){#responsive-menu-container{width: 70%;left: 0;background: #212121;transition: transform 0.5s;text-align: left}#responsive-menu-container #responsive-menu-wrapper{background: #212121}#responsive-menu-container #responsive-menu-additional-content{color: #fff}#responsive-menu-container .responsive-menu-search-box{background: #fff;border: 2px solid #dadada;color: #333}#responsive-menu-container .responsive-menu-search-box:-ms-input-placeholder{color: #c7c7cd}#responsive-menu-container .responsive-menu-search-box:-webkit-input-placeholder{color: #c7c7cd}#responsive-menu-container .responsive-menu-search-box:-moz-placeholder{color: #c7c7cd;opacity: 1}#responsive-menu-container .responsive-menu-search-box::-moz-placeholder{color: #c7c7cd;opacity: 1}#responsive-menu-container .responsive-menu-item-link, #responsive-menu-container #responsive-menu-title, #responsive-menu-container .responsive-menu-subarrow{transition: background-color 0.5s, border-color 0.5s, color 0.5s}#responsive-menu-container #responsive-menu-title{background-color: #212121;color: #fff;font-size: 17px}#responsive-menu-container #responsive-menu-title a{color: #fff;font-size: 17px;text-decoration: none}#responsive-menu-container #responsive-menu-title a:hover{color: #fff}#responsive-menu-container #responsive-menu-title:hover{background-color: #212121;color: #fff}#responsive-menu-container #responsive-menu-title:hover a{color: #fff}#responsive-menu-container #responsive-menu-title #responsive-menu-title-image{display: inline-block;vertical-align: middle;margin-right: 15px}#responsive-menu-container #responsive-menu > li.responsive-menu-item:first-child > a{border-top: 1px solid #212121}#responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link{font-size: 15px}#responsive-menu-container #responsive-menu li.responsive-menu-item a{line-height: 40px;border-bottom: 1px solid #212121;color: #fff;background-color: #212121}#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover{color: #fff;background-color: #3f3f3f;border-color: #212121}#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover .responsive-menu-subarrow{color: #fff;border-color: #3f3f3f;background-color: #3f3f3f}#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow{right: 0;height: 40px;line-height: 40px;width: 40px;color: #fff;border-left: 1px solid #212121;background-color: #212121}#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active{color: #fff;border-color: #212121;background-color: #212121}#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active:hover{color: #fff;border-color: #3f3f3f;background-color: #3f3f3f}#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow:hover{color: #fff;border-color: #3f3f3f;background-color: #3f3f3f}#responsive-menu-container #responsive-menu li.responsive-menu-item.responsive-menu-current-item > .responsive-menu-item-link{background-color: #212121;color: #fff;border-color: #212121}#responsive-menu-container #responsive-menu li.responsive-menu-item.responsive-menu-current-item > .responsive-menu-item-link:hover{background-color: #3f3f3f;color: #fff;border-color: #3f3f3f}}</style></head>
+<body>
+<div id="container">
+<div id="header">
+<div id="man">
+</div>
+<div id="logo">
+<h1>PhpBuilder.ru</h1>
+<h2>ваш путеводитель по веб программированию</h2>
+</div>
+<div id="elephant">
+</div>
+</div>
+<div id="top_menu">
+<ul id="top_buttons">
+<li id="main"><a href="/index.php" title="Главная">ГЛАВНАЯ</a></li>
+<li id="learn_php"><a href="/learn" title="Изучение Php">ИЗУЧЕНИЕ PHP</a></li>
+<li id="php_articles"><a href="/articles" title="Статьи по Php">СТАТЬИ ПО PHP</a></li>
+<li id="php_scripts"><a href="/scripts" title="Php Скрипты">PHP СКРИПТЫ</a></li>
+<li id="mysql"><a href="/mysql" title="MySQL">MySQL</a></li>
+<li id="books"><a href="/books" title="Учебники">УЧЕБНИКИ</a></li>
+<li id="faq"><a href="/faq" title="FAQ">FAQ</a></li>
+<li id="blog"><a href="/blog" title="Блог">БЛОГ</a></li>
+</ul>
+<ul id="decor">
+<li id="dec1"></li>
+<li id="dec2"></li>
+<li id="dec3"></li>
+<li id="dec4"></li>
+<li id="dec5"></li>
+</ul>
+</div><div id="left_column">
+<div class="block-left1">
+<div class="block-left-top">
+<h3>Главное меню</h3>
+</div>
+<div class="block-left-middle1">
+<ul id="tabs">
+<li id="main1"><a href="/index.php" title="Главная страница">Главная страница</a></li>
+<li id="about1"><a href="/about" title="О нас">О нас</a></li>
+<li id="learn_php1"><a href="/learn" title="Изучение php">Изучение php</a></li>
+<li id="php_articles1"><a href="/articles" title="Интересные статьи">Интересные статьи</a></li>
+<li id="php_functions1"><a href="/functions" title="Php функции">Php функции</a></li>
+<li id="php_scripts1"><a href="/scripts" title="Скрипты php">Скрипты php</a></li>
+<li id="java_script1"><a href="/javascript" title="Учим Java Script">Учим Java Script</a></li>
+<li id="mysql1"><a href="/mysql" title="MySQL">MySQL</a></li>
+<li id="php_video1"><a href="/video" title="Видеоуроки по php">Видеоуроки по php</a></li>
+<li id="forum1"><a href="/blog" title="Блог">Блог</a></li>
+<li id="contacts1"><a href="/contacts" title="Контакты">Контакты</a></li>
+</ul>
+</div>
+</div>
+<div class="block-left">
+<div class="block-left-top">
+<h3>&nbsp;</h3>
+</div>
+<div class="block-left-middle" align="center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- New Left ad block -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-9957715359229129"
+data-ad-slot="8580655662"
+data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>		 
+<div class="block-left uroki">
+<div class="block-left-top">
+<h3>Уроки по PHP</h3>
+</div>
+<div class="block-left-middle" align="center">
+<ul>
+<li><a title="Урок 23. Как использовать рекурcивную функцию в php?" href="https://phpbuilder.ru/learn/rekurciya-v-php.php">Урок 23. Как использовать рекурcивную функцию в php?</a></li>
+<li><a title="Урок 22. Как переменной присвоить результат функции?" href="https://phpbuilder.ru/learn/prisvoyenie-rezultata-funkzii.php">Урок 22. Как переменной присвоить результат функции?</a></li>
+<li><a title="Урок 21. Вызов php функций" href="https://phpbuilder.ru/learn/vizov-php-funkziy.php">Урок 21. Вызов php функций</a></li>
+<li><a title="Урок 20. Создание функций в php" href="https://phpbuilder.ru/learn/sozdaniye-funkziy.php">Урок 20. Создание функций в php</a></li>
+<li><a title="Урок 19. Функции в языке php" href="https://phpbuilder.ru/learn/funkzii-v-php.php">Урок 19. Функции в языке php</a></li>
+<li><a title="Урок 18. Способы перебора элементов массивов" href="https://phpbuilder.ru/learn/perebor-elementov-massivov.php">Урок 18. Способы перебора элементов массивов</a></li>
+<li><a title="Урок 17. Одномерные и многомерные массивы" href="https://phpbuilder.ru/learn/odnomerniye-i-mnogomerniye-massivi.php">Урок 17. Одномерные и многомерные массивы</a></li>
+<li><a title="Урок 16. Индексные и ассоциативные массивы" href="https://phpbuilder.ru/learn/indeksniye-i-asoziativniye-masivi.php">Урок 16. Индексные и ассоциативные массивы</a></li>
+<li><a title="Урок 15. Создание массивов" href="https://phpbuilder.ru/learn/sozdaniye-massivov.php">Урок 15. Создание массивов</a></li>
+<li><a title="Урок 14. Массивы в php" href="https://phpbuilder.ru/learn/massivi-v-php.php">Урок 14. Массивы в php</a></li>
+<li><a title="Урок 13. Команды включения файлов: require, require_ once, include, include_once" href="https://phpbuilder.ru/learn/komandi-vklucheniya-faylov.php">Урок 13. Команды включения файлов: require, require_ once, include, include_once</a></li>
+				
+</ul>
+</div>
+</div>
+</div>
+<div id="text_block">	
+<div class="brfl">
+<div class="hlcr">	  
+<a class="glv" href="https://phpbuilder.ru">Главная</a></div>
+<div id="lang">
+<a href="https://phpbuilder.ru"><img src="https://phpbuilder.ru/wp-content/themes/phpbuilder/img/flag-rus.png" alt="Русский" /></a>
+<a href="https://phpbuilder.ru/ua"><img src="https://phpbuilder.ru/wp-content/themes/phpbuilder/img/flag-ukr.png" alt="Українська" /></a>
+</div>
+</div>
+			
+<div class="post-main">
+<h2>Программирование на PHP для начинающих</h2>
+<div class="post">                						
+<p>PHP – это сегодня один из самых известных языков веб-программирования  для веб-приложений, которые исполняются на сервере. PHP – это сокращение от английского «Hypertext Preprocessor» (Препроцессор Гипертекста). Прародителями PHP являются такие известные языки программирования, как &#171;Java&#187;, &#171;C&#187; и &#171;Perl&#187;.  PHP достаточно прост в изучении, это одно из главных преимуществ этого языка.  PHP открывает для веб-программистов удобные возможности быстро генерировать динамические web-страницы.</p>
+<p>Еще одним очень важным преимуществом данного языка среди других предшествующих языков, является возможность написания html-документов со встроенными сценариями и командами PHP. Если, например, сравнить PHP и JavaScript, то нужно отметить, что PHP выполняет скрипты на стороне сервера, в то время как второй – на стороне клиента. Если Вы хотите, то можно настроить сервер так, чтобы процессор PHP обрабатывал  html-файлы.  Тогда мы получаем эффект, когда пользователи не могут различить результат выполнения скрипта и обычный html-файл.</p>
+<p>С помощью PHP Вы сможете без труда создавать качественные Веб-приложения за относительно короткие сроки. Эти приложения в будущем будет легко  поддерживать и модифицировать. PHP прост в изучении, но не смотря на это он  отвечает требованиям профессиональных программистов. Если Вы потратите всего несколько часов на изучение его основ, то уже сможете писать простые скрипты. Язык PHP с каждым днем усовершенствуется, и как следствие, он еще долго будет доминировать в веб-программировании.</p>
+<p>Поэтому, выбрав для изучения язык PHP, Вы сделали хороший выбор.  Он не только самый популярный, удобный и простой в использовании, но и очень перспективный язык веб-программирования, не смотря на постоянный технологический прогресс, который быстро меняет нашу жизнь и наши предпочтения.</p>
+</div>
+<div id="text_ad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- New Text Ad -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-9957715359229129"
+data-ad-slot="8720256468"
+data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>			
+		
+	  
+</div>
+﻿<div id="right_column">		
+<div class="block-right subscribe">
+<div class="block-right-top">
+<h3>E-Mail Подписка</h3>
+</div>
+<div class="block-right-middle" align="center">					
+Подпишитесь на уроки по PHP, MySQ, Java Script и получайте информацию первыми!!!
+<div class="tnp tnp-widget"><form method="post" action="https://phpbuilder.ru/?na=s" onsubmit="return newsletter_check(this)">
+
+<input type="hidden" name="nr" value="widget">
+<input type='hidden' name='nl[]' value='0'>
+<div class="tnp-field tnp-field-firstname"><label>Имя</label><input class="tnp-firstname" type="text" name="nn" required></div>
+<div class="tnp-field tnp-field-email"><label>Email</label><input class="tnp-email" type="email" name="ne" required></div>
+<div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Подписаться">
+</div>
+</form>
+</div>
+</div>
+</div>				
+<div class="block-right stat">
+<div class="block-right-top">
+<h3>Полезные Статьи</h3>
+</div>
+<div class="block-right-middle" align="center">
+<ul>
+<li><a title="Что такое хороший стиль программирования?" href="https://phpbuilder.ru/articles/prog_styles.php">Что такое хороший стиль программирования?</a></li>
+<li><a title="Особенности покупки доменных имен (новых или БУ)" href="https://phpbuilder.ru/articles/domain.php">Особенности покупки доменных имен (новых или БУ)</a></li>
+<li><a title="Что такое «бэкап»?" href="https://phpbuilder.ru/articles/backup.php">Что такое «бэкап»?</a></li>
+<li><a title="Продвижение сайта по НЧ и ВЧ запросам" href="https://phpbuilder.ru/articles/frequency_queries.php">Продвижение сайта по НЧ и ВЧ запросам</a></li>
+<li><a title="Файл sitemap.xml, как улучшить индексацию сайта" href="https://phpbuilder.ru/articles/sitemap.php">Файл sitemap.xml, как улучшить индексацию сайта</a></li>
+<li><a title="Методы по оптимизации и продвижению веб сайтов" href="https://phpbuilder.ru/articles/web_optimization.php">Методы по оптимизации и продвижению веб сайтов</a></li>
+<li><a title="Белые и черные методы seo: что лучше?" href="https://phpbuilder.ru/articles/black_and_white_optimization.php">Белые и черные методы seo: что лучше?</a></li>
+<li><a title="Показатель отказов на сайте как индикатор качества" href="https://phpbuilder.ru/articles/bounce_rate.php">Показатель отказов на сайте как индикатор качества</a></li>
+<li><a title="Правильная разработка и продвижение сайта" href="https://phpbuilder.ru/articles/development_and_optimization.php">Правильная разработка и продвижение сайта</a></li>
+<li><a title="RSS ленты на сайте" href="https://phpbuilder.ru/articles/rss-2.php">RSS ленты на сайте</a></li>
+</ul>
+</div>
+</div>
+<div class="block-right">
+<div class="block-right-top">
+<h3>Партнёры</h3>
+</div>
+<div class="block-right-middle" align="center">
+<ul>
+<li>Киевское бюро переводов "Апрель" - <a href="https://www.april.com.ua" target="_blank">www.april.com.ua</a><br />Перевод текстов и документов любого уровня сложности.</li>
+<li>Интернет-магазин "Хочу Сумку" - <a href="https://hochu-sumku.in.ua" target="_blank" title="Купить дамскую сумку в Киеве">недорогие женские сумки в Киеве</a> на Позняках</li>
+</ul>			 
+</div>		
+</div>
+<script async>var id_test = '24198';</script><script async type="text/javascript" src="https://seo-fast.ru/site_external/c_test_js.js?no=1"></script>
+</div><div class="clear"></div>
+</div>
+<div id="bottom_menu">
+<div id="bottom_shadow">
+</div>
+<ul id="bottom_buttons">
+<li id="main2"><a href="/index.php" title="Главная">ГЛАВНАЯ</a></li>
+<li id="learn_php2"><a href="/learn" title="Изучение Php">ИЗУЧЕНИЕ PHP</a></li>
+<li id="php_articles2"><a href="/articles" title="Статьи по Php">СТАТЬИ ПО PHP</a></li>
+<li id="php_scripts2"><a href="/scripts" title="Php Скрипты">PHP СКРИПТЫ</a></li>
+<li id="mysql2"><a href="/mysql" title="MySQL">MySQL</a></li>
+<li id="books2"><a href="/books" title="Учебники">УЧЕБНИКИ</a></li>
+<li id="faq2"><a href="/faq" title="FAQ">FAQ</a></li>
+<li id="blog2"><a href="/blog" title="Блог">БЛОГ</a></li>
+</ul>
+<ul id="bottom_decor">
+<li id="dec11"></li>
+<li id="dec21"></li>
+<li id="dec31"></li>
+<li id="dec41"></li>
+<li id="dec51"></li>
+</ul>
+</div>
+<div id="bottom_text">
+<p id="footer-text">Copyright © 2012 - 2017 PhpBuilder.ru<br />All Rights Reserved</p>
+<div style="position:absolute;bottom:12px;right:12px;">
+<!--LiveInternet counter--><script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t38.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+</script><!--/LiveInternet-->
+</div>
+</div>
+<!-- START: Syntax Highlighter ComPress -->
+<script type="text/javascript" src="https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shCore.js"></script>
+<script type="text/javascript" src="https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shAutoloader.js"></script>
+<link type="text/css" rel="stylesheet" href="https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/styles/shCoreDefault.css"/>
+<!-- END: Syntax Highlighter ComPress -->
+	
+<!-- START: Syntax Highlighter ComPress -->
+<script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+        'applescript			https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushAppleScript.js',
+        'actionscript3 as3		https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushAS3.js',
+        'bash shell				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushBash.js',
+        'coldfusion cf			https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushColdFusion.js',
+        'cpp c					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushCpp.js',
+        'c# c-sharp csharp		https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushCSharp.js',
+        'css					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushCss.js',
+        'delphi pascal pas		https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushDelphi.js',
+        'diff patch			    https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushDiff.js',
+        'erl erlang				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushErlang.js',
+        'groovy					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushGroovy.js',
+        'java					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushJava.js',
+        'jfx javafx				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushJavaFX.js',
+        'js jscript javascript	https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushJScript.js',
+        'perl pl				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPerl.js',
+        'php					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPhp.js',
+        'text plain				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPlain.js',
+        'powershell ps          https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPowerShell.js',
+        'py python				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushPython.js',
+        'ruby rails ror rb		https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushRuby.js',
+        'sass scss              https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushSass.js',
+        'scala					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushScala.js',
+        'sql					https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushSql.js',
+        'vb vbnet				https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushVb.js',
+        'xml xhtml xslt html	https://phpbuilder.ru/wp-content/plugins/syntax-highlighter-compress/scripts/shBrushXml.js'
+    );
+                    SyntaxHighlighter.defaults['toolbar'] = false;     SyntaxHighlighter.defaults['tab-size'] = 4;
+    SyntaxHighlighter.all();
+</script>
+<!-- END: Syntax Highlighter ComPress -->
+
+	<button id="responsive-menu-button"
+            class="responsive-menu-button responsive-menu-accessible responsive-menu-boring"
+            type="button"
+            aria-label="Menu"><span class="responsive-menu-box"><span class="responsive-menu-inner"></span></span></button><div id="responsive-menu-container"
+  class="
+  slide-left  ">
+  <div id="responsive-menu-wrapper">
+    <ul id="responsive-menu" class=""><li id="responsive-menu-item-571" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item responsive-menu-item responsive-menu-current-item"><a href="https://phpbuilder.ru/" class="responsive-menu-item-link">Главная страница</a></li><li id="responsive-menu-item-572" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="https://phpbuilder.ru/about" class="responsive-menu-item-link">О нас</a></li><li id="responsive-menu-item-580" class=" menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item"><a href="https://phpbuilder.ru/learn" class="responsive-menu-item-link">Изучение PHP</a></li><li id="responsive-menu-item-581" class=" menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item"><a href="https://phpbuilder.ru/articles" class="responsive-menu-item-link">Интересные статьи</a></li><li id="responsive-menu-item-582" class=" menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item"><a href="https://phpbuilder.ru/javascript" class="responsive-menu-item-link">Учим Java Script</a></li><li id="responsive-menu-item-583" class=" menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item"><a href="https://phpbuilder.ru/mysql" class="responsive-menu-item-link">MySQL</a></li><li id="responsive-menu-item-584" class=" menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item"><a href="https://phpbuilder.ru/video" class="responsive-menu-item-link">Видеоуроки по PHP</a></li><li id="responsive-menu-item-585" class=" menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item"><a href="https://phpbuilder.ru/blog" class="responsive-menu-item-link">Блог</a></li><li id="responsive-menu-item-579" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="https://phpbuilder.ru/contacts" class="responsive-menu-item-link">Наши контакты</a></li></ul>  </div>
+</div>
+<script type='text/javascript' src='https://phpbuilder.ru/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type='text/javascript' src='https://phpbuilder.ru/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435, \u0447\u0442\u043e \u0432\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://phpbuilder.ru/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var newsletter = {"messages":{"email_error":"\u041d\u0435\u0432\u0435\u0440\u043d\u044b\u0439 email","name_error":"\u041d\u0435\u0432\u0435\u0440\u043d\u043e\u0435 \u0438\u043c\u044f","surname_error":"The last name is not correct","privacy_error":"You must accept the privacy statement"},"profile_max":"20"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://phpbuilder.ru/wp-content/plugins/newsletter/subscription/validate.js?ver=4.8.7'></script>
+<script type='text/javascript' src='https://phpbuilder.ru/wp-includes/js/wp-embed.min.js?ver=4.7.22'></script>
+<script>jQuery(document).ready(function($){var ResponsiveMenu ={trigger: '#responsive-menu-button',animationSpeed: 500,breakpoint: 615,pushButton: 'off',animationType: 'slide',animationSide: 'left',pageWrapper: '',isOpen: false,triggerTypes: 'click',activeClass: 'is-active',container: '#responsive-menu-container',openClass: 'responsive-menu-open',accordion: 'off',activeArrow: '?',inactiveArrow: '?',wrapper: '#responsive-menu-wrapper',closeOnBodyClick: 'off',closeOnLinkClick: 'off',itemTriggerSubMenu: 'off',linkElement: '.responsive-menu-item-link',openMenu: function(){$(this.trigger).addClass(this.activeClass);$('html').addClass(this.openClass);$('.responsive-menu-button-icon-active').hide();$('.responsive-menu-button-icon-inactive').show();this.setWrapperTranslate();this.isOpen = true},closeMenu: function(){$(this.trigger).removeClass(this.activeClass);$('html').removeClass(this.openClass);$('.responsive-menu-button-icon-inactive').hide();$('.responsive-menu-button-icon-active').show();this.clearWrapperTranslate();this.isOpen = false},triggerMenu: function(){this.isOpen ? this.closeMenu() : this.openMenu()},triggerSubArrow: function(subarrow){var sub_menu = $(subarrow).parent().next('.responsive-menu-submenu');var self = this;if(this.accordion == 'on'){var top_siblings = sub_menu.parents('.responsive-menu-item-has-children').last().siblings('.responsive-menu-item-has-children');var first_siblings = sub_menu.parents('.responsive-menu-item-has-children').first().siblings('.responsive-menu-item-has-children');top_siblings.children('.responsive-menu-submenu').slideUp(200, 'linear').removeClass('responsive-menu-submenu-open');top_siblings.each(function(){$(this).find('.responsive-menu-subarrow').first().html(self.inactiveArrow);$(this).find('.responsive-menu-subarrow').first().removeClass('responsive-menu-subarrow-active')});first_siblings.children('.responsive-menu-submenu').slideUp(200, 'linear').removeClass('responsive-menu-submenu-open');first_siblings.each(function(){$(this).find('.responsive-menu-subarrow').first().html(self.inactiveArrow);$(this).find('.responsive-menu-subarrow').first().removeClass('responsive-menu-subarrow-active')})}if(sub_menu.hasClass('responsive-menu-submenu-open')){sub_menu.slideUp(200, 'linear').removeClass('responsive-menu-submenu-open');$(subarrow).html(this.inactiveArrow);$(subarrow).removeClass('responsive-menu-subarrow-active')}else{sub_menu.slideDown(200, 'linear').addClass('responsive-menu-submenu-open');$(subarrow).html(this.activeArrow);$(subarrow).addClass('responsive-menu-subarrow-active')}},menuHeight: function(){return $(this.container).height()},menuWidth: function(){return $(this.container).width()},wrapperHeight: function(){return $(this.wrapper).height()},setWrapperTranslate: function(){switch(this.animationSide){case 'left':translate = 'translateX(' + this.menuWidth() + 'px)';break;case 'right':translate = 'translateX(-' + this.menuWidth() + 'px)';break;case 'top':translate = 'translateY(' + this.wrapperHeight() + 'px)';break;case 'bottom':translate = 'translateY(-' + this.menuHeight() + 'px)';break}if(this.animationType == 'push'){$(this.pageWrapper).css({'transform':translate});$('html, body').css('overflow-x', 'hidden')}if(this.pushButton == 'on'){$('#responsive-menu-button').css({'transform':translate})}},clearWrapperTranslate: function(){var self = this;if(this.animationType == 'push'){$(this.pageWrapper).css({'transform':''});setTimeout(function(){$('html, body').css('overflow-x', '')}, self.animationSpeed)}if(this.pushButton == 'on'){$('#responsive-menu-button').css({'transform':''})}},init: function(){var self = this;$(this.trigger).on(this.triggerTypes, function(e){e.stopPropagation();self.triggerMenu()});$('.responsive-menu-subarrow').on('click', function(e){e.preventDefault();e.stopPropagation();self.triggerSubArrow(this)});$(window).resize(function(){if($(window).width() > self.breakpoint){if(self.isOpen){self.closeMenu()}}else{if($('.responsive-menu-open').length>0){self.setWrapperTranslate()}}});if(this.closeOnLinkClick == 'on'){$(this.linkElement).on('click', function(e){e.preventDefault();if(self.itemTriggerSubMenu == 'on' && $(this).is('.responsive-menu-item-has-children > ' + self.linkElement)){return}old_href = $(this).attr('href');old_target = typeof $(this).attr('target') == 'undefined' ? '_self' : $(this).attr('target');if(self.isOpen){if($(e.target).closest('.responsive-menu-subarrow').length){return}self.closeMenu();setTimeout(function(){window.open(old_href, old_target)}, self.animationSpeed)}})}if(this.closeOnBodyClick == 'on'){$(document).on('click', 'body', function(e){if(self.isOpen){if($(e.target).closest('#responsive-menu-container').length || $(e.target).closest('#responsive-menu-button').length){return}}self.closeMenu()})}if(this.itemTriggerSubMenu == 'on'){$('.responsive-menu-item-has-children > ' + this.linkElement).on('click', function(e){e.preventDefault();self.triggerSubArrow($(this).children('.responsive-menu-subarrow').first())})}}};ResponsiveMenu.init()});</script></body>
+</html>
