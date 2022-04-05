@@ -19,6 +19,35 @@ def compare_index_entry(x, y):
     return int(x.count) - int(y.count)
 
 
+and_operator = '&'
+or_operator = '|'
+not_operator = 'not'
+
+
+def run_operations(query, operation_symbol, operation_func):
+    result = []
+    for i in range(len(query) - 1):
+        if query[i][1] == operation_symbol:
+            current_result = operation_func(query[i][0], query[i + 1][0])
+            query[i + 1] = (current_result, query[i + 1][1])
+        else:
+            result.append((query[i][0], query[i][1]))
+    result.append((query[len(query) - 1]))
+    return result
+
+
+def and_operation(set_a, set_b):
+    return set_a & set_b
+
+
+def or_operation(set_a, set_b):
+    return set_a | set_b
+
+
+def difference_set(set_a, set_b):
+    return set_a - set_b
+
+
 class BoolSearch:
     def __init__(self):
         self.words_index_mapping = None
@@ -94,19 +123,33 @@ class BoolSearch:
         self.words_index_mapping = words_index_mapping
 
     def search(self, search_words):
-        words = re.split('\s+', search_words)
-        content_page = set()
-        lemma_token = set(map(lambda x: self.get_normal_form(x), words))
-        for word in lemma_token:
-            if len(content_page) == 0:
-                content_page = self.words_index_mapping[word]
-            else:
-                content_page = content_page.intersection(self.words_index_mapping[word])
-        print(content_page)
+        tokens = search_words.split(' ')
+        start_token = tokens[0]
+        search_result = self.words_index_mapping[start_token]
+        if len(tokens) == 1:
+            return search_result
+        for i in range(1, len(tokens)):
+            if tokens[i] == '|':
+                new_res = self.words_index_mapping[tokens[i + 1]]
+                if new_res is not None:
+                    search_result = search_result | new_res
+                i += 1
+            elif tokens[i] == '&':
+                new_res = self.words_index_mapping[tokens[i + 1]]
+                if new_res is not None:
+                    search_result = search_result & new_res
+                i += 1
+            elif tokens[i] == '!':
+                new_res = self.words_index_mapping[tokens[i + 1]]
+                if new_res is not None:
+                    search_result = search_result - new_res
+                i += 1
+        return search_result
 
 
 if __name__ == '__main__':
     s = BoolSearch()
     s.create_indexes_file()
     s.inverted_index_open()
-    s.search('программирование стать лучшим')
+    res = s.search('программирование ! стать')
+    print(res)
